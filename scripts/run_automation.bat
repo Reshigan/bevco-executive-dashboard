@@ -7,17 +7,47 @@ echo ========================================
 echo.
 
 echo Choose your automation method:
-echo 1. PowerShell Automation (Recommended for Windows)
-echo 2. Python Automation (Cross-platform)
-echo 3. Manual Setup Guide
+echo 1. Power BI Template Creator (Recommended - No Auth Issues)
+echo 2. Web Browser Automation (Guided Process)
+echo 3. PowerShell Automation (Advanced Users)
+echo 4. Python API Automation (May have auth issues)
+echo 5. Manual Setup Guide
 echo.
 
-set /p choice="Enter your choice (1-3): "
+set /p choice="Enter your choice (1-5): "
 
-if "%choice%"=="1" goto powershell
-if "%choice%"=="2" goto python
-if "%choice%"=="3" goto manual
+if "%choice%"=="1" goto template
+if "%choice%"=="2" goto webautomation
+if "%choice%"=="3" goto powershell
+if "%choice%"=="4" goto python
+if "%choice%"=="5" goto manual
 goto invalid
+
+:template
+echo.
+echo Creating Power BI Template File...
+echo This will:
+echo - Generate sample data
+echo - Create BevcoTemplate.pbit file
+echo - No authentication required
+echo - Just double-click the .pbit file to use
+echo.
+pause
+python powerbi_template_creator.py
+goto end
+
+:webautomation
+echo.
+echo Starting Web Browser Automation...
+echo This will:
+echo - Generate sample data
+echo - Open Power BI Service in browser
+echo - Guide you through manual login
+echo - Automate workspace creation and file uploads
+echo.
+pause
+python powerbi_web_automation.py
+goto end
 
 :powershell
 echo.
@@ -58,7 +88,7 @@ echo - POWERBI_IMPLEMENTATION_GUIDE.md (complete guide)
 goto end
 
 :invalid
-echo Invalid choice. Please run the script again and choose 1, 2, or 3.
+echo Invalid choice. Please run the script again and choose 1-5.
 goto end
 
 :end
