@@ -71,10 +71,42 @@ bevco-executive-dashboard/
     └── workflows/      # CI/CD automation
 ```
 
-## 🛠️ Installation
+## 🚀 Quick Start
+
+### 🤖 Option 1: Full Automation (Recommended)
+**Deploy everything to app.powerbi.com automatically!**
+
+```bash
+# Windows - One-click automation
+scripts\run_automation.bat
+
+# Mac/Linux - Python automation  
+./scripts/run_automation.sh
+
+# Or run directly:
+powershell .\scripts\PowerBI_Full_Automation.ps1    # Windows
+python3 scripts/powerbi_automation.py               # Cross-platform
+```
+
+**What you get in 10 minutes:**
+- ✅ 36,400+ sample transactions generated
+- ✅ Power BI workspace created automatically  
+- ✅ Executive dashboard published to app.powerbi.com
+- ✅ Reports and visualizations ready to use
+- ✅ Mobile-optimized layouts configured
+- ✅ Data refresh schedules set up
+
+### 📊 Option 2: Online Setup (No Desktop Required)
+**Perfect for app.powerbi.com users:**
+
+1. **Generate Data**: Run `python3 generate_data_standalone.py`
+2. **Follow Guide**: See [ONLINE_POWERBI_SETUP.md](ONLINE_POWERBI_SETUP.md)
+3. **Upload & Build**: Direct implementation at app.powerbi.com
+
+## 🛠️ Manual Installation
 
 ### Prerequisites
-- Power BI Desktop (latest version)
+- Power BI Desktop (latest version) OR Power BI Pro license
 - Python 3.8+ (for data generation)
 - 500MB free disk space
 
