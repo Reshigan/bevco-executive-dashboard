@@ -73,7 +73,26 @@ bevco-executive-dashboard/
 
 ## 🚀 Quick Start
 
-### 🤖 Option 1: Full Automation (Recommended)
+### 📋 Option 1: PBIT Templates (Recommended)
+**Ready-to-import Power BI Template files!**
+
+```bash
+# Create PBIT template files
+python3 create_powerbi_files.py
+
+# Or create directly
+python3 scripts/create_pbit_templates.py
+```
+
+**What you get instantly:**
+- ✅ 4 specialized .pbit template files
+- ✅ Complete data model with relationships
+- ✅ 20+ pre-built DAX measures
+- ✅ Just double-click to open in Power BI Desktop
+- ✅ Automatically prompts for your CSV data
+- ✅ No authentication issues
+
+### 🤖 Option 2: Full Automation
 **Deploy everything to app.powerbi.com automatically!**
 
 ```bash
@@ -96,7 +115,7 @@ python3 scripts/powerbi_automation.py               # Cross-platform
 - ✅ Mobile-optimized layouts configured
 - ✅ Data refresh schedules set up
 
-### 🍎 Option 2: Mac Web Import (Optimized for macOS)
+### 🍎 Option 3: Mac Web Import (Optimized for macOS)
 **Perfect for Mac users uploading to app.powerbi.com:**
 
 ```bash
@@ -114,7 +133,7 @@ python3 scripts/mac_web_server.py
 - 🔄 Automatic Excel conversion
 - 📱 Mobile-ready for iPhone/iPad
 
-### 📊 Option 3: Online Setup (No Desktop Required)
+### 📊 Option 4: Online Setup (No Desktop Required)
 **Perfect for app.powerbi.com users:**
 
 1. **Generate Data**: Run `python3 generate_data_standalone.py`
