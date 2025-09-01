@@ -96,7 +96,25 @@ python3 scripts/powerbi_automation.py               # Cross-platform
 - ✅ Mobile-optimized layouts configured
 - ✅ Data refresh schedules set up
 
-### 📊 Option 2: Online Setup (No Desktop Required)
+### 🍎 Option 2: Mac Web Import (Optimized for macOS)
+**Perfect for Mac users uploading to app.powerbi.com:**
+
+```bash
+# One-click Mac launcher
+./mac_launcher.sh
+
+# Or start web server directly
+python3 scripts/mac_web_server.py
+```
+
+**Mac-specific features:**
+- 🌐 Web-based interface optimized for Safari
+- 📁 Drag & drop from Finder
+- ⌘ Native macOS keyboard shortcuts
+- 🔄 Automatic Excel conversion
+- 📱 Mobile-ready for iPhone/iPad
+
+### 📊 Option 3: Online Setup (No Desktop Required)
 **Perfect for app.powerbi.com users:**
 
 1. **Generate Data**: Run `python3 generate_data_standalone.py`
