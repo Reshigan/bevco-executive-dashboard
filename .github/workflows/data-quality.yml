@@ -1,0 +1,80 @@
+name: Data Quality Check
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'data/**'
+      - 'scripts/etl/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'data/**'
+      - 'scripts/etl/**'
+  schedule:
+    # Run daily at 6 AM UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  data-quality:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Cache Python dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pandas numpy openpyxl
+    
+    - name: Generate sample data
+      run: |
+        python scripts/etl/generate_master_data.py
+    
+    - name: Run data quality checks
+      run: |
+        python scripts/etl/data_quality_check.py
+    
+    - name: Upload quality report
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: data-quality-report
+        path: |
+          data/processed/data_quality_report.txt
+          data/processed/data_quality_summary.csv
+          data/processed/data_quality_issues.csv
+    
+    - name: Comment PR with quality results
+      uses: actions/github-script@v6
+      if: github.event_name == 'pull_request'
+      with:
+        script: |
+          const fs = require('fs');
+          const reportPath = 'data/processed/data_quality_report.txt';
+          
+          if (fs.existsSync(reportPath)) {
+            const report = fs.readFileSync(reportPath, 'utf8');
+            const summary = report.split('\n').slice(0, 20).join('\n');
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `## Data Quality Check Results\n\n\`\`\`\n${summary}\n\`\`\`\n\nFull report available in artifacts.`
+            });
+          }

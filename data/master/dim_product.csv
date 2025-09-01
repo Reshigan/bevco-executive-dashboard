@@ -1,0 +1,340 @@
+ProductKey,SKU,ProductName,Vendor,Category,SubCategory,Brand,PackSize,UnitCost,UnitPrice,LaunchDate,Status
+1000,SKU1000,Coca-Cola Cola 1,Coca-Cola,Soft Drinks,Cola,Coca-Cola,330ml,38.37,32.04,2022-03-24,Active
+1001,SKU1001,Coca-Cola Cola 2,Coca-Cola,Soft Drinks,Cola,Coca-Cola,6-pack,38.33,59.08,2022-10-14,Active
+1002,SKU1002,Coca-Cola Lemon-Lime 1,Coca-Cola,Soft Drinks,Lemon-Lime,Coca-Cola,330ml,14.84,55.48,2022-01-18,Active
+1003,SKU1003,Coca-Cola Lemon-Lime 2,Coca-Cola,Soft Drinks,Lemon-Lime,Coca-Cola,6-pack,34.24,59.04,2022-04-15,Active
+1004,SKU1004,Coca-Cola Orange 1,Coca-Cola,Soft Drinks,Orange,Coca-Cola,12-pack,41.26,72.83,2022-06-09,Active
+1005,SKU1005,Coca-Cola Orange 2,Coca-Cola,Soft Drinks,Orange,Coca-Cola,500ml,48.07,40.29,2022-02-13,Active
+1006,SKU1006,Coca-Cola Energy 1,Coca-Cola,Soft Drinks,Energy,Coca-Cola,12-pack,20.48,33.81,2022-01-24,Discontinued
+1007,SKU1007,Coca-Cola Energy 2,Coca-Cola,Soft Drinks,Energy,Coca-Cola,2L,10.62,93.01,2022-02-18,Active
+1008,SKU1008,Coca-Cola Energy 3,Coca-Cola,Soft Drinks,Energy,Coca-Cola,12-pack,33.29,89.69,2022-06-19,Active
+1009,SKU1009,Coca-Cola Energy 4,Coca-Cola,Soft Drinks,Energy,Coca-Cola,6-pack,8.13,69.51,2022-05-03,Active
+1010,SKU1010,Coca-Cola Water 1,Coca-Cola,Soft Drinks,Water,Coca-Cola,1L,17.51,67.21,2022-06-06,Active
+1011,SKU1011,Coca-Cola Water 2,Coca-Cola,Soft Drinks,Water,Coca-Cola,750ml,14.43,34.03,2022-11-21,Active
+1012,SKU1012,Coca-Cola Lager 1,Coca-Cola,Beer,Lager,Coca-Cola,2L,37.81,24.71,2022-07-09,Active
+1013,SKU1013,Coca-Cola Lager 2,Coca-Cola,Beer,Lager,Coca-Cola,6-pack,19.59,79.15,2022-01-08,Active
+1014,SKU1014,Coca-Cola Lager 3,Coca-Cola,Beer,Lager,Coca-Cola,12-pack,19.2,34.1,2022-04-19,Active
+1015,SKU1015,Coca-Cola Ale 1,Coca-Cola,Beer,Ale,Coca-Cola,6-pack,27.47,89.62,2022-11-15,Active
+1016,SKU1016,Coca-Cola Ale 2,Coca-Cola,Beer,Ale,Coca-Cola,750ml,11.28,77.05,2022-09-09,Discontinued
+1017,SKU1017,Coca-Cola Ale 3,Coca-Cola,Beer,Ale,Coca-Cola,2L,22.97,29.74,2022-03-17,Discontinued
+1018,SKU1018,Coca-Cola Stout 1,Coca-Cola,Beer,Stout,Coca-Cola,12-pack,7.12,19.87,2022-11-06,Discontinued
+1019,SKU1019,Coca-Cola Stout 2,Coca-Cola,Beer,Stout,Coca-Cola,2L,7.86,44.35,2022-08-17,Active
+1020,SKU1020,Coca-Cola Craft 1,Coca-Cola,Beer,Craft,Coca-Cola,6-pack,37.43,71.35,2022-09-25,Active
+1021,SKU1021,Coca-Cola Craft 2,Coca-Cola,Beer,Craft,Coca-Cola,12-pack,33.84,20.04,2022-07-06,Discontinued
+1022,SKU1022,Coca-Cola Light 1,Coca-Cola,Beer,Light,Coca-Cola,6-pack,44.41,33.71,2022-09-25,Active
+1023,SKU1023,Coca-Cola Light 2,Coca-Cola,Beer,Light,Coca-Cola,2L,46.07,88.35,2022-05-27,Active
+1024,SKU1024,Coca-Cola Whiskey 1,Coca-Cola,Spirits,Whiskey,Coca-Cola,750ml,39.31,58.54,2022-09-01,Active
+1025,SKU1025,Coca-Cola Whiskey 2,Coca-Cola,Spirits,Whiskey,Coca-Cola,1L,5.88,93.62,2022-05-08,Active
+1026,SKU1026,Coca-Cola Whiskey 3,Coca-Cola,Spirits,Whiskey,Coca-Cola,500ml,44.51,95.23,2022-02-24,Discontinued
+1027,SKU1027,Coca-Cola Vodka 1,Coca-Cola,Spirits,Vodka,Coca-Cola,12-pack,28.97,21.32,2022-11-16,Active
+1028,SKU1028,Coca-Cola Vodka 2,Coca-Cola,Spirits,Vodka,Coca-Cola,750ml,28.75,64.59,2022-04-18,Active
+1029,SKU1029,Coca-Cola Rum 1,Coca-Cola,Spirits,Rum,Coca-Cola,1L,49.78,68.49,2022-08-17,Discontinued
+1030,SKU1030,Coca-Cola Rum 2,Coca-Cola,Spirits,Rum,Coca-Cola,330ml,16.16,15.76,2022-01-19,Active
+1031,SKU1031,Coca-Cola Rum 3,Coca-Cola,Spirits,Rum,Coca-Cola,2L,14.91,16.39,2022-11-02,Active
+1032,SKU1032,Coca-Cola Rum 4,Coca-Cola,Spirits,Rum,Coca-Cola,330ml,45.74,87.37,2022-02-17,Active
+1033,SKU1033,Coca-Cola Gin 1,Coca-Cola,Spirits,Gin,Coca-Cola,6-pack,26.84,58.53,2022-12-19,Discontinued
+1034,SKU1034,Coca-Cola Gin 2,Coca-Cola,Spirits,Gin,Coca-Cola,500ml,40.31,82.67,2022-04-04,Active
+1035,SKU1035,Coca-Cola Gin 3,Coca-Cola,Spirits,Gin,Coca-Cola,6-pack,24.4,48.12,2022-08-28,Active
+1036,SKU1036,Coca-Cola Gin 4,Coca-Cola,Spirits,Gin,Coca-Cola,6-pack,34.41,68.16,2022-01-13,Active
+1037,SKU1037,Coca-Cola Brandy 1,Coca-Cola,Spirits,Brandy,Coca-Cola,500ml,13.62,58.27,2022-03-14,Active
+1038,SKU1038,Coca-Cola Brandy 2,Coca-Cola,Spirits,Brandy,Coca-Cola,750ml,25.82,88.7,2022-02-15,Active
+1039,SKU1039,Coca-Cola Red 1,Coca-Cola,Wine,Red,Coca-Cola,6-pack,49.97,85.24,2022-02-25,Active
+1040,SKU1040,Coca-Cola Red 2,Coca-Cola,Wine,Red,Coca-Cola,500ml,23.29,53.32,2022-07-02,Active
+1041,SKU1041,Coca-Cola White 1,Coca-Cola,Wine,White,Coca-Cola,330ml,49.34,33.87,2022-08-10,Discontinued
+1042,SKU1042,Coca-Cola White 2,Coca-Cola,Wine,White,Coca-Cola,6-pack,48.08,99.59,2022-09-22,Discontinued
+1043,SKU1043,Coca-Cola White 3,Coca-Cola,Wine,White,Coca-Cola,500ml,13.55,29.59,2022-01-19,Active
+1044,SKU1044,Coca-Cola White 4,Coca-Cola,Wine,White,Coca-Cola,6-pack,19.11,14.51,2022-08-17,Active
+1045,SKU1045,Coca-Cola White 5,Coca-Cola,Wine,White,Coca-Cola,330ml,48.24,17.21,2022-03-03,Active
+1046,SKU1046,Coca-Cola Sparkling 1,Coca-Cola,Wine,Sparkling,Coca-Cola,1L,10.39,90.13,2022-04-19,Active
+1047,SKU1047,Coca-Cola Sparkling 2,Coca-Cola,Wine,Sparkling,Coca-Cola,2L,8.69,69.16,2022-10-17,Active
+1048,SKU1048,Coca-Cola Sparkling 3,Coca-Cola,Wine,Sparkling,Coca-Cola,750ml,14.19,74.46,2022-04-09,Discontinued
+1049,SKU1049,Coca-Cola Rose 1,Coca-Cola,Wine,Rose,Coca-Cola,6-pack,34.05,51.15,2022-02-01,Discontinued
+1050,SKU1050,Coca-Cola Rose 2,Coca-Cola,Wine,Rose,Coca-Cola,2L,49.93,99.65,2022-02-18,Active
+1051,SKU1051,Coca-Cola Rose 3,Coca-Cola,Wine,Rose,Coca-Cola,2L,16.93,93.99,2022-02-08,Active
+1052,SKU1052,Coca-Cola Fortified 1,Coca-Cola,Wine,Fortified,Coca-Cola,500ml,24.72,58.89,2022-05-20,Active
+1053,SKU1053,Coca-Cola Fortified 2,Coca-Cola,Wine,Fortified,Coca-Cola,6-pack,41.77,36.94,2022-11-04,Active
+1054,SKU1054,Coca-Cola Fortified 3,Coca-Cola,Wine,Fortified,Coca-Cola,750ml,10.19,19.63,2022-09-05,Active
+1055,SKU1055,Coca-Cola Fortified 4,Coca-Cola,Wine,Fortified,Coca-Cola,750ml,32.22,74.59,2022-04-22,Active
+1056,SKU1056,SABMiller Cola 1,SABMiller,Soft Drinks,Cola,SABMiller,750ml,45.74,86.15,2022-02-21,Discontinued
+1057,SKU1057,SABMiller Cola 2,SABMiller,Soft Drinks,Cola,SABMiller,12-pack,17.45,10.32,2022-03-21,Active
+1058,SKU1058,SABMiller Cola 3,SABMiller,Soft Drinks,Cola,SABMiller,500ml,38.36,59.65,2022-07-18,Active
+1059,SKU1059,SABMiller Cola 4,SABMiller,Soft Drinks,Cola,SABMiller,330ml,8.39,89.48,2022-03-18,Active
+1060,SKU1060,SABMiller Cola 5,SABMiller,Soft Drinks,Cola,SABMiller,12-pack,21.61,59.73,2022-07-05,Active
+1061,SKU1061,SABMiller Lemon-Lime 1,SABMiller,Soft Drinks,Lemon-Lime,SABMiller,750ml,45.45,81.65,2022-01-12,Active
+1062,SKU1062,SABMiller Lemon-Lime 2,SABMiller,Soft Drinks,Lemon-Lime,SABMiller,6-pack,16.23,19.25,2022-09-28,Discontinued
+1063,SKU1063,SABMiller Lemon-Lime 3,SABMiller,Soft Drinks,Lemon-Lime,SABMiller,2L,38.73,93.32,2022-04-28,Active
+1064,SKU1064,SABMiller Lemon-Lime 4,SABMiller,Soft Drinks,Lemon-Lime,SABMiller,12-pack,41.48,89.33,2022-01-06,Active
+1065,SKU1065,SABMiller Orange 1,SABMiller,Soft Drinks,Orange,SABMiller,12-pack,35.15,76.16,2022-04-09,Active
+1066,SKU1066,SABMiller Orange 2,SABMiller,Soft Drinks,Orange,SABMiller,12-pack,36.56,44.43,2022-01-28,Discontinued
+1067,SKU1067,SABMiller Orange 3,SABMiller,Soft Drinks,Orange,SABMiller,500ml,13.98,92.66,2022-06-10,Active
+1068,SKU1068,SABMiller Orange 4,SABMiller,Soft Drinks,Orange,SABMiller,500ml,6.06,27.38,2022-06-09,Active
+1069,SKU1069,SABMiller Orange 5,SABMiller,Soft Drinks,Orange,SABMiller,12-pack,17.56,67.73,2022-07-22,Active
+1070,SKU1070,SABMiller Energy 1,SABMiller,Soft Drinks,Energy,SABMiller,330ml,44.47,33.51,2022-10-09,Active
+1071,SKU1071,SABMiller Energy 2,SABMiller,Soft Drinks,Energy,SABMiller,330ml,31.85,41.11,2022-06-14,Active
+1072,SKU1072,SABMiller Water 1,SABMiller,Soft Drinks,Water,SABMiller,2L,13.55,13.99,2022-07-01,Active
+1073,SKU1073,SABMiller Water 2,SABMiller,Soft Drinks,Water,SABMiller,750ml,24.41,95.4,2022-06-20,Active
+1074,SKU1074,SABMiller Water 3,SABMiller,Soft Drinks,Water,SABMiller,6-pack,43.16,74.78,2022-05-17,Active
+1075,SKU1075,SABMiller Water 4,SABMiller,Soft Drinks,Water,SABMiller,6-pack,23.38,46.22,2022-05-18,Active
+1076,SKU1076,SABMiller Water 5,SABMiller,Soft Drinks,Water,SABMiller,500ml,23.92,94.63,2022-11-24,Active
+1077,SKU1077,SABMiller Lager 1,SABMiller,Beer,Lager,SABMiller,1L,29.66,10.04,2022-05-07,Discontinued
+1078,SKU1078,SABMiller Lager 2,SABMiller,Beer,Lager,SABMiller,12-pack,31.1,68.92,2022-08-15,Discontinued
+1079,SKU1079,SABMiller Lager 3,SABMiller,Beer,Lager,SABMiller,6-pack,14.62,52.59,2022-12-06,Active
+1080,SKU1080,SABMiller Lager 4,SABMiller,Beer,Lager,SABMiller,750ml,28.2,66.96,2022-06-03,Active
+1081,SKU1081,SABMiller Ale 1,SABMiller,Beer,Ale,SABMiller,500ml,41.3,23.26,2022-01-08,Discontinued
+1082,SKU1082,SABMiller Ale 2,SABMiller,Beer,Ale,SABMiller,2L,43.24,16.55,2022-07-21,Active
+1083,SKU1083,SABMiller Ale 3,SABMiller,Beer,Ale,SABMiller,6-pack,36.34,54.49,2022-04-05,Active
+1084,SKU1084,SABMiller Ale 4,SABMiller,Beer,Ale,SABMiller,12-pack,43.72,89.69,2022-07-08,Active
+1085,SKU1085,SABMiller Stout 1,SABMiller,Beer,Stout,SABMiller,330ml,30.08,92.57,2022-02-15,Active
+1086,SKU1086,SABMiller Stout 2,SABMiller,Beer,Stout,SABMiller,12-pack,25.91,57.8,2022-09-20,Active
+1087,SKU1087,SABMiller Stout 3,SABMiller,Beer,Stout,SABMiller,12-pack,45.11,65.14,2022-12-17,Discontinued
+1088,SKU1088,SABMiller Stout 4,SABMiller,Beer,Stout,SABMiller,12-pack,45.81,50.13,2022-03-24,Discontinued
+1089,SKU1089,SABMiller Stout 5,SABMiller,Beer,Stout,SABMiller,1L,16.66,32.25,2022-11-09,Discontinued
+1090,SKU1090,SABMiller Craft 1,SABMiller,Beer,Craft,SABMiller,750ml,24.79,74.22,2022-04-09,Active
+1091,SKU1091,SABMiller Craft 2,SABMiller,Beer,Craft,SABMiller,750ml,45.19,17.25,2022-03-08,Discontinued
+1092,SKU1092,SABMiller Craft 3,SABMiller,Beer,Craft,SABMiller,6-pack,11.88,29.26,2022-07-14,Active
+1093,SKU1093,SABMiller Light 1,SABMiller,Beer,Light,SABMiller,1L,7.8,84.96,2022-07-25,Active
+1094,SKU1094,SABMiller Light 2,SABMiller,Beer,Light,SABMiller,12-pack,44.63,61.81,2022-08-01,Active
+1095,SKU1095,SABMiller Light 3,SABMiller,Beer,Light,SABMiller,750ml,38.91,86.81,2022-07-18,Active
+1096,SKU1096,SABMiller Light 4,SABMiller,Beer,Light,SABMiller,1L,14.87,49.23,2022-01-13,Active
+1097,SKU1097,SABMiller Light 5,SABMiller,Beer,Light,SABMiller,6-pack,35.56,46.39,2022-03-27,Discontinued
+1098,SKU1098,SABMiller Whiskey 1,SABMiller,Spirits,Whiskey,SABMiller,2L,29.04,91.62,2022-10-19,Active
+1099,SKU1099,SABMiller Whiskey 2,SABMiller,Spirits,Whiskey,SABMiller,330ml,33.92,22.21,2022-08-06,Active
+1100,SKU1100,SABMiller Whiskey 3,SABMiller,Spirits,Whiskey,SABMiller,750ml,22.06,29.05,2022-06-11,Discontinued
+1101,SKU1101,SABMiller Vodka 1,SABMiller,Spirits,Vodka,SABMiller,12-pack,47.8,47.94,2022-02-16,Active
+1102,SKU1102,SABMiller Vodka 2,SABMiller,Spirits,Vodka,SABMiller,6-pack,29.27,99.99,2022-06-08,Active
+1103,SKU1103,SABMiller Vodka 3,SABMiller,Spirits,Vodka,SABMiller,12-pack,48.08,13.62,2022-01-08,Active
+1104,SKU1104,SABMiller Vodka 4,SABMiller,Spirits,Vodka,SABMiller,12-pack,5.92,23.71,2022-03-16,Active
+1105,SKU1105,SABMiller Rum 1,SABMiller,Spirits,Rum,SABMiller,1L,36.48,79.02,2022-03-20,Active
+1106,SKU1106,SABMiller Rum 2,SABMiller,Spirits,Rum,SABMiller,12-pack,41.87,96.82,2022-02-19,Active
+1107,SKU1107,SABMiller Rum 3,SABMiller,Spirits,Rum,SABMiller,750ml,30.91,91.72,2022-07-13,Active
+1108,SKU1108,SABMiller Gin 1,SABMiller,Spirits,Gin,SABMiller,2L,36.08,66.45,2022-02-23,Active
+1109,SKU1109,SABMiller Gin 2,SABMiller,Spirits,Gin,SABMiller,12-pack,35.79,82.5,2022-10-26,Active
+1110,SKU1110,SABMiller Brandy 1,SABMiller,Spirits,Brandy,SABMiller,2L,24.28,43.35,2022-09-21,Active
+1111,SKU1111,SABMiller Brandy 2,SABMiller,Spirits,Brandy,SABMiller,330ml,43.23,84.01,2022-02-14,Active
+1112,SKU1112,SABMiller Brandy 3,SABMiller,Spirits,Brandy,SABMiller,6-pack,45.12,51.38,2022-03-14,Active
+1113,SKU1113,SABMiller Brandy 4,SABMiller,Spirits,Brandy,SABMiller,6-pack,28.48,68.54,2022-10-26,Discontinued
+1114,SKU1114,SABMiller Red 1,SABMiller,Wine,Red,SABMiller,1L,42.16,63.32,2022-06-28,Active
+1115,SKU1115,SABMiller Red 2,SABMiller,Wine,Red,SABMiller,12-pack,47.06,35.1,2022-08-08,Discontinued
+1116,SKU1116,SABMiller Red 3,SABMiller,Wine,Red,SABMiller,2L,32.46,44.11,2022-01-16,Active
+1117,SKU1117,SABMiller Red 4,SABMiller,Wine,Red,SABMiller,500ml,26.94,41.93,2022-05-11,Active
+1118,SKU1118,SABMiller Red 5,SABMiller,Wine,Red,SABMiller,2L,36.55,34.86,2022-01-17,Active
+1119,SKU1119,SABMiller White 1,SABMiller,Wine,White,SABMiller,500ml,37.4,53.97,2022-04-23,Discontinued
+1120,SKU1120,SABMiller White 2,SABMiller,Wine,White,SABMiller,6-pack,37.03,50.34,2022-01-03,Active
+1121,SKU1121,SABMiller Sparkling 1,SABMiller,Wine,Sparkling,SABMiller,1L,36.13,37.56,2022-10-12,Discontinued
+1122,SKU1122,SABMiller Sparkling 2,SABMiller,Wine,Sparkling,SABMiller,2L,28.89,48.3,2022-12-18,Active
+1123,SKU1123,SABMiller Sparkling 3,SABMiller,Wine,Sparkling,SABMiller,750ml,36.63,34.38,2022-05-08,Active
+1124,SKU1124,SABMiller Rose 1,SABMiller,Wine,Rose,SABMiller,750ml,10.38,58.23,2022-12-06,Active
+1125,SKU1125,SABMiller Rose 2,SABMiller,Wine,Rose,SABMiller,500ml,38.24,34.88,2022-10-25,Active
+1126,SKU1126,SABMiller Rose 3,SABMiller,Wine,Rose,SABMiller,330ml,42.47,36.66,2022-06-06,Active
+1127,SKU1127,SABMiller Fortified 1,SABMiller,Wine,Fortified,SABMiller,6-pack,29.04,34.69,2022-01-18,Active
+1128,SKU1128,SABMiller Fortified 2,SABMiller,Wine,Fortified,SABMiller,6-pack,47.48,67.41,2022-08-04,Active
+1129,SKU1129,Distell Cola 1,Distell,Soft Drinks,Cola,Distell,1L,26.54,40.66,2022-01-09,Discontinued
+1130,SKU1130,Distell Cola 2,Distell,Soft Drinks,Cola,Distell,330ml,42.0,46.06,2022-02-19,Active
+1131,SKU1131,Distell Cola 3,Distell,Soft Drinks,Cola,Distell,500ml,11.71,60.66,2022-05-03,Active
+1132,SKU1132,Distell Cola 4,Distell,Soft Drinks,Cola,Distell,330ml,30.11,47.46,2022-10-26,Active
+1133,SKU1133,Distell Lemon-Lime 1,Distell,Soft Drinks,Lemon-Lime,Distell,1L,45.88,36.76,2022-10-14,Active
+1134,SKU1134,Distell Lemon-Lime 2,Distell,Soft Drinks,Lemon-Lime,Distell,2L,32.95,64.87,2022-12-04,Active
+1135,SKU1135,Distell Lemon-Lime 3,Distell,Soft Drinks,Lemon-Lime,Distell,6-pack,14.5,69.44,2022-03-08,Active
+1136,SKU1136,Distell Lemon-Lime 4,Distell,Soft Drinks,Lemon-Lime,Distell,2L,8.38,10.24,2022-08-23,Discontinued
+1137,SKU1137,Distell Lemon-Lime 5,Distell,Soft Drinks,Lemon-Lime,Distell,750ml,6.47,35.93,2022-05-23,Discontinued
+1138,SKU1138,Distell Orange 1,Distell,Soft Drinks,Orange,Distell,6-pack,15.5,33.81,2022-11-19,Active
+1139,SKU1139,Distell Orange 2,Distell,Soft Drinks,Orange,Distell,1L,10.16,30.23,2022-03-09,Active
+1140,SKU1140,Distell Energy 1,Distell,Soft Drinks,Energy,Distell,330ml,12.47,37.69,2022-12-27,Active
+1141,SKU1141,Distell Energy 2,Distell,Soft Drinks,Energy,Distell,1L,10.6,71.98,2022-12-13,Active
+1142,SKU1142,Distell Water 1,Distell,Soft Drinks,Water,Distell,1L,8.62,13.59,2022-07-24,Active
+1143,SKU1143,Distell Water 2,Distell,Soft Drinks,Water,Distell,2L,16.27,18.22,2022-11-27,Active
+1144,SKU1144,Distell Water 3,Distell,Soft Drinks,Water,Distell,12-pack,35.25,34.26,2022-01-25,Active
+1145,SKU1145,Distell Water 4,Distell,Soft Drinks,Water,Distell,1L,28.35,49.8,2022-05-06,Discontinued
+1146,SKU1146,Distell Water 5,Distell,Soft Drinks,Water,Distell,6-pack,41.64,97.21,2022-08-12,Discontinued
+1147,SKU1147,Distell Lager 1,Distell,Beer,Lager,Distell,750ml,35.16,87.2,2022-06-14,Discontinued
+1148,SKU1148,Distell Lager 2,Distell,Beer,Lager,Distell,750ml,34.82,46.04,2022-09-02,Discontinued
+1149,SKU1149,Distell Lager 3,Distell,Beer,Lager,Distell,330ml,19.15,39.09,2022-07-28,Active
+1150,SKU1150,Distell Lager 4,Distell,Beer,Lager,Distell,6-pack,44.12,51.58,2022-01-07,Active
+1151,SKU1151,Distell Ale 1,Distell,Beer,Ale,Distell,6-pack,24.89,14.65,2022-05-18,Active
+1152,SKU1152,Distell Ale 2,Distell,Beer,Ale,Distell,750ml,24.72,72.84,2022-02-01,Active
+1153,SKU1153,Distell Ale 3,Distell,Beer,Ale,Distell,6-pack,12.13,59.58,2022-09-14,Active
+1154,SKU1154,Distell Ale 4,Distell,Beer,Ale,Distell,500ml,49.65,92.16,2022-08-04,Active
+1155,SKU1155,Distell Ale 5,Distell,Beer,Ale,Distell,1L,46.97,36.27,2022-12-09,Discontinued
+1156,SKU1156,Distell Stout 1,Distell,Beer,Stout,Distell,1L,15.97,59.61,2022-07-07,Active
+1157,SKU1157,Distell Stout 2,Distell,Beer,Stout,Distell,12-pack,8.14,79.54,2022-07-11,Active
+1158,SKU1158,Distell Stout 3,Distell,Beer,Stout,Distell,12-pack,5.12,75.34,2022-10-19,Discontinued
+1159,SKU1159,Distell Stout 4,Distell,Beer,Stout,Distell,12-pack,11.69,58.47,2022-06-11,Discontinued
+1160,SKU1160,Distell Stout 5,Distell,Beer,Stout,Distell,1L,46.98,88.26,2022-12-08,Discontinued
+1161,SKU1161,Distell Craft 1,Distell,Beer,Craft,Distell,12-pack,39.9,13.93,2022-12-16,Discontinued
+1162,SKU1162,Distell Craft 2,Distell,Beer,Craft,Distell,1L,49.48,81.32,2022-11-05,Discontinued
+1163,SKU1163,Distell Craft 3,Distell,Beer,Craft,Distell,330ml,10.68,96.88,2022-06-28,Active
+1164,SKU1164,Distell Light 1,Distell,Beer,Light,Distell,330ml,28.67,51.12,2022-12-05,Discontinued
+1165,SKU1165,Distell Light 2,Distell,Beer,Light,Distell,12-pack,34.47,23.89,2022-08-26,Active
+1166,SKU1166,Distell Light 3,Distell,Beer,Light,Distell,750ml,33.05,45.77,2022-02-28,Active
+1167,SKU1167,Distell Light 4,Distell,Beer,Light,Distell,12-pack,35.35,58.03,2022-06-21,Discontinued
+1168,SKU1168,Distell Light 5,Distell,Beer,Light,Distell,12-pack,29.35,65.57,2022-04-21,Active
+1169,SKU1169,Distell Whiskey 1,Distell,Spirits,Whiskey,Distell,6-pack,9.07,98.05,2022-11-23,Active
+1170,SKU1170,Distell Whiskey 2,Distell,Spirits,Whiskey,Distell,1L,12.49,36.95,2022-01-02,Active
+1171,SKU1171,Distell Whiskey 3,Distell,Spirits,Whiskey,Distell,12-pack,7.53,42.26,2022-07-05,Active
+1172,SKU1172,Distell Vodka 1,Distell,Spirits,Vodka,Distell,2L,35.68,26.21,2022-03-03,Discontinued
+1173,SKU1173,Distell Vodka 2,Distell,Spirits,Vodka,Distell,2L,35.74,54.79,2022-10-05,Active
+1174,SKU1174,Distell Vodka 3,Distell,Spirits,Vodka,Distell,1L,33.71,51.36,2022-11-01,Discontinued
+1175,SKU1175,Distell Vodka 4,Distell,Spirits,Vodka,Distell,750ml,35.49,24.22,2022-08-12,Active
+1176,SKU1176,Distell Vodka 5,Distell,Spirits,Vodka,Distell,6-pack,48.29,72.13,2022-08-28,Active
+1177,SKU1177,Distell Rum 1,Distell,Spirits,Rum,Distell,1L,43.4,19.6,2022-07-19,Active
+1178,SKU1178,Distell Rum 2,Distell,Spirits,Rum,Distell,2L,18.31,72.94,2022-01-27,Discontinued
+1179,SKU1179,Distell Rum 3,Distell,Spirits,Rum,Distell,750ml,5.36,87.86,2022-12-02,Discontinued
+1180,SKU1180,Distell Gin 1,Distell,Spirits,Gin,Distell,12-pack,40.95,64.64,2022-06-08,Active
+1181,SKU1181,Distell Gin 2,Distell,Spirits,Gin,Distell,2L,16.28,78.0,2022-11-22,Active
+1182,SKU1182,Distell Gin 3,Distell,Spirits,Gin,Distell,6-pack,9.37,66.47,2022-01-10,Discontinued
+1183,SKU1183,Distell Gin 4,Distell,Spirits,Gin,Distell,330ml,31.08,75.91,2022-02-10,Active
+1184,SKU1184,Distell Brandy 1,Distell,Spirits,Brandy,Distell,500ml,14.04,80.79,2022-06-17,Active
+1185,SKU1185,Distell Brandy 2,Distell,Spirits,Brandy,Distell,12-pack,12.4,92.26,2022-08-26,Active
+1186,SKU1186,Distell Brandy 3,Distell,Spirits,Brandy,Distell,6-pack,44.17,82.38,2022-08-03,Active
+1187,SKU1187,Distell Brandy 4,Distell,Spirits,Brandy,Distell,12-pack,48.49,87.41,2022-12-22,Discontinued
+1188,SKU1188,Distell Brandy 5,Distell,Spirits,Brandy,Distell,12-pack,41.21,42.92,2022-07-01,Active
+1189,SKU1189,Distell Red 1,Distell,Wine,Red,Distell,1L,21.59,77.41,2022-05-19,Discontinued
+1190,SKU1190,Distell Red 2,Distell,Wine,Red,Distell,12-pack,33.73,43.43,2022-11-08,Discontinued
+1191,SKU1191,Distell White 1,Distell,Wine,White,Distell,2L,44.79,60.53,2022-10-08,Active
+1192,SKU1192,Distell White 2,Distell,Wine,White,Distell,6-pack,42.07,91.84,2022-05-21,Discontinued
+1193,SKU1193,Distell Sparkling 1,Distell,Wine,Sparkling,Distell,500ml,7.04,13.35,2022-08-04,Active
+1194,SKU1194,Distell Sparkling 2,Distell,Wine,Sparkling,Distell,500ml,44.93,22.21,2022-08-12,Discontinued
+1195,SKU1195,Distell Rose 1,Distell,Wine,Rose,Distell,1L,34.47,85.03,2022-10-14,Active
+1196,SKU1196,Distell Rose 2,Distell,Wine,Rose,Distell,330ml,36.06,29.55,2022-08-08,Active
+1197,SKU1197,Distell Rose 3,Distell,Wine,Rose,Distell,330ml,49.14,43.06,2022-11-12,Active
+1198,SKU1198,Distell Fortified 1,Distell,Wine,Fortified,Distell,750ml,13.54,20.99,2022-08-03,Active
+1199,SKU1199,Distell Fortified 2,Distell,Wine,Fortified,Distell,6-pack,33.78,97.4,2022-01-26,Active
+1200,SKU1200,Distell Fortified 3,Distell,Wine,Fortified,Distell,500ml,49.5,80.83,2022-04-03,Active
+1201,SKU1201,Distell Fortified 4,Distell,Wine,Fortified,Distell,2L,14.72,88.27,2022-06-25,Active
+1202,SKU1202,Distell Fortified 5,Distell,Wine,Fortified,Distell,12-pack,45.52,10.26,2022-03-05,Active
+1203,SKU1203,Heineken Cola 1,Heineken,Soft Drinks,Cola,Heineken,330ml,34.75,12.32,2022-01-12,Active
+1204,SKU1204,Heineken Cola 2,Heineken,Soft Drinks,Cola,Heineken,2L,19.57,25.68,2022-01-05,Discontinued
+1205,SKU1205,Heineken Cola 3,Heineken,Soft Drinks,Cola,Heineken,2L,10.11,15.72,2022-08-25,Active
+1206,SKU1206,Heineken Lemon-Lime 1,Heineken,Soft Drinks,Lemon-Lime,Heineken,1L,27.67,95.09,2022-01-24,Active
+1207,SKU1207,Heineken Lemon-Lime 2,Heineken,Soft Drinks,Lemon-Lime,Heineken,1L,33.95,12.8,2022-08-28,Discontinued
+1208,SKU1208,Heineken Orange 1,Heineken,Soft Drinks,Orange,Heineken,6-pack,9.86,74.12,2022-08-03,Active
+1209,SKU1209,Heineken Orange 2,Heineken,Soft Drinks,Orange,Heineken,750ml,32.37,15.91,2022-05-20,Active
+1210,SKU1210,Heineken Orange 3,Heineken,Soft Drinks,Orange,Heineken,1L,49.76,57.75,2022-08-17,Discontinued
+1211,SKU1211,Heineken Orange 4,Heineken,Soft Drinks,Orange,Heineken,330ml,40.69,20.3,2022-11-21,Active
+1212,SKU1212,Heineken Orange 5,Heineken,Soft Drinks,Orange,Heineken,1L,25.32,30.56,2022-06-27,Discontinued
+1213,SKU1213,Heineken Energy 1,Heineken,Soft Drinks,Energy,Heineken,1L,37.83,38.13,2022-06-22,Active
+1214,SKU1214,Heineken Energy 2,Heineken,Soft Drinks,Energy,Heineken,750ml,47.91,71.81,2022-08-03,Active
+1215,SKU1215,Heineken Energy 3,Heineken,Soft Drinks,Energy,Heineken,12-pack,8.84,48.87,2022-12-24,Active
+1216,SKU1216,Heineken Energy 4,Heineken,Soft Drinks,Energy,Heineken,12-pack,10.86,15.4,2022-09-18,Active
+1217,SKU1217,Heineken Energy 5,Heineken,Soft Drinks,Energy,Heineken,6-pack,10.5,41.82,2022-11-25,Discontinued
+1218,SKU1218,Heineken Water 1,Heineken,Soft Drinks,Water,Heineken,750ml,32.02,41.65,2022-10-17,Active
+1219,SKU1219,Heineken Water 2,Heineken,Soft Drinks,Water,Heineken,500ml,34.55,30.18,2022-02-12,Active
+1220,SKU1220,Heineken Lager 1,Heineken,Beer,Lager,Heineken,12-pack,17.54,30.35,2022-07-28,Active
+1221,SKU1221,Heineken Lager 2,Heineken,Beer,Lager,Heineken,2L,46.81,84.65,2022-05-01,Active
+1222,SKU1222,Heineken Ale 1,Heineken,Beer,Ale,Heineken,6-pack,39.31,92.94,2022-06-01,Active
+1223,SKU1223,Heineken Ale 2,Heineken,Beer,Ale,Heineken,12-pack,11.45,69.16,2022-02-05,Active
+1224,SKU1224,Heineken Ale 3,Heineken,Beer,Ale,Heineken,330ml,38.58,29.36,2022-07-15,Active
+1225,SKU1225,Heineken Ale 4,Heineken,Beer,Ale,Heineken,500ml,21.65,74.94,2022-10-20,Active
+1226,SKU1226,Heineken Stout 1,Heineken,Beer,Stout,Heineken,500ml,12.08,65.61,2022-11-03,Active
+1227,SKU1227,Heineken Stout 2,Heineken,Beer,Stout,Heineken,1L,34.79,53.71,2022-08-14,Active
+1228,SKU1228,Heineken Craft 1,Heineken,Beer,Craft,Heineken,12-pack,28.06,41.07,2022-02-10,Discontinued
+1229,SKU1229,Heineken Craft 2,Heineken,Beer,Craft,Heineken,2L,35.02,14.09,2022-07-20,Active
+1230,SKU1230,Heineken Craft 3,Heineken,Beer,Craft,Heineken,330ml,14.2,95.08,2022-03-25,Active
+1231,SKU1231,Heineken Light 1,Heineken,Beer,Light,Heineken,750ml,10.4,54.76,2022-07-06,Active
+1232,SKU1232,Heineken Light 2,Heineken,Beer,Light,Heineken,1L,28.97,30.71,2022-09-27,Active
+1233,SKU1233,Heineken Light 3,Heineken,Beer,Light,Heineken,330ml,22.87,76.78,2022-07-01,Discontinued
+1234,SKU1234,Heineken Light 4,Heineken,Beer,Light,Heineken,330ml,43.79,61.82,2022-10-13,Discontinued
+1235,SKU1235,Heineken Whiskey 1,Heineken,Spirits,Whiskey,Heineken,330ml,23.23,96.96,2022-03-26,Discontinued
+1236,SKU1236,Heineken Whiskey 2,Heineken,Spirits,Whiskey,Heineken,12-pack,36.03,42.57,2022-07-28,Active
+1237,SKU1237,Heineken Whiskey 3,Heineken,Spirits,Whiskey,Heineken,500ml,24.61,46.04,2022-02-13,Active
+1238,SKU1238,Heineken Whiskey 4,Heineken,Spirits,Whiskey,Heineken,6-pack,20.28,39.98,2022-03-03,Active
+1239,SKU1239,Heineken Vodka 1,Heineken,Spirits,Vodka,Heineken,12-pack,20.72,75.46,2022-11-27,Active
+1240,SKU1240,Heineken Vodka 2,Heineken,Spirits,Vodka,Heineken,500ml,9.63,33.04,2022-03-20,Active
+1241,SKU1241,Heineken Vodka 3,Heineken,Spirits,Vodka,Heineken,12-pack,39.16,16.78,2022-11-16,Discontinued
+1242,SKU1242,Heineken Rum 1,Heineken,Spirits,Rum,Heineken,6-pack,46.59,60.8,2022-11-20,Active
+1243,SKU1243,Heineken Rum 2,Heineken,Spirits,Rum,Heineken,12-pack,48.69,38.45,2022-08-03,Discontinued
+1244,SKU1244,Heineken Rum 3,Heineken,Spirits,Rum,Heineken,1L,33.41,81.67,2022-10-02,Active
+1245,SKU1245,Heineken Rum 4,Heineken,Spirits,Rum,Heineken,2L,8.34,51.56,2022-01-02,Active
+1246,SKU1246,Heineken Rum 5,Heineken,Spirits,Rum,Heineken,12-pack,17.92,68.02,2022-02-20,Discontinued
+1247,SKU1247,Heineken Gin 1,Heineken,Spirits,Gin,Heineken,2L,29.94,81.26,2022-01-15,Active
+1248,SKU1248,Heineken Gin 2,Heineken,Spirits,Gin,Heineken,750ml,32.23,55.12,2022-01-15,Active
+1249,SKU1249,Heineken Gin 3,Heineken,Spirits,Gin,Heineken,12-pack,45.46,40.91,2022-12-03,Active
+1250,SKU1250,Heineken Gin 4,Heineken,Spirits,Gin,Heineken,330ml,16.15,49.4,2022-08-17,Active
+1251,SKU1251,Heineken Gin 5,Heineken,Spirits,Gin,Heineken,750ml,21.78,35.46,2022-07-25,Active
+1252,SKU1252,Heineken Brandy 1,Heineken,Spirits,Brandy,Heineken,12-pack,33.39,40.12,2022-06-04,Discontinued
+1253,SKU1253,Heineken Brandy 2,Heineken,Spirits,Brandy,Heineken,750ml,16.34,86.64,2022-10-28,Active
+1254,SKU1254,Heineken Red 1,Heineken,Wine,Red,Heineken,330ml,31.22,22.73,2022-06-10,Discontinued
+1255,SKU1255,Heineken Red 2,Heineken,Wine,Red,Heineken,500ml,31.78,94.42,2022-05-18,Discontinued
+1256,SKU1256,Heineken Red 3,Heineken,Wine,Red,Heineken,6-pack,40.62,83.19,2022-11-23,Active
+1257,SKU1257,Heineken Red 4,Heineken,Wine,Red,Heineken,6-pack,35.17,55.76,2022-01-12,Active
+1258,SKU1258,Heineken White 1,Heineken,Wine,White,Heineken,500ml,20.38,78.95,2022-04-08,Active
+1259,SKU1259,Heineken White 2,Heineken,Wine,White,Heineken,500ml,8.47,86.0,2022-02-17,Active
+1260,SKU1260,Heineken White 3,Heineken,Wine,White,Heineken,6-pack,20.15,78.97,2022-03-20,Discontinued
+1261,SKU1261,Heineken Sparkling 1,Heineken,Wine,Sparkling,Heineken,500ml,13.14,72.36,2022-10-26,Active
+1262,SKU1262,Heineken Sparkling 2,Heineken,Wine,Sparkling,Heineken,6-pack,24.7,46.98,2022-11-24,Active
+1263,SKU1263,Heineken Sparkling 3,Heineken,Wine,Sparkling,Heineken,1L,32.48,77.72,2022-08-08,Active
+1264,SKU1264,Heineken Rose 1,Heineken,Wine,Rose,Heineken,12-pack,40.3,91.36,2022-04-12,Discontinued
+1265,SKU1265,Heineken Rose 2,Heineken,Wine,Rose,Heineken,1L,39.62,80.03,2022-09-17,Discontinued
+1266,SKU1266,Heineken Rose 3,Heineken,Wine,Rose,Heineken,500ml,41.76,82.11,2022-03-28,Active
+1267,SKU1267,Heineken Rose 4,Heineken,Wine,Rose,Heineken,330ml,33.85,88.67,2022-09-04,Active
+1268,SKU1268,Heineken Fortified 1,Heineken,Wine,Fortified,Heineken,330ml,39.34,34.55,2022-09-05,Discontinued
+1269,SKU1269,Heineken Fortified 2,Heineken,Wine,Fortified,Heineken,330ml,47.59,29.98,2022-08-12,Active
+1270,SKU1270,Heineken Fortified 3,Heineken,Wine,Fortified,Heineken,1L,7.4,55.18,2022-04-13,Active
+1271,SKU1271,Heineken Fortified 4,Heineken,Wine,Fortified,Heineken,750ml,15.1,38.68,2022-02-27,Active
+1272,SKU1272,Diageo Cola 1,Diageo,Soft Drinks,Cola,Diageo,500ml,6.72,92.57,2022-08-23,Active
+1273,SKU1273,Diageo Cola 2,Diageo,Soft Drinks,Cola,Diageo,12-pack,36.75,50.37,2022-01-03,Active
+1274,SKU1274,Diageo Cola 3,Diageo,Soft Drinks,Cola,Diageo,750ml,14.7,23.46,2022-12-20,Discontinued
+1275,SKU1275,Diageo Lemon-Lime 1,Diageo,Soft Drinks,Lemon-Lime,Diageo,12-pack,17.96,37.1,2022-01-08,Discontinued
+1276,SKU1276,Diageo Lemon-Lime 2,Diageo,Soft Drinks,Lemon-Lime,Diageo,6-pack,40.73,51.14,2022-02-27,Discontinued
+1277,SKU1277,Diageo Orange 1,Diageo,Soft Drinks,Orange,Diageo,6-pack,28.19,31.77,2022-03-10,Discontinued
+1278,SKU1278,Diageo Orange 2,Diageo,Soft Drinks,Orange,Diageo,330ml,32.67,31.65,2022-07-06,Active
+1279,SKU1279,Diageo Energy 1,Diageo,Soft Drinks,Energy,Diageo,330ml,47.9,58.97,2022-09-18,Active
+1280,SKU1280,Diageo Energy 2,Diageo,Soft Drinks,Energy,Diageo,1L,44.3,13.92,2022-07-12,Active
+1281,SKU1281,Diageo Energy 3,Diageo,Soft Drinks,Energy,Diageo,6-pack,5.73,80.97,2022-06-08,Active
+1282,SKU1282,Diageo Energy 4,Diageo,Soft Drinks,Energy,Diageo,12-pack,31.19,78.1,2022-03-02,Active
+1283,SKU1283,Diageo Water 1,Diageo,Soft Drinks,Water,Diageo,12-pack,33.93,84.73,2022-11-15,Discontinued
+1284,SKU1284,Diageo Water 2,Diageo,Soft Drinks,Water,Diageo,6-pack,13.2,22.14,2022-12-25,Discontinued
+1285,SKU1285,Diageo Water 3,Diageo,Soft Drinks,Water,Diageo,330ml,18.2,13.94,2022-04-02,Active
+1286,SKU1286,Diageo Water 4,Diageo,Soft Drinks,Water,Diageo,750ml,28.19,99.02,2022-09-16,Active
+1287,SKU1287,Diageo Lager 1,Diageo,Beer,Lager,Diageo,12-pack,34.11,35.75,2022-01-28,Active
+1288,SKU1288,Diageo Lager 2,Diageo,Beer,Lager,Diageo,750ml,10.6,43.12,2022-07-24,Discontinued
+1289,SKU1289,Diageo Ale 1,Diageo,Beer,Ale,Diageo,750ml,48.82,54.66,2022-08-12,Active
+1290,SKU1290,Diageo Ale 2,Diageo,Beer,Ale,Diageo,12-pack,8.72,48.2,2022-07-20,Active
+1291,SKU1291,Diageo Ale 3,Diageo,Beer,Ale,Diageo,2L,18.22,19.23,2022-06-22,Active
+1292,SKU1292,Diageo Ale 4,Diageo,Beer,Ale,Diageo,750ml,25.07,74.59,2022-03-23,Discontinued
+1293,SKU1293,Diageo Ale 5,Diageo,Beer,Ale,Diageo,750ml,25.12,75.41,2022-06-20,Discontinued
+1294,SKU1294,Diageo Stout 1,Diageo,Beer,Stout,Diageo,6-pack,49.1,95.31,2022-02-22,Discontinued
+1295,SKU1295,Diageo Stout 2,Diageo,Beer,Stout,Diageo,750ml,28.09,77.49,2022-03-01,Active
+1296,SKU1296,Diageo Stout 3,Diageo,Beer,Stout,Diageo,12-pack,32.34,80.32,2022-01-05,Active
+1297,SKU1297,Diageo Stout 4,Diageo,Beer,Stout,Diageo,500ml,40.03,42.97,2022-07-19,Active
+1298,SKU1298,Diageo Craft 1,Diageo,Beer,Craft,Diageo,6-pack,25.25,43.39,2022-08-25,Active
+1299,SKU1299,Diageo Craft 2,Diageo,Beer,Craft,Diageo,2L,11.2,43.03,2022-06-21,Active
+1300,SKU1300,Diageo Craft 3,Diageo,Beer,Craft,Diageo,500ml,48.22,12.33,2022-03-16,Discontinued
+1301,SKU1301,Diageo Light 1,Diageo,Beer,Light,Diageo,750ml,39.87,73.36,2022-04-20,Active
+1302,SKU1302,Diageo Light 2,Diageo,Beer,Light,Diageo,6-pack,46.24,54.21,2022-02-05,Active
+1303,SKU1303,Diageo Whiskey 1,Diageo,Spirits,Whiskey,Diageo,500ml,45.44,50.06,2022-02-26,Active
+1304,SKU1304,Diageo Whiskey 2,Diageo,Spirits,Whiskey,Diageo,6-pack,20.63,15.84,2022-09-10,Active
+1305,SKU1305,Diageo Whiskey 3,Diageo,Spirits,Whiskey,Diageo,12-pack,12.09,73.86,2022-12-21,Active
+1306,SKU1306,Diageo Whiskey 4,Diageo,Spirits,Whiskey,Diageo,12-pack,21.27,30.18,2022-04-26,Active
+1307,SKU1307,Diageo Whiskey 5,Diageo,Spirits,Whiskey,Diageo,500ml,40.57,12.37,2022-09-19,Active
+1308,SKU1308,Diageo Vodka 1,Diageo,Spirits,Vodka,Diageo,12-pack,49.24,21.68,2022-02-03,Active
+1309,SKU1309,Diageo Vodka 2,Diageo,Spirits,Vodka,Diageo,1L,49.98,74.7,2022-09-14,Discontinued
+1310,SKU1310,Diageo Vodka 3,Diageo,Spirits,Vodka,Diageo,12-pack,30.87,21.28,2022-06-21,Active
+1311,SKU1311,Diageo Vodka 4,Diageo,Spirits,Vodka,Diageo,1L,25.96,56.56,2022-03-27,Active
+1312,SKU1312,Diageo Vodka 5,Diageo,Spirits,Vodka,Diageo,12-pack,48.48,48.94,2022-01-27,Active
+1313,SKU1313,Diageo Rum 1,Diageo,Spirits,Rum,Diageo,750ml,12.41,39.04,2022-12-08,Active
+1314,SKU1314,Diageo Rum 2,Diageo,Spirits,Rum,Diageo,2L,45.27,86.13,2022-05-07,Active
+1315,SKU1315,Diageo Rum 3,Diageo,Spirits,Rum,Diageo,500ml,33.13,65.3,2022-02-17,Active
+1316,SKU1316,Diageo Gin 1,Diageo,Spirits,Gin,Diageo,500ml,34.64,74.86,2022-10-11,Active
+1317,SKU1317,Diageo Gin 2,Diageo,Spirits,Gin,Diageo,12-pack,43.87,17.31,2022-11-25,Active
+1318,SKU1318,Diageo Gin 3,Diageo,Spirits,Gin,Diageo,6-pack,14.49,61.49,2022-10-21,Active
+1319,SKU1319,Diageo Brandy 1,Diageo,Spirits,Brandy,Diageo,6-pack,29.55,67.77,2022-05-16,Active
+1320,SKU1320,Diageo Brandy 2,Diageo,Spirits,Brandy,Diageo,12-pack,41.33,46.55,2022-08-03,Active
+1321,SKU1321,Diageo Brandy 3,Diageo,Spirits,Brandy,Diageo,500ml,24.78,53.58,2022-04-11,Active
+1322,SKU1322,Diageo Brandy 4,Diageo,Spirits,Brandy,Diageo,750ml,43.77,38.74,2022-06-13,Active
+1323,SKU1323,Diageo Brandy 5,Diageo,Spirits,Brandy,Diageo,12-pack,21.67,60.55,2022-06-08,Discontinued
+1324,SKU1324,Diageo Red 1,Diageo,Wine,Red,Diageo,750ml,25.23,22.68,2022-01-10,Discontinued
+1325,SKU1325,Diageo Red 2,Diageo,Wine,Red,Diageo,12-pack,32.69,32.34,2022-03-27,Active
+1326,SKU1326,Diageo White 1,Diageo,Wine,White,Diageo,500ml,39.34,54.84,2022-09-15,Discontinued
+1327,SKU1327,Diageo White 2,Diageo,Wine,White,Diageo,750ml,27.38,18.1,2022-07-17,Discontinued
+1328,SKU1328,Diageo White 3,Diageo,Wine,White,Diageo,500ml,14.68,41.76,2022-01-10,Discontinued
+1329,SKU1329,Diageo White 4,Diageo,Wine,White,Diageo,2L,44.71,68.88,2022-08-10,Active
+1330,SKU1330,Diageo Sparkling 1,Diageo,Wine,Sparkling,Diageo,1L,11.03,33.8,2022-06-25,Discontinued
+1331,SKU1331,Diageo Sparkling 2,Diageo,Wine,Sparkling,Diageo,750ml,7.04,14.6,2022-09-07,Active
+1332,SKU1332,Diageo Rose 1,Diageo,Wine,Rose,Diageo,330ml,22.39,50.53,2022-09-09,Active
+1333,SKU1333,Diageo Rose 2,Diageo,Wine,Rose,Diageo,500ml,48.88,45.45,2022-06-18,Active
+1334,SKU1334,Diageo Rose 3,Diageo,Wine,Rose,Diageo,12-pack,11.49,64.22,2022-07-17,Active
+1335,SKU1335,Diageo Rose 4,Diageo,Wine,Rose,Diageo,330ml,6.75,74.22,2022-08-17,Discontinued
+1336,SKU1336,Diageo Fortified 1,Diageo,Wine,Fortified,Diageo,2L,45.19,22.58,2022-10-11,Active
+1337,SKU1337,Diageo Fortified 2,Diageo,Wine,Fortified,Diageo,1L,49.58,76.54,2022-05-19,Active
+1338,SKU1338,Diageo Fortified 3,Diageo,Wine,Fortified,Diageo,2L,42.27,57.91,2022-12-19,Active

@@ -1,0 +1,102 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Power BI
+*.pbix
+*.pbit
+*.abf
+~$*.pbix
+*.tmp
+.powerbi/
+*.layout
+
+# Data files (keep structure but not actual data in production)
+# Uncomment these lines for production use:
+# data/raw/*
+# data/processed/*
+# !data/raw/.gitkeep
+# !data/processed/.gitkeep
+
+# Sensitive information
+*.env
+.env.*
+config/secrets.json
+config/credentials.json
+*.key
+*.pem
+*.pfx
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Temporary files
+tmp/
+temp/
+cache/
+*.tmp
+*.temp
+*.cache
+
+# Documentation build
+site/
+mkdocs.yml
+.mkdocs.yml
+
+# Test coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Backup files
+*.bak
+*.backup
+*_backup.*
+backups/
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Keep these files
+!.gitkeep
+!requirements.txt
+!setup.sh
+!setup.bat

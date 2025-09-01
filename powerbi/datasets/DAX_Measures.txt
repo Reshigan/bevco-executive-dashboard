@@ -1,0 +1,441 @@
+// =====================================================
+// BEVCO EXECUTIVE DASHBOARD - DAX MEASURES
+// =====================================================
+
+// =====================================================
+// SALES MEASURES
+// =====================================================
+
+// Basic Sales Metrics
+Total Gross Sales = SUM(Fact_Sales[GrossSales])
+
+Total Discounts = SUM(Fact_Sales[DiscountAmount])
+
+Total Net Sales = SUM(Fact_Sales[NetSales])
+
+Total Cost = SUM(Fact_Sales[Cost])
+
+Total Gross Profit = SUM(Fact_Sales[GrossProfit])
+
+Total Quantity Sold = SUM(Fact_Sales[Quantity])
+
+Transaction Count = COUNTROWS(Fact_Sales)
+
+// Year-over-Year Comparisons
+Total Sales LY = 
+CALCULATE(
+    [Total Net Sales],
+    SAMEPERIODLASTYEAR(Dim_Date[Date])
+)
+
+Sales YoY Growth = [Total Net Sales] - [Total Sales LY]
+
+Sales YoY Growth % = 
+DIVIDE(
+    [Sales YoY Growth],
+    [Total Sales LY],
+    0
+)
+
+// Month-over-Month Comparisons
+Total Sales LM = 
+CALCULATE(
+    [Total Net Sales],
+    DATEADD(Dim_Date[Date], -1, MONTH)
+)
+
+Sales MoM Growth = [Total Net Sales] - [Total Sales LM]
+
+Sales MoM Growth % = 
+DIVIDE(
+    [Sales MoM Growth],
+    [Total Sales LM],
+    0
+)
+
+// Profit Margins
+Gross Profit Margin % = 
+DIVIDE(
+    [Total Gross Profit],
+    [Total Net Sales],
+    0
+)
+
+Discount % = 
+DIVIDE(
+    [Total Discounts],
+    [Total Gross Sales],
+    0
+)
+
+// Average Metrics
+Average Order Value = 
+DIVIDE(
+    [Total Net Sales],
+    [Transaction Count],
+    0
+)
+
+Average Quantity per Order = 
+DIVIDE(
+    [Total Quantity Sold],
+    [Transaction Count],
+    0
+)
+
+Average Discount % = 
+AVERAGEX(
+    Fact_Sales,
+    Fact_Sales[DiscountPercent]
+)
+
+// =====================================================
+// CUSTOMER ANALYTICS
+// =====================================================
+
+Total Customers = DISTINCTCOUNT(Fact_Sales[CustomerKey])
+
+Active Customers = 
+CALCULATE(
+    DISTINCTCOUNT(Fact_Sales[CustomerKey]),
+    Dim_Customer[Status] = "Active"
+)
+
+New Customers MTD = 
+CALCULATE(
+    DISTINCTCOUNT(Dim_Customer[CustomerKey]),
+    DATESMTD(Dim_Date[Date]),
+    Dim_Customer[OnboardingDate] >= MIN(Dim_Date[Date])
+)
+
+Revenue per Customer = 
+DIVIDE(
+    [Total Net Sales],
+    [Total Customers],
+    0
+)
+
+Customer Retention Rate = 
+VAR CustomersLastPeriod = 
+    CALCULATE(
+        [Total Customers],
+        DATEADD(Dim_Date[Date], -1, MONTH)
+    )
+VAR ReturningCustomers = 
+    COUNTROWS(
+        FILTER(
+            SUMMARIZE(
+                Fact_Sales,
+                Fact_Sales[CustomerKey]
+            ),
+            CALCULATE(
+                COUNTROWS(Fact_Sales),
+                DATEADD(Dim_Date[Date], -1, MONTH)
+            ) > 0
+        )
+    )
+RETURN
+DIVIDE(
+    ReturningCustomers,
+    CustomersLastPeriod,
+    0
+)
+
+// =====================================================
+// PRODUCT PERFORMANCE
+// =====================================================
+
+Total Products Sold = DISTINCTCOUNT(Fact_Sales[ProductKey])
+
+Top Product by Revenue = 
+FIRSTNONBLANK(
+    TOPN(
+        1,
+        VALUES(Dim_Product[ProductName]),
+        [Total Net Sales]
+    ),
+    1
+)
+
+Product Mix % = 
+DIVIDE(
+    [Total Net Sales],
+    CALCULATE(
+        [Total Net Sales],
+        ALL(Dim_Product)
+    ),
+    0
+)
+
+SKU Efficiency = 
+DIVIDE(
+    [Total Net Sales],
+    [Total Products Sold],
+    0
+)
+
+// =====================================================
+// FINANCIAL MANAGEMENT
+// =====================================================
+
+// Budget vs Actual
+Total Budget = SUM(Fact_Budget[BudgetAmount])
+
+Total Forecast = SUM(Fact_Budget[ForecastAmount])
+
+Total Actual = SUM(Fact_Budget[ActualAmount])
+
+Budget Variance = [Total Actual] - [Total Budget]
+
+Budget Variance % = 
+DIVIDE(
+    [Budget Variance],
+    [Total Budget],
+    0
+)
+
+Forecast Accuracy % = 
+1 - ABS(
+    DIVIDE(
+        [Total Actual] - [Total Forecast],
+        [Total Forecast],
+        0
+    )
+)
+
+// Working Capital Metrics
+Days Sales Outstanding = 
+VAR AvgDailyRevenue = DIVIDE([Total Net Sales], 365, 0)
+VAR AccountsReceivable = [Total Net Sales] * 0.15 // Assuming 15% outstanding
+RETURN
+DIVIDE(
+    AccountsReceivable,
+    AvgDailyRevenue,
+    0
+)
+
+// Cash Flow Proxy
+Operating Cash Flow = 
+[Total Gross Profit] * 0.85 // Assuming 85% collection rate
+
+// =====================================================
+// INVENTORY METRICS
+// =====================================================
+
+Total Stock Value = SUM(Fact_Inventory[StockValue])
+
+Total Stock Units = SUM(Fact_Inventory[StockOnHand])
+
+Average Days on Hand = AVERAGE(Fact_Inventory[DaysOnHand])
+
+Inventory Turnover = 
+DIVIDE(
+    [Total Cost],
+    [Total Stock Value],
+    0
+) * 12 // Annualized
+
+Stock Coverage Days = 
+VAR DailyCOGS = DIVIDE([Total Cost], 365, 0)
+RETURN
+DIVIDE(
+    [Total Stock Value],
+    DailyCOGS,
+    0
+)
+
+Slow Moving Stock % = 
+DIVIDE(
+    CALCULATE(
+        [Total Stock Value],
+        Fact_Inventory[DaysOnHand] > 60
+    ),
+    [Total Stock Value],
+    0
+)
+
+// =====================================================
+// OPERATIONAL EXCELLENCE
+// =====================================================
+
+// Service Level Metrics
+Perfect Order Rate = 0.95 // Placeholder - would need order fulfillment data
+
+On Time Delivery % = 0.92 // Placeholder - would need delivery data
+
+// Efficiency Metrics
+Revenue per Employee = 
+DIVIDE(
+    [Total Net Sales],
+    COUNTROWS(Dim_Employee),
+    0
+)
+
+Cost per Case = 
+DIVIDE(
+    [Total Cost],
+    [Total Quantity Sold],
+    0
+)
+
+// =====================================================
+// MARKET & COMPETITIVE INTELLIGENCE
+// =====================================================
+
+Market Share % = 0.23 // Placeholder - would need market data
+
+Category Growth Rate = 
+AVERAGEX(
+    VALUES(Dim_Product[Category]),
+    [Sales YoY Growth %]
+)
+
+Brand Performance Index = 
+DIVIDE(
+    [Sales YoY Growth %],
+    [Category Growth Rate],
+    1
+) * 100
+
+// =====================================================
+// HR METRICS
+// =====================================================
+
+Total Employees = COUNTROWS(Dim_Employee)
+
+Total Headcount Cost = SUM(Dim_Employee[Salary])
+
+Average Salary = AVERAGE(Dim_Employee[Salary])
+
+Sales Team Size = 
+CALCULATE(
+    [Total Employees],
+    Dim_Employee[Department] = "Sales"
+)
+
+Sales per Sales Rep = 
+DIVIDE(
+    [Total Net Sales],
+    [Sales Team Size],
+    0
+)
+
+// =====================================================
+// EXECUTIVE KPIs
+// =====================================================
+
+// Consolidated P&L Metrics
+Net Revenue = [Total Net Sales]
+
+EBITDA = [Total Gross Profit] * 0.4 // Simplified calculation
+
+EBITDA Margin % = 
+DIVIDE(
+    [EBITDA],
+    [Net Revenue],
+    0
+)
+
+Net Profit = [EBITDA] * 0.6 // Simplified calculation
+
+Net Profit Margin % = 
+DIVIDE(
+    [Net Profit],
+    [Net Revenue],
+    0
+)
+
+// Strategic Metrics
+Revenue Growth Target Achievement % = 
+DIVIDE(
+    [Sales YoY Growth %],
+    0.15, // Assuming 15% growth target
+    0
+)
+
+Customer Satisfaction Score = 85 // Placeholder
+
+Digital Adoption Rate = 0.35 // Placeholder
+
+// =====================================================
+// ADVANCED ANALYTICS
+// =====================================================
+
+// Trend Analysis
+Sales Trend = 
+VAR LastDate = MAX(Dim_Date[Date])
+VAR DateRange = DATESINPERIOD(Dim_Date[Date], LastDate, -90, DAY)
+VAR TrendData = 
+    ADDCOLUMNS(
+        DateRange,
+        "DayNumber", DATEDIFF(MIN(DateRange), Dim_Date[Date], DAY),
+        "Sales", [Total Net Sales]
+    )
+VAR Slope = 
+    DIVIDE(
+        SUMX(TrendData, [DayNumber] * [Sales]) - 
+        SUMX(TrendData, [DayNumber]) * SUMX(TrendData, [Sales]) / COUNTROWS(TrendData),
+        SUMX(TrendData, [DayNumber] ^ 2) - 
+        SUMX(TrendData, [DayNumber]) ^ 2 / COUNTROWS(TrendData)
+    )
+RETURN
+IF(Slope > 0, "Increasing", "Decreasing")
+
+// Pareto Analysis
+Is Top 20% Customer = 
+VAR CustomerRank = 
+    RANKX(
+        ALL(Dim_Customer),
+        [Total Net Sales],
+        ,
+        DESC
+    )
+VAR TotalCustomers = CALCULATE(COUNTROWS(Dim_Customer), ALL(Dim_Customer))
+RETURN
+CustomerRank <= TotalCustomers * 0.2
+
+// Seasonality Index
+Seasonality Index = 
+VAR MonthlyAvg = 
+    AVERAGEX(
+        VALUES(Dim_Date[Month]),
+        [Total Net Sales]
+    )
+VAR CurrentMonthSales = [Total Net Sales]
+RETURN
+DIVIDE(
+    CurrentMonthSales,
+    MonthlyAvg,
+    1
+)
+
+// =====================================================
+// ALERTS & THRESHOLDS
+// =====================================================
+
+Revenue Alert Status = 
+SWITCH(
+    TRUE(),
+    [Budget Variance %] < -0.1, "Critical",
+    [Budget Variance %] < -0.05, "Warning",
+    [Budget Variance %] >= 0, "On Track",
+    "Unknown"
+)
+
+Inventory Alert = 
+IF(
+    [Stock Coverage Days] > 60,
+    "Excess Stock",
+    IF(
+        [Stock Coverage Days] < 14,
+        "Low Stock",
+        "Optimal"
+    )
+)
+
+Margin Alert = 
+IF(
+    [Gross Profit Margin %] < 0.30,
+    "Below Target",
+    "On Target"
+)

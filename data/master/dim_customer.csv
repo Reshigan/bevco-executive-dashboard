@@ -1,0 +1,725 @@
+CustomerKey,CustomerCode,CustomerName,Channel,CustomerType,Region,Province,City,CreditLimit,PaymentTerms,Status,OnboardingDate
+1,CUST00001,Supermarket Gauteng 1,Retail,Supermarket,Gauteng,Gauteng,Gauteng City 3,183664,7,Inactive,2022-10-10
+2,CUST00002,Supermarket Gauteng 2,Retail,Supermarket,Gauteng,Gauteng,Gauteng City 5,258821,30,Active,2022-12-02
+3,CUST00003,Hypermarket Gauteng 3,Retail,Hypermarket,Gauteng,Gauteng,Gauteng City 2,284848,45,Active,2022-11-08
+4,CUST00004,Supermarket Gauteng 4,Retail,Supermarket,Gauteng,Gauteng,Gauteng City 5,377274,7,Active,2022-01-15
+5,CUST00005,Bottle Store Gauteng 5,Retail,Bottle Store,Gauteng,Gauteng,Gauteng City 4,89393,45,Active,2022-07-17
+6,CUST00006,Hypermarket Gauteng 6,Retail,Hypermarket,Gauteng,Gauteng,Gauteng City 1,380029,14,Active,2022-09-11
+7,CUST00007,Hypermarket Gauteng 7,Retail,Hypermarket,Gauteng,Gauteng,Gauteng City 5,207564,30,Active,2022-08-18
+8,CUST00008,Bottle Store Gauteng 8,Retail,Bottle Store,Gauteng,Gauteng,Gauteng City 5,195748,30,Inactive,2022-04-08
+9,CUST00009,Bottle Store Gauteng 9,Retail,Bottle Store,Gauteng,Gauteng,Gauteng City 5,166499,14,Active,2022-05-23
+10,CUST00010,Convenience Store Gauteng 10,Retail,Convenience Store,Gauteng,Gauteng,Gauteng City 4,176220,45,Active,2022-09-26
+11,CUST00011,Bottle Store Gauteng 11,Retail,Bottle Store,Gauteng,Gauteng,Gauteng City 3,73897,45,Inactive,2022-06-25
+12,CUST00012,Convenience Store Gauteng 12,Retail,Convenience Store,Gauteng,Gauteng,Gauteng City 3,32054,30,Active,2022-06-15
+13,CUST00013,Bottle Store Gauteng 13,Retail,Bottle Store,Gauteng,Gauteng,Gauteng City 4,122190,14,Active,2022-09-23
+14,CUST00014,Bottle Store Gauteng 14,Retail,Bottle Store,Gauteng,Gauteng,Gauteng City 2,67266,14,Active,2022-01-22
+15,CUST00015,Convenience Store Gauteng 15,Retail,Convenience Store,Gauteng,Gauteng,Gauteng City 2,37520,7,Inactive,2022-06-23
+16,CUST00016,Hypermarket Gauteng 16,Retail,Hypermarket,Gauteng,Gauteng,Gauteng City 1,367140,14,Active,2022-09-06
+17,CUST00017,Hypermarket Gauteng 17,Retail,Hypermarket,Gauteng,Gauteng,Gauteng City 4,260320,14,Active,2022-06-10
+18,CUST00018,Supermarket Gauteng 18,Retail,Supermarket,Gauteng,Gauteng,Gauteng City 1,351992,14,Active,2022-03-14
+19,CUST00019,Convenience Store Gauteng 19,Retail,Convenience Store,Gauteng,Gauteng,Gauteng City 1,448411,45,Inactive,2022-03-24
+20,CUST00020,Bottle Store Gauteng 20,Retail,Bottle Store,Gauteng,Gauteng,Gauteng City 1,14858,30,Active,2022-06-10
+21,CUST00021,Hypermarket Gauteng 21,Retail,Hypermarket,Gauteng,Gauteng,Gauteng City 5,284893,45,Active,2022-09-15
+22,CUST00022,Bottle Store Gauteng 22,Retail,Bottle Store,Gauteng,Gauteng,Gauteng City 2,434051,7,Active,2022-03-24
+23,CUST00023,Hypermarket Gauteng 23,Retail,Hypermarket,Gauteng,Gauteng,Gauteng City 3,386752,14,Active,2022-12-11
+24,CUST00024,Bottle Store Gauteng 24,Retail,Bottle Store,Gauteng,Gauteng,Gauteng City 5,363580,14,Active,2022-10-28
+25,CUST00025,Hypermarket Gauteng 25,Retail,Hypermarket,Gauteng,Gauteng,Gauteng City 4,280155,30,Active,2022-07-22
+26,CUST00026,Cash & Carry Gauteng 1,Wholesale,Cash & Carry,Gauteng,Gauteng,Gauteng City 2,260323,30,Active,2022-01-09
+27,CUST00027,Distributor Gauteng 2,Wholesale,Distributor,Gauteng,Gauteng,Gauteng City 2,244218,30,Active,2022-05-19
+28,CUST00028,Wholesaler Gauteng 3,Wholesale,Wholesaler,Gauteng,Gauteng,Gauteng City 5,15995,30,Active,2022-12-08
+29,CUST00029,Cash & Carry Gauteng 4,Wholesale,Cash & Carry,Gauteng,Gauteng,Gauteng City 1,254001,30,Active,2022-07-22
+30,CUST00030,Wholesaler Gauteng 5,Wholesale,Wholesaler,Gauteng,Gauteng,Gauteng City 3,371910,7,Active,2022-06-20
+31,CUST00031,Cash & Carry Gauteng 6,Wholesale,Cash & Carry,Gauteng,Gauteng,Gauteng City 2,80028,45,Active,2022-08-24
+32,CUST00032,Wholesaler Gauteng 7,Wholesale,Wholesaler,Gauteng,Gauteng,Gauteng City 3,228022,45,Active,2022-04-22
+33,CUST00033,Wholesaler Gauteng 8,Wholesale,Wholesaler,Gauteng,Gauteng,Gauteng City 1,285516,45,Active,2022-02-19
+34,CUST00034,Cash & Carry Gauteng 9,Wholesale,Cash & Carry,Gauteng,Gauteng,Gauteng City 1,444516,14,Active,2022-03-11
+35,CUST00035,Wholesaler Gauteng 10,Wholesale,Wholesaler,Gauteng,Gauteng,Gauteng City 4,70943,14,Inactive,2022-02-17
+36,CUST00036,Distributor Gauteng 11,Wholesale,Distributor,Gauteng,Gauteng,Gauteng City 1,247729,14,Inactive,2022-08-19
+37,CUST00037,Cash & Carry Gauteng 12,Wholesale,Cash & Carry,Gauteng,Gauteng,Gauteng City 5,252419,30,Active,2022-07-09
+38,CUST00038,Cash & Carry Gauteng 13,Wholesale,Cash & Carry,Gauteng,Gauteng,Gauteng City 2,313201,7,Active,2022-07-12
+39,CUST00039,Restaurant Gauteng 1,On-Trade,Restaurant,Gauteng,Gauteng,Gauteng City 1,499567,45,Active,2022-05-14
+40,CUST00040,Bar Gauteng 2,On-Trade,Bar,Gauteng,Gauteng,Gauteng City 2,411514,45,Active,2022-07-15
+41,CUST00041,Club Gauteng 3,On-Trade,Club,Gauteng,Gauteng,Gauteng City 4,52074,14,Active,2022-02-06
+42,CUST00042,Club Gauteng 4,On-Trade,Club,Gauteng,Gauteng,Gauteng City 5,76766,14,Active,2022-01-10
+43,CUST00043,Club Gauteng 5,On-Trade,Club,Gauteng,Gauteng,Gauteng City 5,232365,45,Active,2022-04-15
+44,CUST00044,Hotel Gauteng 6,On-Trade,Hotel,Gauteng,Gauteng,Gauteng City 2,154519,14,Active,2022-01-26
+45,CUST00045,Club Gauteng 7,On-Trade,Club,Gauteng,Gauteng,Gauteng City 5,411632,7,Active,2022-04-03
+46,CUST00046,Restaurant Gauteng 8,On-Trade,Restaurant,Gauteng,Gauteng,Gauteng City 5,27603,45,Active,2022-04-24
+47,CUST00047,Restaurant Gauteng 9,On-Trade,Restaurant,Gauteng,Gauteng,Gauteng City 4,240142,14,Active,2022-01-05
+48,CUST00048,Hotel Gauteng 10,On-Trade,Hotel,Gauteng,Gauteng,Gauteng City 2,437706,30,Active,2022-04-10
+49,CUST00049,Bar Gauteng 11,On-Trade,Bar,Gauteng,Gauteng,Gauteng City 5,125890,45,Active,2022-05-02
+50,CUST00050,Bar Gauteng 12,On-Trade,Bar,Gauteng,Gauteng,Gauteng City 4,301425,45,Active,2022-06-21
+51,CUST00051,Direct-to-Consumer Gauteng 1,E-Commerce,Direct-to-Consumer,Gauteng,Gauteng,Gauteng City 3,375066,45,Inactive,2022-03-10
+52,CUST00052,Marketplace Gauteng 2,E-Commerce,Marketplace,Gauteng,Gauteng,Gauteng City 2,405531,45,Active,2022-04-10
+53,CUST00053,Direct-to-Consumer Gauteng 3,E-Commerce,Direct-to-Consumer,Gauteng,Gauteng,Gauteng City 2,432458,45,Active,2022-09-14
+54,CUST00054,Marketplace Gauteng 4,E-Commerce,Marketplace,Gauteng,Gauteng,Gauteng City 5,287868,14,Inactive,2022-04-09
+55,CUST00055,Online Retailer Gauteng 5,E-Commerce,Online Retailer,Gauteng,Gauteng,Gauteng City 3,349060,7,Inactive,2022-06-03
+56,CUST00056,Direct-to-Consumer Gauteng 6,E-Commerce,Direct-to-Consumer,Gauteng,Gauteng,Gauteng City 2,37020,30,Inactive,2022-11-20
+57,CUST00057,Direct-to-Consumer Gauteng 7,E-Commerce,Direct-to-Consumer,Gauteng,Gauteng,Gauteng City 1,468028,7,Active,2022-10-24
+58,CUST00058,Direct-to-Consumer Gauteng 8,E-Commerce,Direct-to-Consumer,Gauteng,Gauteng,Gauteng City 5,123779,45,Active,2022-06-10
+59,CUST00059,Online Retailer Gauteng 9,E-Commerce,Online Retailer,Gauteng,Gauteng,Gauteng City 2,109627,7,Inactive,2022-04-23
+60,CUST00060,Direct-to-Consumer Gauteng 10,E-Commerce,Direct-to-Consumer,Gauteng,Gauteng,Gauteng City 2,217949,14,Active,2022-05-13
+61,CUST00061,Marketplace Gauteng 11,E-Commerce,Marketplace,Gauteng,Gauteng,Gauteng City 5,350116,30,Active,2022-05-12
+62,CUST00062,Direct-to-Consumer Gauteng 12,E-Commerce,Direct-to-Consumer,Gauteng,Gauteng,Gauteng City 4,254320,7,Inactive,2022-06-07
+63,CUST00063,Marketplace Gauteng 13,E-Commerce,Marketplace,Gauteng,Gauteng,Gauteng City 3,227018,7,Active,2022-12-05
+64,CUST00064,Online Retailer Gauteng 14,E-Commerce,Online Retailer,Gauteng,Gauteng,Gauteng City 3,300094,45,Active,2022-03-07
+65,CUST00065,Marketplace Gauteng 15,E-Commerce,Marketplace,Gauteng,Gauteng,Gauteng City 2,209145,14,Inactive,2022-09-21
+66,CUST00066,Direct-to-Consumer Gauteng 16,E-Commerce,Direct-to-Consumer,Gauteng,Gauteng,Gauteng City 3,144913,45,Inactive,2022-08-06
+67,CUST00067,Direct-to-Consumer Gauteng 17,E-Commerce,Direct-to-Consumer,Gauteng,Gauteng,Gauteng City 3,98743,14,Inactive,2022-03-18
+68,CUST00068,Direct-to-Consumer Gauteng 18,E-Commerce,Direct-to-Consumer,Gauteng,Gauteng,Gauteng City 1,284697,7,Active,2022-11-02
+69,CUST00069,Online Retailer Gauteng 19,E-Commerce,Online Retailer,Gauteng,Gauteng,Gauteng City 4,82085,14,Active,2022-12-05
+70,CUST00070,Online Retailer Gauteng 20,E-Commerce,Online Retailer,Gauteng,Gauteng,Gauteng City 2,275149,45,Active,2022-01-20
+71,CUST00071,Direct-to-Consumer Gauteng 21,E-Commerce,Direct-to-Consumer,Gauteng,Gauteng,Gauteng City 5,488544,45,Inactive,2022-01-01
+72,CUST00072,Direct-to-Consumer Gauteng 22,E-Commerce,Direct-to-Consumer,Gauteng,Gauteng,Gauteng City 5,225659,7,Active,2022-09-24
+73,CUST00073,Bottle Store Western Cape 1,Retail,Bottle Store,Western Cape,Western Cape,Western Cape City 1,273305,45,Active,2022-02-04
+74,CUST00074,Convenience Store Western Cape 2,Retail,Convenience Store,Western Cape,Western Cape,Western Cape City 2,110627,30,Active,2022-05-26
+75,CUST00075,Hypermarket Western Cape 3,Retail,Hypermarket,Western Cape,Western Cape,Western Cape City 1,205586,45,Inactive,2022-10-08
+76,CUST00076,Convenience Store Western Cape 4,Retail,Convenience Store,Western Cape,Western Cape,Western Cape City 3,368634,7,Active,2022-02-13
+77,CUST00077,Hypermarket Western Cape 5,Retail,Hypermarket,Western Cape,Western Cape,Western Cape City 4,299774,45,Active,2022-11-01
+78,CUST00078,Convenience Store Western Cape 6,Retail,Convenience Store,Western Cape,Western Cape,Western Cape City 1,272069,45,Active,2022-10-28
+79,CUST00079,Supermarket Western Cape 7,Retail,Supermarket,Western Cape,Western Cape,Western Cape City 5,491900,7,Active,2022-04-28
+80,CUST00080,Hypermarket Western Cape 8,Retail,Hypermarket,Western Cape,Western Cape,Western Cape City 3,34411,7,Active,2022-09-19
+81,CUST00081,Supermarket Western Cape 9,Retail,Supermarket,Western Cape,Western Cape,Western Cape City 2,496941,30,Active,2022-04-19
+82,CUST00082,Convenience Store Western Cape 10,Retail,Convenience Store,Western Cape,Western Cape,Western Cape City 4,496997,7,Active,2022-03-19
+83,CUST00083,Convenience Store Western Cape 11,Retail,Convenience Store,Western Cape,Western Cape,Western Cape City 5,447597,45,Active,2022-07-25
+84,CUST00084,Convenience Store Western Cape 12,Retail,Convenience Store,Western Cape,Western Cape,Western Cape City 1,272559,30,Active,2022-02-14
+85,CUST00085,Convenience Store Western Cape 13,Retail,Convenience Store,Western Cape,Western Cape,Western Cape City 1,188568,45,Active,2022-01-21
+86,CUST00086,Bottle Store Western Cape 14,Retail,Bottle Store,Western Cape,Western Cape,Western Cape City 4,267217,14,Active,2022-09-13
+87,CUST00087,Hypermarket Western Cape 15,Retail,Hypermarket,Western Cape,Western Cape,Western Cape City 2,366355,45,Active,2022-10-10
+88,CUST00088,Convenience Store Western Cape 16,Retail,Convenience Store,Western Cape,Western Cape,Western Cape City 1,53011,30,Active,2022-07-23
+89,CUST00089,Convenience Store Western Cape 17,Retail,Convenience Store,Western Cape,Western Cape,Western Cape City 4,176030,30,Active,2022-02-01
+90,CUST00090,Bottle Store Western Cape 18,Retail,Bottle Store,Western Cape,Western Cape,Western Cape City 4,198700,30,Active,2022-03-03
+91,CUST00091,Distributor Western Cape 1,Wholesale,Distributor,Western Cape,Western Cape,Western Cape City 4,302020,45,Active,2022-01-03
+92,CUST00092,Distributor Western Cape 2,Wholesale,Distributor,Western Cape,Western Cape,Western Cape City 5,58792,30,Inactive,2022-01-10
+93,CUST00093,Distributor Western Cape 3,Wholesale,Distributor,Western Cape,Western Cape,Western Cape City 4,418509,7,Active,2022-10-17
+94,CUST00094,Cash & Carry Western Cape 4,Wholesale,Cash & Carry,Western Cape,Western Cape,Western Cape City 4,98867,14,Active,2022-05-09
+95,CUST00095,Distributor Western Cape 5,Wholesale,Distributor,Western Cape,Western Cape,Western Cape City 2,43170,14,Inactive,2022-05-14
+96,CUST00096,Distributor Western Cape 6,Wholesale,Distributor,Western Cape,Western Cape,Western Cape City 4,420342,7,Active,2022-05-08
+97,CUST00097,Wholesaler Western Cape 7,Wholesale,Wholesaler,Western Cape,Western Cape,Western Cape City 4,321325,14,Inactive,2022-02-05
+98,CUST00098,Distributor Western Cape 8,Wholesale,Distributor,Western Cape,Western Cape,Western Cape City 1,217456,30,Inactive,2022-06-15
+99,CUST00099,Distributor Western Cape 9,Wholesale,Distributor,Western Cape,Western Cape,Western Cape City 4,437544,14,Active,2022-06-20
+100,CUST00100,Wholesaler Western Cape 10,Wholesale,Wholesaler,Western Cape,Western Cape,Western Cape City 2,261139,30,Active,2022-07-11
+101,CUST00101,Distributor Western Cape 11,Wholesale,Distributor,Western Cape,Western Cape,Western Cape City 4,311926,14,Active,2022-07-09
+102,CUST00102,Distributor Western Cape 12,Wholesale,Distributor,Western Cape,Western Cape,Western Cape City 3,69710,14,Active,2022-11-25
+103,CUST00103,Wholesaler Western Cape 13,Wholesale,Wholesaler,Western Cape,Western Cape,Western Cape City 1,391269,45,Active,2022-08-26
+104,CUST00104,Distributor Western Cape 14,Wholesale,Distributor,Western Cape,Western Cape,Western Cape City 1,439373,45,Inactive,2022-03-21
+105,CUST00105,Distributor Western Cape 15,Wholesale,Distributor,Western Cape,Western Cape,Western Cape City 2,142477,14,Inactive,2022-07-03
+106,CUST00106,Club Western Cape 1,On-Trade,Club,Western Cape,Western Cape,Western Cape City 5,220137,45,Active,2022-06-23
+107,CUST00107,Restaurant Western Cape 2,On-Trade,Restaurant,Western Cape,Western Cape,Western Cape City 1,413153,14,Active,2022-03-21
+108,CUST00108,Restaurant Western Cape 3,On-Trade,Restaurant,Western Cape,Western Cape,Western Cape City 5,348182,45,Active,2022-07-04
+109,CUST00109,Restaurant Western Cape 4,On-Trade,Restaurant,Western Cape,Western Cape,Western Cape City 1,145653,14,Active,2022-08-12
+110,CUST00110,Club Western Cape 5,On-Trade,Club,Western Cape,Western Cape,Western Cape City 4,414929,14,Active,2022-01-16
+111,CUST00111,Restaurant Western Cape 6,On-Trade,Restaurant,Western Cape,Western Cape,Western Cape City 3,228090,7,Active,2022-12-05
+112,CUST00112,Hotel Western Cape 7,On-Trade,Hotel,Western Cape,Western Cape,Western Cape City 3,189865,45,Active,2022-09-16
+113,CUST00113,Hotel Western Cape 8,On-Trade,Hotel,Western Cape,Western Cape,Western Cape City 4,61182,45,Inactive,2022-06-03
+114,CUST00114,Hotel Western Cape 9,On-Trade,Hotel,Western Cape,Western Cape,Western Cape City 1,434770,7,Active,2022-06-21
+115,CUST00115,Restaurant Western Cape 10,On-Trade,Restaurant,Western Cape,Western Cape,Western Cape City 2,497547,14,Active,2022-09-06
+116,CUST00116,Hotel Western Cape 11,On-Trade,Hotel,Western Cape,Western Cape,Western Cape City 5,233540,45,Active,2022-07-21
+117,CUST00117,Bar Western Cape 12,On-Trade,Bar,Western Cape,Western Cape,Western Cape City 2,345795,45,Inactive,2022-01-24
+118,CUST00118,Bar Western Cape 13,On-Trade,Bar,Western Cape,Western Cape,Western Cape City 4,320485,45,Inactive,2022-01-23
+119,CUST00119,Bar Western Cape 14,On-Trade,Bar,Western Cape,Western Cape,Western Cape City 2,155932,7,Active,2022-09-06
+120,CUST00120,Hotel Western Cape 15,On-Trade,Hotel,Western Cape,Western Cape,Western Cape City 3,113323,45,Active,2022-05-22
+121,CUST00121,Club Western Cape 16,On-Trade,Club,Western Cape,Western Cape,Western Cape City 5,345076,30,Inactive,2022-10-13
+122,CUST00122,Restaurant Western Cape 17,On-Trade,Restaurant,Western Cape,Western Cape,Western Cape City 3,194541,45,Active,2022-11-23
+123,CUST00123,Hotel Western Cape 18,On-Trade,Hotel,Western Cape,Western Cape,Western Cape City 5,319418,7,Active,2022-06-04
+124,CUST00124,Bar Western Cape 19,On-Trade,Bar,Western Cape,Western Cape,Western Cape City 3,71314,14,Active,2022-12-05
+125,CUST00125,Club Western Cape 20,On-Trade,Club,Western Cape,Western Cape,Western Cape City 4,322698,14,Inactive,2022-07-06
+126,CUST00126,Club Western Cape 21,On-Trade,Club,Western Cape,Western Cape,Western Cape City 5,373558,14,Active,2022-08-10
+127,CUST00127,Bar Western Cape 22,On-Trade,Bar,Western Cape,Western Cape,Western Cape City 2,174930,45,Active,2022-06-01
+128,CUST00128,Club Western Cape 23,On-Trade,Club,Western Cape,Western Cape,Western Cape City 2,112303,45,Inactive,2022-07-22
+129,CUST00129,Club Western Cape 24,On-Trade,Club,Western Cape,Western Cape,Western Cape City 4,382319,45,Inactive,2022-03-03
+130,CUST00130,Online Retailer Western Cape 1,E-Commerce,Online Retailer,Western Cape,Western Cape,Western Cape City 2,163139,7,Active,2022-04-18
+131,CUST00131,Marketplace Western Cape 2,E-Commerce,Marketplace,Western Cape,Western Cape,Western Cape City 2,419332,45,Inactive,2022-09-17
+132,CUST00132,Online Retailer Western Cape 3,E-Commerce,Online Retailer,Western Cape,Western Cape,Western Cape City 5,69877,30,Active,2022-09-27
+133,CUST00133,Online Retailer Western Cape 4,E-Commerce,Online Retailer,Western Cape,Western Cape,Western Cape City 4,296446,14,Inactive,2022-02-24
+134,CUST00134,Direct-to-Consumer Western Cape 5,E-Commerce,Direct-to-Consumer,Western Cape,Western Cape,Western Cape City 2,166085,7,Inactive,2022-05-12
+135,CUST00135,Online Retailer Western Cape 6,E-Commerce,Online Retailer,Western Cape,Western Cape,Western Cape City 4,463661,7,Active,2022-04-26
+136,CUST00136,Direct-to-Consumer Western Cape 7,E-Commerce,Direct-to-Consumer,Western Cape,Western Cape,Western Cape City 5,371304,30,Inactive,2022-03-20
+137,CUST00137,Online Retailer Western Cape 8,E-Commerce,Online Retailer,Western Cape,Western Cape,Western Cape City 2,436523,14,Active,2022-10-12
+138,CUST00138,Direct-to-Consumer Western Cape 9,E-Commerce,Direct-to-Consumer,Western Cape,Western Cape,Western Cape City 3,322925,14,Active,2022-12-10
+139,CUST00139,Marketplace Western Cape 10,E-Commerce,Marketplace,Western Cape,Western Cape,Western Cape City 5,150164,7,Active,2022-07-02
+140,CUST00140,Marketplace Western Cape 11,E-Commerce,Marketplace,Western Cape,Western Cape,Western Cape City 2,377749,14,Active,2022-03-23
+141,CUST00141,Marketplace Western Cape 12,E-Commerce,Marketplace,Western Cape,Western Cape,Western Cape City 2,409231,45,Inactive,2022-03-19
+142,CUST00142,Direct-to-Consumer Western Cape 13,E-Commerce,Direct-to-Consumer,Western Cape,Western Cape,Western Cape City 3,339154,45,Inactive,2022-08-03
+143,CUST00143,Direct-to-Consumer Western Cape 14,E-Commerce,Direct-to-Consumer,Western Cape,Western Cape,Western Cape City 1,221209,30,Active,2022-08-16
+144,CUST00144,Marketplace Western Cape 15,E-Commerce,Marketplace,Western Cape,Western Cape,Western Cape City 5,11296,7,Inactive,2022-11-22
+145,CUST00145,Direct-to-Consumer Western Cape 16,E-Commerce,Direct-to-Consumer,Western Cape,Western Cape,Western Cape City 3,455700,7,Inactive,2022-04-14
+146,CUST00146,Online Retailer Western Cape 17,E-Commerce,Online Retailer,Western Cape,Western Cape,Western Cape City 4,150790,30,Active,2022-06-18
+147,CUST00147,Direct-to-Consumer Western Cape 18,E-Commerce,Direct-to-Consumer,Western Cape,Western Cape,Western Cape City 2,306821,45,Active,2022-11-25
+148,CUST00148,Online Retailer Western Cape 19,E-Commerce,Online Retailer,Western Cape,Western Cape,Western Cape City 1,62205,45,Active,2022-02-28
+149,CUST00149,Online Retailer Western Cape 20,E-Commerce,Online Retailer,Western Cape,Western Cape,Western Cape City 4,249346,7,Inactive,2022-04-23
+150,CUST00150,Online Retailer Western Cape 21,E-Commerce,Online Retailer,Western Cape,Western Cape,Western Cape City 3,93349,30,Active,2022-11-12
+151,CUST00151,Marketplace Western Cape 22,E-Commerce,Marketplace,Western Cape,Western Cape,Western Cape City 1,204953,14,Active,2022-07-21
+152,CUST00152,Marketplace Western Cape 23,E-Commerce,Marketplace,Western Cape,Western Cape,Western Cape City 2,235040,7,Active,2022-01-07
+153,CUST00153,Marketplace Western Cape 24,E-Commerce,Marketplace,Western Cape,Western Cape,Western Cape City 1,79572,14,Inactive,2022-01-01
+154,CUST00154,Direct-to-Consumer Western Cape 25,E-Commerce,Direct-to-Consumer,Western Cape,Western Cape,Western Cape City 3,438400,7,Inactive,2022-12-05
+155,CUST00155,Marketplace Western Cape 26,E-Commerce,Marketplace,Western Cape,Western Cape,Western Cape City 1,130034,45,Active,2022-12-26
+156,CUST00156,Online Retailer Western Cape 27,E-Commerce,Online Retailer,Western Cape,Western Cape,Western Cape City 1,174286,30,Active,2022-03-13
+157,CUST00157,Online Retailer Western Cape 28,E-Commerce,Online Retailer,Western Cape,Western Cape,Western Cape City 2,45867,7,Active,2022-08-12
+158,CUST00158,Convenience Store KwaZulu-Natal 1,Retail,Convenience Store,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 4,333001,45,Active,2022-02-04
+159,CUST00159,Convenience Store KwaZulu-Natal 2,Retail,Convenience Store,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,319106,45,Active,2022-07-11
+160,CUST00160,Convenience Store KwaZulu-Natal 3,Retail,Convenience Store,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 2,155210,7,Active,2022-09-20
+161,CUST00161,Bottle Store KwaZulu-Natal 4,Retail,Bottle Store,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,454539,30,Active,2022-09-20
+162,CUST00162,Convenience Store KwaZulu-Natal 5,Retail,Convenience Store,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 4,164949,7,Active,2022-08-13
+163,CUST00163,Supermarket KwaZulu-Natal 6,Retail,Supermarket,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 2,271925,7,Active,2022-06-11
+164,CUST00164,Convenience Store KwaZulu-Natal 7,Retail,Convenience Store,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 4,461314,45,Active,2022-09-22
+165,CUST00165,Convenience Store KwaZulu-Natal 8,Retail,Convenience Store,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 4,413894,7,Active,2022-10-03
+166,CUST00166,Supermarket KwaZulu-Natal 9,Retail,Supermarket,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,123111,7,Active,2022-07-17
+167,CUST00167,Bottle Store KwaZulu-Natal 10,Retail,Bottle Store,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,412186,45,Inactive,2022-12-13
+168,CUST00168,Supermarket KwaZulu-Natal 11,Retail,Supermarket,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,291886,14,Active,2022-02-10
+169,CUST00169,Supermarket KwaZulu-Natal 12,Retail,Supermarket,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,492829,14,Active,2022-09-11
+170,CUST00170,Hypermarket KwaZulu-Natal 13,Retail,Hypermarket,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,342552,7,Active,2022-12-14
+171,CUST00171,Convenience Store KwaZulu-Natal 14,Retail,Convenience Store,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,138177,7,Inactive,2022-02-15
+172,CUST00172,Supermarket KwaZulu-Natal 15,Retail,Supermarket,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,359217,14,Active,2022-01-23
+173,CUST00173,Convenience Store KwaZulu-Natal 16,Retail,Convenience Store,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,95895,45,Active,2022-09-17
+174,CUST00174,Cash & Carry KwaZulu-Natal 1,Wholesale,Cash & Carry,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,76548,30,Active,2022-01-11
+175,CUST00175,Distributor KwaZulu-Natal 2,Wholesale,Distributor,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,284650,7,Active,2022-12-19
+176,CUST00176,Wholesaler KwaZulu-Natal 3,Wholesale,Wholesaler,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,270124,45,Active,2022-01-16
+177,CUST00177,Wholesaler KwaZulu-Natal 4,Wholesale,Wholesaler,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 2,202774,14,Active,2022-02-19
+178,CUST00178,Wholesaler KwaZulu-Natal 5,Wholesale,Wholesaler,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,129749,7,Active,2022-01-08
+179,CUST00179,Cash & Carry KwaZulu-Natal 6,Wholesale,Cash & Carry,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 4,200828,45,Active,2022-03-28
+180,CUST00180,Cash & Carry KwaZulu-Natal 7,Wholesale,Cash & Carry,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,431063,45,Active,2022-06-08
+181,CUST00181,Distributor KwaZulu-Natal 8,Wholesale,Distributor,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,152217,7,Active,2022-02-17
+182,CUST00182,Wholesaler KwaZulu-Natal 9,Wholesale,Wholesaler,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,104028,14,Active,2022-07-03
+183,CUST00183,Distributor KwaZulu-Natal 10,Wholesale,Distributor,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,415551,30,Active,2022-02-18
+184,CUST00184,Distributor KwaZulu-Natal 11,Wholesale,Distributor,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,203419,14,Active,2022-10-26
+185,CUST00185,Distributor KwaZulu-Natal 12,Wholesale,Distributor,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,137183,45,Active,2022-10-16
+186,CUST00186,Cash & Carry KwaZulu-Natal 13,Wholesale,Cash & Carry,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,408711,14,Active,2022-01-14
+187,CUST00187,Cash & Carry KwaZulu-Natal 14,Wholesale,Cash & Carry,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 2,293925,30,Active,2022-06-01
+188,CUST00188,Wholesaler KwaZulu-Natal 15,Wholesale,Wholesaler,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 4,455123,30,Active,2022-04-17
+189,CUST00189,Cash & Carry KwaZulu-Natal 16,Wholesale,Cash & Carry,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 4,267964,7,Active,2022-12-09
+190,CUST00190,Cash & Carry KwaZulu-Natal 17,Wholesale,Cash & Carry,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,493013,14,Inactive,2022-12-12
+191,CUST00191,Distributor KwaZulu-Natal 18,Wholesale,Distributor,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,314491,7,Active,2022-11-27
+192,CUST00192,Restaurant KwaZulu-Natal 1,On-Trade,Restaurant,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,307701,7,Inactive,2022-11-05
+193,CUST00193,Bar KwaZulu-Natal 2,On-Trade,Bar,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,146834,30,Inactive,2022-12-27
+194,CUST00194,Hotel KwaZulu-Natal 3,On-Trade,Hotel,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,247375,30,Active,2022-02-07
+195,CUST00195,Bar KwaZulu-Natal 4,On-Trade,Bar,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,67133,14,Active,2022-03-15
+196,CUST00196,Club KwaZulu-Natal 5,On-Trade,Club,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,223129,7,Active,2022-04-15
+197,CUST00197,Hotel KwaZulu-Natal 6,On-Trade,Hotel,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 4,148940,7,Active,2022-03-26
+198,CUST00198,Hotel KwaZulu-Natal 7,On-Trade,Hotel,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,31144,14,Active,2022-03-03
+199,CUST00199,Bar KwaZulu-Natal 8,On-Trade,Bar,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,217746,7,Active,2022-05-27
+200,CUST00200,Bar KwaZulu-Natal 9,On-Trade,Bar,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,222017,45,Active,2022-02-15
+201,CUST00201,Restaurant KwaZulu-Natal 10,On-Trade,Restaurant,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 2,73676,7,Active,2022-04-05
+202,CUST00202,Bar KwaZulu-Natal 11,On-Trade,Bar,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 4,205160,7,Active,2022-02-01
+203,CUST00203,Restaurant KwaZulu-Natal 12,On-Trade,Restaurant,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 2,483167,45,Active,2022-02-28
+204,CUST00204,Hotel KwaZulu-Natal 13,On-Trade,Hotel,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,32385,45,Active,2022-03-19
+205,CUST00205,Club KwaZulu-Natal 14,On-Trade,Club,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 4,270113,7,Inactive,2022-11-14
+206,CUST00206,Bar KwaZulu-Natal 15,On-Trade,Bar,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,122573,14,Active,2022-05-15
+207,CUST00207,Bar KwaZulu-Natal 16,On-Trade,Bar,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,331968,14,Active,2022-08-14
+208,CUST00208,Club KwaZulu-Natal 17,On-Trade,Club,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,55991,30,Inactive,2022-03-14
+209,CUST00209,Bar KwaZulu-Natal 18,On-Trade,Bar,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,140625,7,Inactive,2022-12-12
+210,CUST00210,Club KwaZulu-Natal 19,On-Trade,Club,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,419697,45,Active,2022-10-17
+211,CUST00211,Hotel KwaZulu-Natal 20,On-Trade,Hotel,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 4,151786,14,Active,2022-06-20
+212,CUST00212,Bar KwaZulu-Natal 21,On-Trade,Bar,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,479638,30,Active,2022-08-17
+213,CUST00213,Hotel KwaZulu-Natal 22,On-Trade,Hotel,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,132034,14,Active,2022-04-22
+214,CUST00214,Marketplace KwaZulu-Natal 1,E-Commerce,Marketplace,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,437968,7,Active,2022-10-28
+215,CUST00215,Marketplace KwaZulu-Natal 2,E-Commerce,Marketplace,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,449994,14,Active,2022-04-19
+216,CUST00216,Marketplace KwaZulu-Natal 3,E-Commerce,Marketplace,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,489188,7,Active,2022-10-19
+217,CUST00217,Online Retailer KwaZulu-Natal 4,E-Commerce,Online Retailer,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,108688,45,Active,2022-03-16
+218,CUST00218,Online Retailer KwaZulu-Natal 5,E-Commerce,Online Retailer,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,39448,14,Active,2022-01-17
+219,CUST00219,Marketplace KwaZulu-Natal 6,E-Commerce,Marketplace,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,183924,14,Active,2022-06-23
+220,CUST00220,Online Retailer KwaZulu-Natal 7,E-Commerce,Online Retailer,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,41224,7,Active,2022-10-23
+221,CUST00221,Online Retailer KwaZulu-Natal 8,E-Commerce,Online Retailer,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,453799,30,Active,2022-06-23
+222,CUST00222,Direct-to-Consumer KwaZulu-Natal 9,E-Commerce,Direct-to-Consumer,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 4,317241,7,Active,2022-05-11
+223,CUST00223,Online Retailer KwaZulu-Natal 10,E-Commerce,Online Retailer,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 2,393963,45,Inactive,2022-11-11
+224,CUST00224,Online Retailer KwaZulu-Natal 11,E-Commerce,Online Retailer,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,373625,30,Active,2022-11-19
+225,CUST00225,Online Retailer KwaZulu-Natal 12,E-Commerce,Online Retailer,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 4,170863,30,Active,2022-03-24
+226,CUST00226,Online Retailer KwaZulu-Natal 13,E-Commerce,Online Retailer,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 5,215311,7,Active,2022-10-11
+227,CUST00227,Direct-to-Consumer KwaZulu-Natal 14,E-Commerce,Direct-to-Consumer,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 2,345359,7,Inactive,2022-03-11
+228,CUST00228,Direct-to-Consumer KwaZulu-Natal 15,E-Commerce,Direct-to-Consumer,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,134778,30,Active,2022-03-21
+229,CUST00229,Online Retailer KwaZulu-Natal 16,E-Commerce,Online Retailer,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 3,244162,7,Active,2022-04-08
+230,CUST00230,Direct-to-Consumer KwaZulu-Natal 17,E-Commerce,Direct-to-Consumer,KwaZulu-Natal,KwaZulu-Natal,KwaZulu-Natal City 1,193753,30,Active,2022-12-01
+231,CUST00231,Hypermarket Eastern Cape 1,Retail,Hypermarket,Eastern Cape,Eastern Cape,Eastern Cape City 4,394085,45,Active,2022-07-16
+232,CUST00232,Hypermarket Eastern Cape 2,Retail,Hypermarket,Eastern Cape,Eastern Cape,Eastern Cape City 3,296273,45,Active,2022-08-26
+233,CUST00233,Convenience Store Eastern Cape 3,Retail,Convenience Store,Eastern Cape,Eastern Cape,Eastern Cape City 2,246604,7,Active,2022-05-01
+234,CUST00234,Bottle Store Eastern Cape 4,Retail,Bottle Store,Eastern Cape,Eastern Cape,Eastern Cape City 3,64906,7,Active,2022-03-13
+235,CUST00235,Convenience Store Eastern Cape 5,Retail,Convenience Store,Eastern Cape,Eastern Cape,Eastern Cape City 1,296809,7,Active,2022-10-20
+236,CUST00236,Hypermarket Eastern Cape 6,Retail,Hypermarket,Eastern Cape,Eastern Cape,Eastern Cape City 1,236137,14,Inactive,2022-03-02
+237,CUST00237,Supermarket Eastern Cape 7,Retail,Supermarket,Eastern Cape,Eastern Cape,Eastern Cape City 3,117767,14,Inactive,2022-12-18
+238,CUST00238,Bottle Store Eastern Cape 8,Retail,Bottle Store,Eastern Cape,Eastern Cape,Eastern Cape City 3,165923,14,Active,2022-01-13
+239,CUST00239,Hypermarket Eastern Cape 9,Retail,Hypermarket,Eastern Cape,Eastern Cape,Eastern Cape City 2,38576,30,Active,2022-07-03
+240,CUST00240,Bottle Store Eastern Cape 10,Retail,Bottle Store,Eastern Cape,Eastern Cape,Eastern Cape City 5,261830,14,Active,2022-01-07
+241,CUST00241,Convenience Store Eastern Cape 11,Retail,Convenience Store,Eastern Cape,Eastern Cape,Eastern Cape City 3,52958,45,Active,2022-05-26
+242,CUST00242,Distributor Eastern Cape 1,Wholesale,Distributor,Eastern Cape,Eastern Cape,Eastern Cape City 4,479173,30,Active,2022-11-18
+243,CUST00243,Distributor Eastern Cape 2,Wholesale,Distributor,Eastern Cape,Eastern Cape,Eastern Cape City 2,204521,45,Active,2022-03-15
+244,CUST00244,Cash & Carry Eastern Cape 3,Wholesale,Cash & Carry,Eastern Cape,Eastern Cape,Eastern Cape City 3,240550,45,Active,2022-04-27
+245,CUST00245,Distributor Eastern Cape 4,Wholesale,Distributor,Eastern Cape,Eastern Cape,Eastern Cape City 5,42316,14,Active,2022-02-22
+246,CUST00246,Distributor Eastern Cape 5,Wholesale,Distributor,Eastern Cape,Eastern Cape,Eastern Cape City 5,227048,14,Active,2022-07-27
+247,CUST00247,Wholesaler Eastern Cape 6,Wholesale,Wholesaler,Eastern Cape,Eastern Cape,Eastern Cape City 4,290763,45,Active,2022-08-10
+248,CUST00248,Cash & Carry Eastern Cape 7,Wholesale,Cash & Carry,Eastern Cape,Eastern Cape,Eastern Cape City 4,483315,7,Active,2022-02-25
+249,CUST00249,Distributor Eastern Cape 8,Wholesale,Distributor,Eastern Cape,Eastern Cape,Eastern Cape City 2,97642,14,Active,2022-03-02
+250,CUST00250,Distributor Eastern Cape 9,Wholesale,Distributor,Eastern Cape,Eastern Cape,Eastern Cape City 1,368154,45,Active,2022-11-05
+251,CUST00251,Wholesaler Eastern Cape 10,Wholesale,Wholesaler,Eastern Cape,Eastern Cape,Eastern Cape City 3,177640,7,Active,2022-07-18
+252,CUST00252,Distributor Eastern Cape 11,Wholesale,Distributor,Eastern Cape,Eastern Cape,Eastern Cape City 5,180984,30,Inactive,2022-01-26
+253,CUST00253,Wholesaler Eastern Cape 12,Wholesale,Wholesaler,Eastern Cape,Eastern Cape,Eastern Cape City 5,318059,45,Active,2022-07-05
+254,CUST00254,Cash & Carry Eastern Cape 13,Wholesale,Cash & Carry,Eastern Cape,Eastern Cape,Eastern Cape City 5,318246,7,Active,2022-10-25
+255,CUST00255,Cash & Carry Eastern Cape 14,Wholesale,Cash & Carry,Eastern Cape,Eastern Cape,Eastern Cape City 3,464806,30,Inactive,2022-05-13
+256,CUST00256,Wholesaler Eastern Cape 15,Wholesale,Wholesaler,Eastern Cape,Eastern Cape,Eastern Cape City 4,309904,45,Active,2022-03-09
+257,CUST00257,Distributor Eastern Cape 16,Wholesale,Distributor,Eastern Cape,Eastern Cape,Eastern Cape City 2,334138,45,Active,2022-07-11
+258,CUST00258,Wholesaler Eastern Cape 17,Wholesale,Wholesaler,Eastern Cape,Eastern Cape,Eastern Cape City 2,35842,45,Active,2022-06-01
+259,CUST00259,Distributor Eastern Cape 18,Wholesale,Distributor,Eastern Cape,Eastern Cape,Eastern Cape City 3,173026,30,Inactive,2022-12-22
+260,CUST00260,Cash & Carry Eastern Cape 19,Wholesale,Cash & Carry,Eastern Cape,Eastern Cape,Eastern Cape City 2,80456,30,Inactive,2022-06-09
+261,CUST00261,Wholesaler Eastern Cape 20,Wholesale,Wholesaler,Eastern Cape,Eastern Cape,Eastern Cape City 4,327183,7,Active,2022-08-07
+262,CUST00262,Distributor Eastern Cape 21,Wholesale,Distributor,Eastern Cape,Eastern Cape,Eastern Cape City 4,408193,30,Active,2022-09-26
+263,CUST00263,Cash & Carry Eastern Cape 22,Wholesale,Cash & Carry,Eastern Cape,Eastern Cape,Eastern Cape City 1,173118,45,Active,2022-09-19
+264,CUST00264,Bar Eastern Cape 1,On-Trade,Bar,Eastern Cape,Eastern Cape,Eastern Cape City 2,468846,14,Active,2022-04-02
+265,CUST00265,Club Eastern Cape 2,On-Trade,Club,Eastern Cape,Eastern Cape,Eastern Cape City 1,491312,30,Active,2022-05-12
+266,CUST00266,Club Eastern Cape 3,On-Trade,Club,Eastern Cape,Eastern Cape,Eastern Cape City 5,218112,7,Active,2022-04-12
+267,CUST00267,Club Eastern Cape 4,On-Trade,Club,Eastern Cape,Eastern Cape,Eastern Cape City 5,243886,14,Inactive,2022-10-18
+268,CUST00268,Hotel Eastern Cape 5,On-Trade,Hotel,Eastern Cape,Eastern Cape,Eastern Cape City 3,95728,30,Active,2022-05-01
+269,CUST00269,Club Eastern Cape 6,On-Trade,Club,Eastern Cape,Eastern Cape,Eastern Cape City 1,95410,14,Active,2022-11-08
+270,CUST00270,Bar Eastern Cape 7,On-Trade,Bar,Eastern Cape,Eastern Cape,Eastern Cape City 3,351619,45,Active,2022-11-01
+271,CUST00271,Club Eastern Cape 8,On-Trade,Club,Eastern Cape,Eastern Cape,Eastern Cape City 2,349409,14,Active,2022-04-09
+272,CUST00272,Hotel Eastern Cape 9,On-Trade,Hotel,Eastern Cape,Eastern Cape,Eastern Cape City 3,232196,45,Active,2022-08-09
+273,CUST00273,Bar Eastern Cape 10,On-Trade,Bar,Eastern Cape,Eastern Cape,Eastern Cape City 4,168411,45,Active,2022-01-17
+274,CUST00274,Direct-to-Consumer Eastern Cape 1,E-Commerce,Direct-to-Consumer,Eastern Cape,Eastern Cape,Eastern Cape City 5,329317,30,Active,2022-11-04
+275,CUST00275,Marketplace Eastern Cape 2,E-Commerce,Marketplace,Eastern Cape,Eastern Cape,Eastern Cape City 1,186309,30,Active,2022-05-09
+276,CUST00276,Direct-to-Consumer Eastern Cape 3,E-Commerce,Direct-to-Consumer,Eastern Cape,Eastern Cape,Eastern Cape City 3,108754,14,Active,2022-01-26
+277,CUST00277,Direct-to-Consumer Eastern Cape 4,E-Commerce,Direct-to-Consumer,Eastern Cape,Eastern Cape,Eastern Cape City 4,356308,30,Active,2022-12-01
+278,CUST00278,Direct-to-Consumer Eastern Cape 5,E-Commerce,Direct-to-Consumer,Eastern Cape,Eastern Cape,Eastern Cape City 4,164981,30,Inactive,2022-07-13
+279,CUST00279,Direct-to-Consumer Eastern Cape 6,E-Commerce,Direct-to-Consumer,Eastern Cape,Eastern Cape,Eastern Cape City 1,315672,14,Active,2022-12-23
+280,CUST00280,Online Retailer Eastern Cape 7,E-Commerce,Online Retailer,Eastern Cape,Eastern Cape,Eastern Cape City 5,344660,45,Active,2022-09-10
+281,CUST00281,Online Retailer Eastern Cape 8,E-Commerce,Online Retailer,Eastern Cape,Eastern Cape,Eastern Cape City 5,104967,30,Active,2022-08-05
+282,CUST00282,Direct-to-Consumer Eastern Cape 9,E-Commerce,Direct-to-Consumer,Eastern Cape,Eastern Cape,Eastern Cape City 3,390206,14,Active,2022-11-03
+283,CUST00283,Online Retailer Eastern Cape 10,E-Commerce,Online Retailer,Eastern Cape,Eastern Cape,Eastern Cape City 3,127088,30,Inactive,2022-06-12
+284,CUST00284,Marketplace Eastern Cape 11,E-Commerce,Marketplace,Eastern Cape,Eastern Cape,Eastern Cape City 5,164167,45,Active,2022-08-02
+285,CUST00285,Direct-to-Consumer Eastern Cape 12,E-Commerce,Direct-to-Consumer,Eastern Cape,Eastern Cape,Eastern Cape City 5,314251,7,Inactive,2022-04-17
+286,CUST00286,Online Retailer Eastern Cape 13,E-Commerce,Online Retailer,Eastern Cape,Eastern Cape,Eastern Cape City 4,287787,30,Inactive,2022-01-28
+287,CUST00287,Online Retailer Eastern Cape 14,E-Commerce,Online Retailer,Eastern Cape,Eastern Cape,Eastern Cape City 2,115013,30,Inactive,2022-10-15
+288,CUST00288,Online Retailer Eastern Cape 15,E-Commerce,Online Retailer,Eastern Cape,Eastern Cape,Eastern Cape City 3,462142,14,Active,2022-08-11
+289,CUST00289,Direct-to-Consumer Eastern Cape 16,E-Commerce,Direct-to-Consumer,Eastern Cape,Eastern Cape,Eastern Cape City 2,174319,7,Active,2022-08-09
+290,CUST00290,Online Retailer Eastern Cape 17,E-Commerce,Online Retailer,Eastern Cape,Eastern Cape,Eastern Cape City 2,312136,14,Inactive,2022-02-05
+291,CUST00291,Direct-to-Consumer Eastern Cape 18,E-Commerce,Direct-to-Consumer,Eastern Cape,Eastern Cape,Eastern Cape City 4,342129,45,Inactive,2022-07-16
+292,CUST00292,Marketplace Eastern Cape 19,E-Commerce,Marketplace,Eastern Cape,Eastern Cape,Eastern Cape City 1,29778,14,Active,2022-01-11
+293,CUST00293,Direct-to-Consumer Eastern Cape 20,E-Commerce,Direct-to-Consumer,Eastern Cape,Eastern Cape,Eastern Cape City 2,19393,7,Active,2022-04-23
+294,CUST00294,Marketplace Eastern Cape 21,E-Commerce,Marketplace,Eastern Cape,Eastern Cape,Eastern Cape City 3,77596,7,Inactive,2022-09-19
+295,CUST00295,Convenience Store Mpumalanga 1,Retail,Convenience Store,Mpumalanga,Mpumalanga,Mpumalanga City 1,441931,7,Active,2022-05-15
+296,CUST00296,Bottle Store Mpumalanga 2,Retail,Bottle Store,Mpumalanga,Mpumalanga,Mpumalanga City 4,475554,14,Active,2022-08-12
+297,CUST00297,Convenience Store Mpumalanga 3,Retail,Convenience Store,Mpumalanga,Mpumalanga,Mpumalanga City 2,485473,45,Active,2022-04-08
+298,CUST00298,Convenience Store Mpumalanga 4,Retail,Convenience Store,Mpumalanga,Mpumalanga,Mpumalanga City 2,394867,7,Active,2022-02-12
+299,CUST00299,Supermarket Mpumalanga 5,Retail,Supermarket,Mpumalanga,Mpumalanga,Mpumalanga City 4,469561,30,Active,2022-10-02
+300,CUST00300,Supermarket Mpumalanga 6,Retail,Supermarket,Mpumalanga,Mpumalanga,Mpumalanga City 1,35289,7,Inactive,2022-08-13
+301,CUST00301,Supermarket Mpumalanga 7,Retail,Supermarket,Mpumalanga,Mpumalanga,Mpumalanga City 5,142507,45,Active,2022-04-23
+302,CUST00302,Supermarket Mpumalanga 8,Retail,Supermarket,Mpumalanga,Mpumalanga,Mpumalanga City 3,230657,7,Active,2022-10-20
+303,CUST00303,Convenience Store Mpumalanga 9,Retail,Convenience Store,Mpumalanga,Mpumalanga,Mpumalanga City 4,445501,7,Active,2022-05-04
+304,CUST00304,Supermarket Mpumalanga 10,Retail,Supermarket,Mpumalanga,Mpumalanga,Mpumalanga City 4,114148,14,Active,2022-09-07
+305,CUST00305,Bottle Store Mpumalanga 11,Retail,Bottle Store,Mpumalanga,Mpumalanga,Mpumalanga City 4,164849,14,Active,2022-09-16
+306,CUST00306,Convenience Store Mpumalanga 12,Retail,Convenience Store,Mpumalanga,Mpumalanga,Mpumalanga City 4,183331,14,Active,2022-01-22
+307,CUST00307,Supermarket Mpumalanga 13,Retail,Supermarket,Mpumalanga,Mpumalanga,Mpumalanga City 1,447902,45,Active,2022-02-25
+308,CUST00308,Supermarket Mpumalanga 14,Retail,Supermarket,Mpumalanga,Mpumalanga,Mpumalanga City 1,484364,30,Active,2022-08-10
+309,CUST00309,Bottle Store Mpumalanga 15,Retail,Bottle Store,Mpumalanga,Mpumalanga,Mpumalanga City 4,36256,7,Active,2022-01-28
+310,CUST00310,Bottle Store Mpumalanga 16,Retail,Bottle Store,Mpumalanga,Mpumalanga,Mpumalanga City 3,430267,30,Inactive,2022-12-04
+311,CUST00311,Supermarket Mpumalanga 17,Retail,Supermarket,Mpumalanga,Mpumalanga,Mpumalanga City 1,15071,14,Active,2022-06-12
+312,CUST00312,Hypermarket Mpumalanga 18,Retail,Hypermarket,Mpumalanga,Mpumalanga,Mpumalanga City 5,150671,7,Active,2022-06-06
+313,CUST00313,Supermarket Mpumalanga 19,Retail,Supermarket,Mpumalanga,Mpumalanga,Mpumalanga City 4,219846,45,Active,2022-07-23
+314,CUST00314,Distributor Mpumalanga 1,Wholesale,Distributor,Mpumalanga,Mpumalanga,Mpumalanga City 2,69274,14,Active,2022-03-04
+315,CUST00315,Distributor Mpumalanga 2,Wholesale,Distributor,Mpumalanga,Mpumalanga,Mpumalanga City 5,263060,45,Active,2022-10-13
+316,CUST00316,Distributor Mpumalanga 3,Wholesale,Distributor,Mpumalanga,Mpumalanga,Mpumalanga City 5,25108,14,Inactive,2022-08-04
+317,CUST00317,Distributor Mpumalanga 4,Wholesale,Distributor,Mpumalanga,Mpumalanga,Mpumalanga City 4,34102,7,Active,2022-11-11
+318,CUST00318,Cash & Carry Mpumalanga 5,Wholesale,Cash & Carry,Mpumalanga,Mpumalanga,Mpumalanga City 5,412406,14,Active,2022-09-17
+319,CUST00319,Wholesaler Mpumalanga 6,Wholesale,Wholesaler,Mpumalanga,Mpumalanga,Mpumalanga City 5,59934,45,Active,2022-08-12
+320,CUST00320,Wholesaler Mpumalanga 7,Wholesale,Wholesaler,Mpumalanga,Mpumalanga,Mpumalanga City 4,87937,7,Active,2022-11-06
+321,CUST00321,Wholesaler Mpumalanga 8,Wholesale,Wholesaler,Mpumalanga,Mpumalanga,Mpumalanga City 4,456625,45,Active,2022-02-25
+322,CUST00322,Distributor Mpumalanga 9,Wholesale,Distributor,Mpumalanga,Mpumalanga,Mpumalanga City 3,136296,30,Active,2022-01-17
+323,CUST00323,Cash & Carry Mpumalanga 10,Wholesale,Cash & Carry,Mpumalanga,Mpumalanga,Mpumalanga City 5,347283,45,Inactive,2022-04-03
+324,CUST00324,Distributor Mpumalanga 11,Wholesale,Distributor,Mpumalanga,Mpumalanga,Mpumalanga City 4,430091,45,Active,2022-08-15
+325,CUST00325,Distributor Mpumalanga 12,Wholesale,Distributor,Mpumalanga,Mpumalanga,Mpumalanga City 1,270766,7,Active,2022-07-14
+326,CUST00326,Cash & Carry Mpumalanga 13,Wholesale,Cash & Carry,Mpumalanga,Mpumalanga,Mpumalanga City 5,297885,7,Active,2022-10-20
+327,CUST00327,Wholesaler Mpumalanga 14,Wholesale,Wholesaler,Mpumalanga,Mpumalanga,Mpumalanga City 3,476674,14,Inactive,2022-06-12
+328,CUST00328,Cash & Carry Mpumalanga 15,Wholesale,Cash & Carry,Mpumalanga,Mpumalanga,Mpumalanga City 2,452665,45,Active,2022-09-25
+329,CUST00329,Wholesaler Mpumalanga 16,Wholesale,Wholesaler,Mpumalanga,Mpumalanga,Mpumalanga City 5,258058,30,Inactive,2022-02-04
+330,CUST00330,Wholesaler Mpumalanga 17,Wholesale,Wholesaler,Mpumalanga,Mpumalanga,Mpumalanga City 2,11151,30,Active,2022-11-26
+331,CUST00331,Distributor Mpumalanga 18,Wholesale,Distributor,Mpumalanga,Mpumalanga,Mpumalanga City 5,283670,30,Active,2022-01-06
+332,CUST00332,Distributor Mpumalanga 19,Wholesale,Distributor,Mpumalanga,Mpumalanga,Mpumalanga City 2,440880,45,Active,2022-05-20
+333,CUST00333,Cash & Carry Mpumalanga 20,Wholesale,Cash & Carry,Mpumalanga,Mpumalanga,Mpumalanga City 2,73305,45,Active,2022-08-27
+334,CUST00334,Cash & Carry Mpumalanga 21,Wholesale,Cash & Carry,Mpumalanga,Mpumalanga,Mpumalanga City 3,66500,45,Active,2022-11-27
+335,CUST00335,Wholesaler Mpumalanga 22,Wholesale,Wholesaler,Mpumalanga,Mpumalanga,Mpumalanga City 5,74602,45,Inactive,2022-11-19
+336,CUST00336,Wholesaler Mpumalanga 23,Wholesale,Wholesaler,Mpumalanga,Mpumalanga,Mpumalanga City 2,271529,7,Active,2022-09-14
+337,CUST00337,Wholesaler Mpumalanga 24,Wholesale,Wholesaler,Mpumalanga,Mpumalanga,Mpumalanga City 4,494636,14,Active,2022-12-27
+338,CUST00338,Cash & Carry Mpumalanga 25,Wholesale,Cash & Carry,Mpumalanga,Mpumalanga,Mpumalanga City 1,213112,30,Inactive,2022-07-20
+339,CUST00339,Hotel Mpumalanga 1,On-Trade,Hotel,Mpumalanga,Mpumalanga,Mpumalanga City 4,189756,30,Inactive,2022-03-05
+340,CUST00340,Club Mpumalanga 2,On-Trade,Club,Mpumalanga,Mpumalanga,Mpumalanga City 5,377009,30,Active,2022-12-24
+341,CUST00341,Bar Mpumalanga 3,On-Trade,Bar,Mpumalanga,Mpumalanga,Mpumalanga City 2,119949,30,Active,2022-11-05
+342,CUST00342,Bar Mpumalanga 4,On-Trade,Bar,Mpumalanga,Mpumalanga,Mpumalanga City 5,294421,30,Active,2022-06-18
+343,CUST00343,Club Mpumalanga 5,On-Trade,Club,Mpumalanga,Mpumalanga,Mpumalanga City 5,309178,45,Active,2022-07-26
+344,CUST00344,Restaurant Mpumalanga 6,On-Trade,Restaurant,Mpumalanga,Mpumalanga,Mpumalanga City 5,65821,7,Inactive,2022-03-02
+345,CUST00345,Restaurant Mpumalanga 7,On-Trade,Restaurant,Mpumalanga,Mpumalanga,Mpumalanga City 2,149973,14,Active,2022-11-09
+346,CUST00346,Bar Mpumalanga 8,On-Trade,Bar,Mpumalanga,Mpumalanga,Mpumalanga City 1,372070,30,Active,2022-09-02
+347,CUST00347,Hotel Mpumalanga 9,On-Trade,Hotel,Mpumalanga,Mpumalanga,Mpumalanga City 4,63729,14,Inactive,2022-04-17
+348,CUST00348,Hotel Mpumalanga 10,On-Trade,Hotel,Mpumalanga,Mpumalanga,Mpumalanga City 1,495744,45,Inactive,2022-07-26
+349,CUST00349,Hotel Mpumalanga 11,On-Trade,Hotel,Mpumalanga,Mpumalanga,Mpumalanga City 5,38207,7,Active,2022-04-20
+350,CUST00350,Club Mpumalanga 12,On-Trade,Club,Mpumalanga,Mpumalanga,Mpumalanga City 2,487881,30,Active,2022-12-07
+351,CUST00351,Hotel Mpumalanga 13,On-Trade,Hotel,Mpumalanga,Mpumalanga,Mpumalanga City 4,103022,7,Active,2022-03-24
+352,CUST00352,Restaurant Mpumalanga 14,On-Trade,Restaurant,Mpumalanga,Mpumalanga,Mpumalanga City 4,31304,45,Active,2022-09-09
+353,CUST00353,Bar Mpumalanga 15,On-Trade,Bar,Mpumalanga,Mpumalanga,Mpumalanga City 2,316176,30,Active,2022-06-15
+354,CUST00354,Bar Mpumalanga 16,On-Trade,Bar,Mpumalanga,Mpumalanga,Mpumalanga City 1,90584,30,Active,2022-11-20
+355,CUST00355,Hotel Mpumalanga 17,On-Trade,Hotel,Mpumalanga,Mpumalanga,Mpumalanga City 4,424139,30,Active,2022-12-11
+356,CUST00356,Online Retailer Mpumalanga 1,E-Commerce,Online Retailer,Mpumalanga,Mpumalanga,Mpumalanga City 2,282947,7,Active,2022-07-18
+357,CUST00357,Direct-to-Consumer Mpumalanga 2,E-Commerce,Direct-to-Consumer,Mpumalanga,Mpumalanga,Mpumalanga City 4,58205,30,Active,2022-04-22
+358,CUST00358,Marketplace Mpumalanga 3,E-Commerce,Marketplace,Mpumalanga,Mpumalanga,Mpumalanga City 3,199161,30,Active,2022-10-17
+359,CUST00359,Marketplace Mpumalanga 4,E-Commerce,Marketplace,Mpumalanga,Mpumalanga,Mpumalanga City 5,441849,7,Active,2022-11-12
+360,CUST00360,Marketplace Mpumalanga 5,E-Commerce,Marketplace,Mpumalanga,Mpumalanga,Mpumalanga City 2,484216,14,Active,2022-11-11
+361,CUST00361,Marketplace Mpumalanga 6,E-Commerce,Marketplace,Mpumalanga,Mpumalanga,Mpumalanga City 1,212310,30,Active,2022-01-17
+362,CUST00362,Marketplace Mpumalanga 7,E-Commerce,Marketplace,Mpumalanga,Mpumalanga,Mpumalanga City 5,430907,45,Inactive,2022-01-10
+363,CUST00363,Direct-to-Consumer Mpumalanga 8,E-Commerce,Direct-to-Consumer,Mpumalanga,Mpumalanga,Mpumalanga City 2,177936,7,Active,2022-03-25
+364,CUST00364,Direct-to-Consumer Mpumalanga 9,E-Commerce,Direct-to-Consumer,Mpumalanga,Mpumalanga,Mpumalanga City 5,13843,7,Active,2022-11-21
+365,CUST00365,Online Retailer Mpumalanga 10,E-Commerce,Online Retailer,Mpumalanga,Mpumalanga,Mpumalanga City 4,448129,7,Active,2022-09-27
+366,CUST00366,Direct-to-Consumer Mpumalanga 11,E-Commerce,Direct-to-Consumer,Mpumalanga,Mpumalanga,Mpumalanga City 4,348984,7,Active,2022-01-15
+367,CUST00367,Direct-to-Consumer Mpumalanga 12,E-Commerce,Direct-to-Consumer,Mpumalanga,Mpumalanga,Mpumalanga City 3,29863,7,Active,2022-01-06
+368,CUST00368,Marketplace Mpumalanga 13,E-Commerce,Marketplace,Mpumalanga,Mpumalanga,Mpumalanga City 5,46931,14,Active,2022-07-13
+369,CUST00369,Marketplace Mpumalanga 14,E-Commerce,Marketplace,Mpumalanga,Mpumalanga,Mpumalanga City 4,237029,30,Active,2022-07-22
+370,CUST00370,Online Retailer Mpumalanga 15,E-Commerce,Online Retailer,Mpumalanga,Mpumalanga,Mpumalanga City 5,13092,7,Active,2022-12-28
+371,CUST00371,Online Retailer Mpumalanga 16,E-Commerce,Online Retailer,Mpumalanga,Mpumalanga,Mpumalanga City 3,496564,7,Active,2022-11-10
+372,CUST00372,Direct-to-Consumer Mpumalanga 17,E-Commerce,Direct-to-Consumer,Mpumalanga,Mpumalanga,Mpumalanga City 1,157596,45,Inactive,2022-07-27
+373,CUST00373,Direct-to-Consumer Mpumalanga 18,E-Commerce,Direct-to-Consumer,Mpumalanga,Mpumalanga,Mpumalanga City 1,258506,14,Active,2022-03-24
+374,CUST00374,Marketplace Mpumalanga 19,E-Commerce,Marketplace,Mpumalanga,Mpumalanga,Mpumalanga City 5,164653,14,Active,2022-11-26
+375,CUST00375,Direct-to-Consumer Mpumalanga 20,E-Commerce,Direct-to-Consumer,Mpumalanga,Mpumalanga,Mpumalanga City 3,15845,14,Active,2022-01-01
+376,CUST00376,Direct-to-Consumer Mpumalanga 21,E-Commerce,Direct-to-Consumer,Mpumalanga,Mpumalanga,Mpumalanga City 5,216612,7,Active,2022-04-24
+377,CUST00377,Direct-to-Consumer Mpumalanga 22,E-Commerce,Direct-to-Consumer,Mpumalanga,Mpumalanga,Mpumalanga City 3,121011,45,Active,2022-03-06
+378,CUST00378,Online Retailer Mpumalanga 23,E-Commerce,Online Retailer,Mpumalanga,Mpumalanga,Mpumalanga City 5,447648,30,Active,2022-02-06
+379,CUST00379,Direct-to-Consumer Mpumalanga 24,E-Commerce,Direct-to-Consumer,Mpumalanga,Mpumalanga,Mpumalanga City 5,456825,7,Inactive,2022-11-18
+380,CUST00380,Online Retailer Mpumalanga 25,E-Commerce,Online Retailer,Mpumalanga,Mpumalanga,Mpumalanga City 3,362156,7,Active,2022-02-07
+381,CUST00381,Direct-to-Consumer Mpumalanga 26,E-Commerce,Direct-to-Consumer,Mpumalanga,Mpumalanga,Mpumalanga City 5,265428,30,Active,2022-03-22
+382,CUST00382,Convenience Store Limpopo 1,Retail,Convenience Store,Limpopo,Limpopo,Limpopo City 1,159493,7,Active,2022-06-16
+383,CUST00383,Hypermarket Limpopo 2,Retail,Hypermarket,Limpopo,Limpopo,Limpopo City 3,333140,30,Active,2022-10-19
+384,CUST00384,Bottle Store Limpopo 3,Retail,Bottle Store,Limpopo,Limpopo,Limpopo City 3,234556,14,Active,2022-06-08
+385,CUST00385,Convenience Store Limpopo 4,Retail,Convenience Store,Limpopo,Limpopo,Limpopo City 4,155059,30,Active,2022-11-24
+386,CUST00386,Bottle Store Limpopo 5,Retail,Bottle Store,Limpopo,Limpopo,Limpopo City 4,252665,45,Active,2022-05-16
+387,CUST00387,Supermarket Limpopo 6,Retail,Supermarket,Limpopo,Limpopo,Limpopo City 2,348454,7,Active,2022-03-18
+388,CUST00388,Convenience Store Limpopo 7,Retail,Convenience Store,Limpopo,Limpopo,Limpopo City 3,394588,7,Active,2022-01-28
+389,CUST00389,Supermarket Limpopo 8,Retail,Supermarket,Limpopo,Limpopo,Limpopo City 5,313510,45,Active,2022-01-18
+390,CUST00390,Bottle Store Limpopo 9,Retail,Bottle Store,Limpopo,Limpopo,Limpopo City 5,478706,45,Active,2022-06-13
+391,CUST00391,Convenience Store Limpopo 10,Retail,Convenience Store,Limpopo,Limpopo,Limpopo City 5,394422,30,Active,2022-08-17
+392,CUST00392,Supermarket Limpopo 11,Retail,Supermarket,Limpopo,Limpopo,Limpopo City 4,200770,7,Active,2022-10-22
+393,CUST00393,Convenience Store Limpopo 12,Retail,Convenience Store,Limpopo,Limpopo,Limpopo City 5,83594,45,Active,2022-03-19
+394,CUST00394,Convenience Store Limpopo 13,Retail,Convenience Store,Limpopo,Limpopo,Limpopo City 4,198112,7,Active,2022-08-08
+395,CUST00395,Supermarket Limpopo 14,Retail,Supermarket,Limpopo,Limpopo,Limpopo City 3,203690,14,Active,2022-11-07
+396,CUST00396,Bottle Store Limpopo 15,Retail,Bottle Store,Limpopo,Limpopo,Limpopo City 4,256244,45,Active,2022-01-21
+397,CUST00397,Bottle Store Limpopo 16,Retail,Bottle Store,Limpopo,Limpopo,Limpopo City 1,378960,30,Active,2022-10-18
+398,CUST00398,Convenience Store Limpopo 17,Retail,Convenience Store,Limpopo,Limpopo,Limpopo City 4,352714,45,Active,2022-10-21
+399,CUST00399,Supermarket Limpopo 18,Retail,Supermarket,Limpopo,Limpopo,Limpopo City 5,141903,45,Active,2022-09-13
+400,CUST00400,Bottle Store Limpopo 19,Retail,Bottle Store,Limpopo,Limpopo,Limpopo City 3,265255,45,Active,2022-09-05
+401,CUST00401,Hypermarket Limpopo 20,Retail,Hypermarket,Limpopo,Limpopo,Limpopo City 2,130581,7,Active,2022-04-05
+402,CUST00402,Convenience Store Limpopo 21,Retail,Convenience Store,Limpopo,Limpopo,Limpopo City 2,199909,7,Active,2022-07-26
+403,CUST00403,Bottle Store Limpopo 22,Retail,Bottle Store,Limpopo,Limpopo,Limpopo City 1,262453,45,Inactive,2022-04-19
+404,CUST00404,Convenience Store Limpopo 23,Retail,Convenience Store,Limpopo,Limpopo,Limpopo City 4,21768,14,Active,2022-03-19
+405,CUST00405,Convenience Store Limpopo 24,Retail,Convenience Store,Limpopo,Limpopo,Limpopo City 2,340060,7,Active,2022-01-06
+406,CUST00406,Bottle Store Limpopo 25,Retail,Bottle Store,Limpopo,Limpopo,Limpopo City 2,280868,45,Active,2022-12-24
+407,CUST00407,Bottle Store Limpopo 26,Retail,Bottle Store,Limpopo,Limpopo,Limpopo City 1,123557,45,Inactive,2022-08-06
+408,CUST00408,Convenience Store Limpopo 27,Retail,Convenience Store,Limpopo,Limpopo,Limpopo City 4,325012,14,Active,2022-10-22
+409,CUST00409,Bottle Store Limpopo 28,Retail,Bottle Store,Limpopo,Limpopo,Limpopo City 2,389682,30,Inactive,2022-10-19
+410,CUST00410,Supermarket Limpopo 29,Retail,Supermarket,Limpopo,Limpopo,Limpopo City 2,208291,45,Active,2022-02-01
+411,CUST00411,Convenience Store Limpopo 30,Retail,Convenience Store,Limpopo,Limpopo,Limpopo City 5,460673,45,Active,2022-10-04
+412,CUST00412,Distributor Limpopo 1,Wholesale,Distributor,Limpopo,Limpopo,Limpopo City 5,324475,7,Active,2022-02-16
+413,CUST00413,Wholesaler Limpopo 2,Wholesale,Wholesaler,Limpopo,Limpopo,Limpopo City 2,482899,7,Inactive,2022-09-14
+414,CUST00414,Distributor Limpopo 3,Wholesale,Distributor,Limpopo,Limpopo,Limpopo City 1,375765,45,Active,2022-08-26
+415,CUST00415,Distributor Limpopo 4,Wholesale,Distributor,Limpopo,Limpopo,Limpopo City 3,318830,7,Inactive,2022-03-09
+416,CUST00416,Distributor Limpopo 5,Wholesale,Distributor,Limpopo,Limpopo,Limpopo City 2,487146,7,Active,2022-10-18
+417,CUST00417,Distributor Limpopo 6,Wholesale,Distributor,Limpopo,Limpopo,Limpopo City 3,109101,7,Active,2022-10-17
+418,CUST00418,Cash & Carry Limpopo 7,Wholesale,Cash & Carry,Limpopo,Limpopo,Limpopo City 5,13771,45,Active,2022-12-26
+419,CUST00419,Distributor Limpopo 8,Wholesale,Distributor,Limpopo,Limpopo,Limpopo City 4,199933,7,Active,2022-07-21
+420,CUST00420,Wholesaler Limpopo 9,Wholesale,Wholesaler,Limpopo,Limpopo,Limpopo City 3,146997,45,Active,2022-10-09
+421,CUST00421,Wholesaler Limpopo 10,Wholesale,Wholesaler,Limpopo,Limpopo,Limpopo City 4,405822,14,Inactive,2022-09-26
+422,CUST00422,Wholesaler Limpopo 11,Wholesale,Wholesaler,Limpopo,Limpopo,Limpopo City 4,103700,30,Inactive,2022-05-10
+423,CUST00423,Wholesaler Limpopo 12,Wholesale,Wholesaler,Limpopo,Limpopo,Limpopo City 3,415900,45,Active,2022-11-04
+424,CUST00424,Wholesaler Limpopo 13,Wholesale,Wholesaler,Limpopo,Limpopo,Limpopo City 2,244144,14,Active,2022-04-17
+425,CUST00425,Distributor Limpopo 14,Wholesale,Distributor,Limpopo,Limpopo,Limpopo City 3,429878,7,Active,2022-07-21
+426,CUST00426,Cash & Carry Limpopo 15,Wholesale,Cash & Carry,Limpopo,Limpopo,Limpopo City 1,441622,14,Inactive,2022-10-14
+427,CUST00427,Restaurant Limpopo 1,On-Trade,Restaurant,Limpopo,Limpopo,Limpopo City 3,126271,30,Active,2022-10-02
+428,CUST00428,Club Limpopo 2,On-Trade,Club,Limpopo,Limpopo,Limpopo City 4,331894,30,Active,2022-03-21
+429,CUST00429,Club Limpopo 3,On-Trade,Club,Limpopo,Limpopo,Limpopo City 4,15615,14,Active,2022-04-02
+430,CUST00430,Bar Limpopo 4,On-Trade,Bar,Limpopo,Limpopo,Limpopo City 5,98857,7,Active,2022-04-21
+431,CUST00431,Restaurant Limpopo 5,On-Trade,Restaurant,Limpopo,Limpopo,Limpopo City 2,55530,30,Inactive,2022-06-22
+432,CUST00432,Club Limpopo 6,On-Trade,Club,Limpopo,Limpopo,Limpopo City 4,317274,14,Active,2022-12-23
+433,CUST00433,Restaurant Limpopo 7,On-Trade,Restaurant,Limpopo,Limpopo,Limpopo City 1,298144,30,Active,2022-06-27
+434,CUST00434,Hotel Limpopo 8,On-Trade,Hotel,Limpopo,Limpopo,Limpopo City 2,327909,14,Inactive,2022-07-19
+435,CUST00435,Restaurant Limpopo 9,On-Trade,Restaurant,Limpopo,Limpopo,Limpopo City 3,101768,45,Active,2022-09-03
+436,CUST00436,Hotel Limpopo 10,On-Trade,Hotel,Limpopo,Limpopo,Limpopo City 3,71346,30,Active,2022-12-15
+437,CUST00437,Club Limpopo 11,On-Trade,Club,Limpopo,Limpopo,Limpopo City 5,263561,14,Active,2022-08-22
+438,CUST00438,Club Limpopo 12,On-Trade,Club,Limpopo,Limpopo,Limpopo City 5,461948,7,Inactive,2022-02-09
+439,CUST00439,Marketplace Limpopo 1,E-Commerce,Marketplace,Limpopo,Limpopo,Limpopo City 2,364897,14,Active,2022-07-12
+440,CUST00440,Direct-to-Consumer Limpopo 2,E-Commerce,Direct-to-Consumer,Limpopo,Limpopo,Limpopo City 5,15097,30,Active,2022-05-03
+441,CUST00441,Marketplace Limpopo 3,E-Commerce,Marketplace,Limpopo,Limpopo,Limpopo City 3,49860,14,Inactive,2022-06-12
+442,CUST00442,Online Retailer Limpopo 4,E-Commerce,Online Retailer,Limpopo,Limpopo,Limpopo City 5,151073,14,Active,2022-08-24
+443,CUST00443,Online Retailer Limpopo 5,E-Commerce,Online Retailer,Limpopo,Limpopo,Limpopo City 2,395576,14,Active,2022-04-08
+444,CUST00444,Online Retailer Limpopo 6,E-Commerce,Online Retailer,Limpopo,Limpopo,Limpopo City 2,448480,30,Active,2022-02-04
+445,CUST00445,Online Retailer Limpopo 7,E-Commerce,Online Retailer,Limpopo,Limpopo,Limpopo City 4,331822,7,Active,2022-08-12
+446,CUST00446,Direct-to-Consumer Limpopo 8,E-Commerce,Direct-to-Consumer,Limpopo,Limpopo,Limpopo City 3,268128,30,Inactive,2022-03-25
+447,CUST00447,Direct-to-Consumer Limpopo 9,E-Commerce,Direct-to-Consumer,Limpopo,Limpopo,Limpopo City 3,218603,14,Active,2022-01-17
+448,CUST00448,Marketplace Limpopo 10,E-Commerce,Marketplace,Limpopo,Limpopo,Limpopo City 4,293518,7,Active,2022-07-28
+449,CUST00449,Direct-to-Consumer Limpopo 11,E-Commerce,Direct-to-Consumer,Limpopo,Limpopo,Limpopo City 2,249702,7,Inactive,2022-06-23
+450,CUST00450,Online Retailer Limpopo 12,E-Commerce,Online Retailer,Limpopo,Limpopo,Limpopo City 1,363424,14,Inactive,2022-10-04
+451,CUST00451,Bottle Store Free State 1,Retail,Bottle Store,Free State,Free State,Free State City 5,461853,30,Active,2022-09-09
+452,CUST00452,Convenience Store Free State 2,Retail,Convenience Store,Free State,Free State,Free State City 3,257120,30,Active,2022-03-16
+453,CUST00453,Hypermarket Free State 3,Retail,Hypermarket,Free State,Free State,Free State City 2,229725,30,Active,2022-07-09
+454,CUST00454,Hypermarket Free State 4,Retail,Hypermarket,Free State,Free State,Free State City 2,309583,14,Active,2022-02-24
+455,CUST00455,Bottle Store Free State 5,Retail,Bottle Store,Free State,Free State,Free State City 2,301158,45,Inactive,2022-04-05
+456,CUST00456,Convenience Store Free State 6,Retail,Convenience Store,Free State,Free State,Free State City 4,432402,7,Active,2022-07-16
+457,CUST00457,Convenience Store Free State 7,Retail,Convenience Store,Free State,Free State,Free State City 5,289960,30,Inactive,2022-05-09
+458,CUST00458,Supermarket Free State 8,Retail,Supermarket,Free State,Free State,Free State City 4,61891,14,Active,2022-04-27
+459,CUST00459,Bottle Store Free State 9,Retail,Bottle Store,Free State,Free State,Free State City 4,449862,7,Inactive,2022-12-11
+460,CUST00460,Bottle Store Free State 10,Retail,Bottle Store,Free State,Free State,Free State City 3,198904,30,Active,2022-01-14
+461,CUST00461,Supermarket Free State 11,Retail,Supermarket,Free State,Free State,Free State City 3,464750,14,Active,2022-05-12
+462,CUST00462,Bottle Store Free State 12,Retail,Bottle Store,Free State,Free State,Free State City 5,265587,45,Active,2022-07-20
+463,CUST00463,Bottle Store Free State 13,Retail,Bottle Store,Free State,Free State,Free State City 4,341199,14,Active,2022-11-26
+464,CUST00464,Bottle Store Free State 14,Retail,Bottle Store,Free State,Free State,Free State City 4,340969,45,Active,2022-02-06
+465,CUST00465,Bottle Store Free State 15,Retail,Bottle Store,Free State,Free State,Free State City 2,174354,30,Active,2022-12-09
+466,CUST00466,Hypermarket Free State 16,Retail,Hypermarket,Free State,Free State,Free State City 3,475406,45,Active,2022-12-19
+467,CUST00467,Hypermarket Free State 17,Retail,Hypermarket,Free State,Free State,Free State City 4,97722,14,Active,2022-03-24
+468,CUST00468,Convenience Store Free State 18,Retail,Convenience Store,Free State,Free State,Free State City 3,400004,7,Active,2022-03-13
+469,CUST00469,Supermarket Free State 19,Retail,Supermarket,Free State,Free State,Free State City 1,43445,45,Active,2022-01-25
+470,CUST00470,Hypermarket Free State 20,Retail,Hypermarket,Free State,Free State,Free State City 5,411078,7,Active,2022-05-20
+471,CUST00471,Cash & Carry Free State 1,Wholesale,Cash & Carry,Free State,Free State,Free State City 4,172199,14,Active,2022-12-10
+472,CUST00472,Distributor Free State 2,Wholesale,Distributor,Free State,Free State,Free State City 2,78827,14,Active,2022-01-22
+473,CUST00473,Distributor Free State 3,Wholesale,Distributor,Free State,Free State,Free State City 3,463111,45,Inactive,2022-09-09
+474,CUST00474,Wholesaler Free State 4,Wholesale,Wholesaler,Free State,Free State,Free State City 4,80839,14,Inactive,2022-11-24
+475,CUST00475,Wholesaler Free State 5,Wholesale,Wholesaler,Free State,Free State,Free State City 5,238053,30,Active,2022-08-18
+476,CUST00476,Cash & Carry Free State 6,Wholesale,Cash & Carry,Free State,Free State,Free State City 1,241662,30,Active,2022-07-09
+477,CUST00477,Cash & Carry Free State 7,Wholesale,Cash & Carry,Free State,Free State,Free State City 3,15534,7,Active,2022-06-10
+478,CUST00478,Distributor Free State 8,Wholesale,Distributor,Free State,Free State,Free State City 5,14360,45,Inactive,2022-05-01
+479,CUST00479,Distributor Free State 9,Wholesale,Distributor,Free State,Free State,Free State City 3,323001,14,Active,2022-09-12
+480,CUST00480,Cash & Carry Free State 10,Wholesale,Cash & Carry,Free State,Free State,Free State City 4,472506,45,Inactive,2022-04-06
+481,CUST00481,Wholesaler Free State 11,Wholesale,Wholesaler,Free State,Free State,Free State City 4,444334,45,Active,2022-05-03
+482,CUST00482,Distributor Free State 12,Wholesale,Distributor,Free State,Free State,Free State City 2,280852,30,Active,2022-11-24
+483,CUST00483,Wholesaler Free State 13,Wholesale,Wholesaler,Free State,Free State,Free State City 3,226480,14,Active,2022-03-05
+484,CUST00484,Distributor Free State 14,Wholesale,Distributor,Free State,Free State,Free State City 1,343915,45,Inactive,2022-05-23
+485,CUST00485,Club Free State 1,On-Trade,Club,Free State,Free State,Free State City 2,178109,7,Active,2022-01-18
+486,CUST00486,Restaurant Free State 2,On-Trade,Restaurant,Free State,Free State,Free State City 2,63620,30,Active,2022-03-23
+487,CUST00487,Club Free State 3,On-Trade,Club,Free State,Free State,Free State City 1,132059,7,Active,2022-01-16
+488,CUST00488,Bar Free State 4,On-Trade,Bar,Free State,Free State,Free State City 3,230328,30,Inactive,2022-06-15
+489,CUST00489,Restaurant Free State 5,On-Trade,Restaurant,Free State,Free State,Free State City 3,52060,14,Active,2022-05-25
+490,CUST00490,Club Free State 6,On-Trade,Club,Free State,Free State,Free State City 1,294789,45,Active,2022-04-27
+491,CUST00491,Hotel Free State 7,On-Trade,Hotel,Free State,Free State,Free State City 4,444242,7,Active,2022-12-08
+492,CUST00492,Club Free State 8,On-Trade,Club,Free State,Free State,Free State City 4,139584,7,Active,2022-08-24
+493,CUST00493,Restaurant Free State 9,On-Trade,Restaurant,Free State,Free State,Free State City 5,359179,14,Inactive,2022-07-22
+494,CUST00494,Hotel Free State 10,On-Trade,Hotel,Free State,Free State,Free State City 3,93158,7,Active,2022-05-16
+495,CUST00495,Hotel Free State 11,On-Trade,Hotel,Free State,Free State,Free State City 2,198967,7,Active,2022-02-08
+496,CUST00496,Club Free State 12,On-Trade,Club,Free State,Free State,Free State City 3,17899,14,Active,2022-10-04
+497,CUST00497,Club Free State 13,On-Trade,Club,Free State,Free State,Free State City 2,14681,7,Inactive,2022-12-20
+498,CUST00498,Bar Free State 14,On-Trade,Bar,Free State,Free State,Free State City 3,414119,7,Active,2022-03-16
+499,CUST00499,Restaurant Free State 15,On-Trade,Restaurant,Free State,Free State,Free State City 5,187430,7,Active,2022-06-21
+500,CUST00500,Bar Free State 16,On-Trade,Bar,Free State,Free State,Free State City 5,424956,7,Active,2022-08-08
+501,CUST00501,Hotel Free State 17,On-Trade,Hotel,Free State,Free State,Free State City 5,423433,30,Inactive,2022-12-07
+502,CUST00502,Restaurant Free State 18,On-Trade,Restaurant,Free State,Free State,Free State City 4,197782,14,Active,2022-01-16
+503,CUST00503,Club Free State 19,On-Trade,Club,Free State,Free State,Free State City 5,164515,45,Active,2022-10-06
+504,CUST00504,Hotel Free State 20,On-Trade,Hotel,Free State,Free State,Free State City 3,393989,45,Active,2022-10-28
+505,CUST00505,Bar Free State 21,On-Trade,Bar,Free State,Free State,Free State City 1,288468,14,Inactive,2022-05-27
+506,CUST00506,Hotel Free State 22,On-Trade,Hotel,Free State,Free State,Free State City 5,202472,45,Active,2022-11-17
+507,CUST00507,Club Free State 23,On-Trade,Club,Free State,Free State,Free State City 2,472910,7,Active,2022-10-08
+508,CUST00508,Hotel Free State 24,On-Trade,Hotel,Free State,Free State,Free State City 1,355133,45,Active,2022-09-22
+509,CUST00509,Club Free State 25,On-Trade,Club,Free State,Free State,Free State City 5,90809,30,Active,2022-07-21
+510,CUST00510,Hotel Free State 26,On-Trade,Hotel,Free State,Free State,Free State City 1,60466,7,Active,2022-03-06
+511,CUST00511,Restaurant Free State 27,On-Trade,Restaurant,Free State,Free State,Free State City 2,66127,45,Active,2022-02-02
+512,CUST00512,Club Free State 28,On-Trade,Club,Free State,Free State,Free State City 4,285681,30,Active,2022-06-08
+513,CUST00513,Restaurant Free State 29,On-Trade,Restaurant,Free State,Free State,Free State City 1,497698,14,Inactive,2022-02-15
+514,CUST00514,Online Retailer Free State 1,E-Commerce,Online Retailer,Free State,Free State,Free State City 3,302563,45,Active,2022-12-02
+515,CUST00515,Direct-to-Consumer Free State 2,E-Commerce,Direct-to-Consumer,Free State,Free State,Free State City 3,287359,7,Active,2022-05-03
+516,CUST00516,Online Retailer Free State 3,E-Commerce,Online Retailer,Free State,Free State,Free State City 5,60918,7,Active,2022-09-13
+517,CUST00517,Online Retailer Free State 4,E-Commerce,Online Retailer,Free State,Free State,Free State City 2,285876,14,Active,2022-09-24
+518,CUST00518,Direct-to-Consumer Free State 5,E-Commerce,Direct-to-Consumer,Free State,Free State,Free State City 4,401175,7,Active,2022-11-15
+519,CUST00519,Direct-to-Consumer Free State 6,E-Commerce,Direct-to-Consumer,Free State,Free State,Free State City 4,472854,7,Active,2022-03-18
+520,CUST00520,Marketplace Free State 7,E-Commerce,Marketplace,Free State,Free State,Free State City 5,186953,14,Inactive,2022-06-11
+521,CUST00521,Direct-to-Consumer Free State 8,E-Commerce,Direct-to-Consumer,Free State,Free State,Free State City 3,452946,30,Inactive,2022-11-14
+522,CUST00522,Direct-to-Consumer Free State 9,E-Commerce,Direct-to-Consumer,Free State,Free State,Free State City 3,328983,14,Active,2022-07-25
+523,CUST00523,Direct-to-Consumer Free State 10,E-Commerce,Direct-to-Consumer,Free State,Free State,Free State City 3,198748,45,Inactive,2022-07-01
+524,CUST00524,Direct-to-Consumer Free State 11,E-Commerce,Direct-to-Consumer,Free State,Free State,Free State City 1,159150,7,Active,2022-05-01
+525,CUST00525,Marketplace Free State 12,E-Commerce,Marketplace,Free State,Free State,Free State City 2,122629,30,Active,2022-12-27
+526,CUST00526,Marketplace Free State 13,E-Commerce,Marketplace,Free State,Free State,Free State City 5,278053,14,Active,2022-01-15
+527,CUST00527,Marketplace Free State 14,E-Commerce,Marketplace,Free State,Free State,Free State City 2,82565,30,Active,2022-10-08
+528,CUST00528,Online Retailer Free State 15,E-Commerce,Online Retailer,Free State,Free State,Free State City 3,435236,30,Active,2022-10-13
+529,CUST00529,Direct-to-Consumer Free State 16,E-Commerce,Direct-to-Consumer,Free State,Free State,Free State City 2,394966,7,Active,2022-08-06
+530,CUST00530,Marketplace Free State 17,E-Commerce,Marketplace,Free State,Free State,Free State City 5,439662,7,Active,2022-01-24
+531,CUST00531,Direct-to-Consumer Free State 18,E-Commerce,Direct-to-Consumer,Free State,Free State,Free State City 4,51144,7,Active,2022-06-27
+532,CUST00532,Marketplace Free State 19,E-Commerce,Marketplace,Free State,Free State,Free State City 4,497716,7,Active,2022-12-21
+533,CUST00533,Direct-to-Consumer Free State 20,E-Commerce,Direct-to-Consumer,Free State,Free State,Free State City 1,342339,45,Active,2022-05-17
+534,CUST00534,Online Retailer Free State 21,E-Commerce,Online Retailer,Free State,Free State,Free State City 3,293078,14,Active,2022-09-23
+535,CUST00535,Online Retailer Free State 22,E-Commerce,Online Retailer,Free State,Free State,Free State City 2,36486,45,Inactive,2022-10-19
+536,CUST00536,Direct-to-Consumer Free State 23,E-Commerce,Direct-to-Consumer,Free State,Free State,Free State City 1,126436,45,Active,2022-07-05
+537,CUST00537,Online Retailer Free State 24,E-Commerce,Online Retailer,Free State,Free State,Free State City 3,53277,45,Active,2022-09-13
+538,CUST00538,Marketplace Free State 25,E-Commerce,Marketplace,Free State,Free State,Free State City 1,218942,45,Active,2022-03-16
+539,CUST00539,Direct-to-Consumer Free State 26,E-Commerce,Direct-to-Consumer,Free State,Free State,Free State City 2,265779,45,Active,2022-09-20
+540,CUST00540,Direct-to-Consumer Free State 27,E-Commerce,Direct-to-Consumer,Free State,Free State,Free State City 5,139103,14,Active,2022-05-25
+541,CUST00541,Marketplace Free State 28,E-Commerce,Marketplace,Free State,Free State,Free State City 3,368999,7,Active,2022-11-14
+542,CUST00542,Marketplace Free State 29,E-Commerce,Marketplace,Free State,Free State,Free State City 3,192613,14,Active,2022-06-20
+543,CUST00543,Direct-to-Consumer Free State 30,E-Commerce,Direct-to-Consumer,Free State,Free State,Free State City 1,413534,30,Active,2022-06-20
+544,CUST00544,Convenience Store North West 1,Retail,Convenience Store,North West,North West,North West City 4,33528,14,Active,2022-11-12
+545,CUST00545,Convenience Store North West 2,Retail,Convenience Store,North West,North West,North West City 1,68915,7,Active,2022-10-05
+546,CUST00546,Bottle Store North West 3,Retail,Bottle Store,North West,North West,North West City 1,189973,7,Active,2022-08-16
+547,CUST00547,Supermarket North West 4,Retail,Supermarket,North West,North West,North West City 3,119581,14,Active,2022-09-17
+548,CUST00548,Bottle Store North West 5,Retail,Bottle Store,North West,North West,North West City 5,263244,14,Active,2022-07-19
+549,CUST00549,Supermarket North West 6,Retail,Supermarket,North West,North West,North West City 3,99296,7,Active,2022-04-26
+550,CUST00550,Bottle Store North West 7,Retail,Bottle Store,North West,North West,North West City 1,253773,7,Active,2022-07-22
+551,CUST00551,Bottle Store North West 8,Retail,Bottle Store,North West,North West,North West City 3,463132,7,Active,2022-05-28
+552,CUST00552,Hypermarket North West 9,Retail,Hypermarket,North West,North West,North West City 2,209597,7,Active,2022-08-28
+553,CUST00553,Supermarket North West 10,Retail,Supermarket,North West,North West,North West City 2,114267,45,Active,2022-01-08
+554,CUST00554,Bottle Store North West 11,Retail,Bottle Store,North West,North West,North West City 3,266865,45,Active,2022-01-12
+555,CUST00555,Bottle Store North West 12,Retail,Bottle Store,North West,North West,North West City 3,337801,30,Active,2022-09-09
+556,CUST00556,Supermarket North West 13,Retail,Supermarket,North West,North West,North West City 3,470679,45,Active,2022-09-09
+557,CUST00557,Convenience Store North West 14,Retail,Convenience Store,North West,North West,North West City 2,189194,45,Active,2022-02-24
+558,CUST00558,Hypermarket North West 15,Retail,Hypermarket,North West,North West,North West City 5,365464,14,Inactive,2022-04-19
+559,CUST00559,Convenience Store North West 16,Retail,Convenience Store,North West,North West,North West City 4,173778,30,Inactive,2022-09-05
+560,CUST00560,Convenience Store North West 17,Retail,Convenience Store,North West,North West,North West City 2,314627,14,Active,2022-05-23
+561,CUST00561,Convenience Store North West 18,Retail,Convenience Store,North West,North West,North West City 4,486578,14,Active,2022-06-03
+562,CUST00562,Supermarket North West 19,Retail,Supermarket,North West,North West,North West City 2,176512,14,Active,2022-06-14
+563,CUST00563,Hypermarket North West 20,Retail,Hypermarket,North West,North West,North West City 3,242261,30,Active,2022-04-04
+564,CUST00564,Convenience Store North West 21,Retail,Convenience Store,North West,North West,North West City 2,23735,30,Active,2022-10-08
+565,CUST00565,Convenience Store North West 22,Retail,Convenience Store,North West,North West,North West City 1,198356,7,Inactive,2022-03-17
+566,CUST00566,Hypermarket North West 23,Retail,Hypermarket,North West,North West,North West City 3,106456,45,Inactive,2022-08-05
+567,CUST00567,Convenience Store North West 24,Retail,Convenience Store,North West,North West,North West City 2,128632,7,Inactive,2022-01-09
+568,CUST00568,Cash & Carry North West 1,Wholesale,Cash & Carry,North West,North West,North West City 2,407293,14,Active,2022-03-15
+569,CUST00569,Wholesaler North West 2,Wholesale,Wholesaler,North West,North West,North West City 4,370638,30,Inactive,2022-04-14
+570,CUST00570,Distributor North West 3,Wholesale,Distributor,North West,North West,North West City 1,328730,45,Active,2022-07-20
+571,CUST00571,Wholesaler North West 4,Wholesale,Wholesaler,North West,North West,North West City 5,321325,7,Active,2022-08-15
+572,CUST00572,Cash & Carry North West 5,Wholesale,Cash & Carry,North West,North West,North West City 2,281949,45,Active,2022-09-13
+573,CUST00573,Wholesaler North West 6,Wholesale,Wholesaler,North West,North West,North West City 1,109536,30,Inactive,2022-07-10
+574,CUST00574,Distributor North West 7,Wholesale,Distributor,North West,North West,North West City 4,97286,45,Active,2022-10-02
+575,CUST00575,Wholesaler North West 8,Wholesale,Wholesaler,North West,North West,North West City 5,483786,14,Inactive,2022-11-15
+576,CUST00576,Cash & Carry North West 9,Wholesale,Cash & Carry,North West,North West,North West City 5,69334,14,Active,2022-07-14
+577,CUST00577,Distributor North West 10,Wholesale,Distributor,North West,North West,North West City 4,23061,14,Inactive,2022-10-23
+578,CUST00578,Cash & Carry North West 11,Wholesale,Cash & Carry,North West,North West,North West City 4,57280,30,Active,2022-12-21
+579,CUST00579,Wholesaler North West 12,Wholesale,Wholesaler,North West,North West,North West City 2,386635,7,Active,2022-02-23
+580,CUST00580,Distributor North West 13,Wholesale,Distributor,North West,North West,North West City 3,54725,45,Active,2022-07-18
+581,CUST00581,Distributor North West 14,Wholesale,Distributor,North West,North West,North West City 1,412789,14,Active,2022-10-28
+582,CUST00582,Wholesaler North West 15,Wholesale,Wholesaler,North West,North West,North West City 2,94999,14,Active,2022-12-02
+583,CUST00583,Distributor North West 16,Wholesale,Distributor,North West,North West,North West City 3,172276,45,Active,2022-11-06
+584,CUST00584,Cash & Carry North West 17,Wholesale,Cash & Carry,North West,North West,North West City 2,116352,7,Active,2022-01-15
+585,CUST00585,Distributor North West 18,Wholesale,Distributor,North West,North West,North West City 4,294951,7,Inactive,2022-04-07
+586,CUST00586,Wholesaler North West 19,Wholesale,Wholesaler,North West,North West,North West City 4,247889,45,Inactive,2022-02-20
+587,CUST00587,Wholesaler North West 20,Wholesale,Wholesaler,North West,North West,North West City 1,138300,30,Active,2022-01-06
+588,CUST00588,Cash & Carry North West 21,Wholesale,Cash & Carry,North West,North West,North West City 1,352505,30,Active,2022-03-28
+589,CUST00589,Cash & Carry North West 22,Wholesale,Cash & Carry,North West,North West,North West City 5,449360,30,Active,2022-02-02
+590,CUST00590,Cash & Carry North West 23,Wholesale,Cash & Carry,North West,North West,North West City 4,103453,14,Active,2022-10-22
+591,CUST00591,Bar North West 1,On-Trade,Bar,North West,North West,North West City 4,402867,30,Active,2022-02-25
+592,CUST00592,Hotel North West 2,On-Trade,Hotel,North West,North West,North West City 3,203236,45,Active,2022-07-27
+593,CUST00593,Restaurant North West 3,On-Trade,Restaurant,North West,North West,North West City 3,256843,14,Active,2022-12-28
+594,CUST00594,Hotel North West 4,On-Trade,Hotel,North West,North West,North West City 3,286327,45,Active,2022-12-07
+595,CUST00595,Restaurant North West 5,On-Trade,Restaurant,North West,North West,North West City 1,309560,7,Inactive,2022-12-23
+596,CUST00596,Hotel North West 6,On-Trade,Hotel,North West,North West,North West City 4,329209,30,Active,2022-09-19
+597,CUST00597,Hotel North West 7,On-Trade,Hotel,North West,North West,North West City 2,332064,45,Inactive,2022-08-26
+598,CUST00598,Bar North West 8,On-Trade,Bar,North West,North West,North West City 5,132013,30,Active,2022-01-04
+599,CUST00599,Restaurant North West 9,On-Trade,Restaurant,North West,North West,North West City 4,337921,7,Active,2022-10-14
+600,CUST00600,Club North West 10,On-Trade,Club,North West,North West,North West City 1,185003,30,Active,2022-01-21
+601,CUST00601,Bar North West 11,On-Trade,Bar,North West,North West,North West City 3,143388,7,Active,2022-05-17
+602,CUST00602,Hotel North West 12,On-Trade,Hotel,North West,North West,North West City 1,69683,30,Active,2022-07-24
+603,CUST00603,Restaurant North West 13,On-Trade,Restaurant,North West,North West,North West City 2,111720,30,Active,2022-11-16
+604,CUST00604,Club North West 14,On-Trade,Club,North West,North West,North West City 1,348507,14,Inactive,2022-03-21
+605,CUST00605,Club North West 15,On-Trade,Club,North West,North West,North West City 5,479724,30,Inactive,2022-07-24
+606,CUST00606,Restaurant North West 16,On-Trade,Restaurant,North West,North West,North West City 5,166942,30,Active,2022-04-19
+607,CUST00607,Hotel North West 17,On-Trade,Hotel,North West,North West,North West City 3,44714,14,Active,2022-01-11
+608,CUST00608,Club North West 18,On-Trade,Club,North West,North West,North West City 5,451663,14,Inactive,2022-03-20
+609,CUST00609,Restaurant North West 19,On-Trade,Restaurant,North West,North West,North West City 3,379762,30,Active,2022-05-14
+610,CUST00610,Restaurant North West 20,On-Trade,Restaurant,North West,North West,North West City 4,469826,14,Active,2022-08-27
+611,CUST00611,Hotel North West 21,On-Trade,Hotel,North West,North West,North West City 2,285303,30,Active,2022-02-12
+612,CUST00612,Restaurant North West 22,On-Trade,Restaurant,North West,North West,North West City 2,488860,7,Inactive,2022-09-01
+613,CUST00613,Club North West 23,On-Trade,Club,North West,North West,North West City 5,90781,14,Active,2022-08-24
+614,CUST00614,Hotel North West 24,On-Trade,Hotel,North West,North West,North West City 3,85127,7,Active,2022-04-24
+615,CUST00615,Restaurant North West 25,On-Trade,Restaurant,North West,North West,North West City 4,213207,7,Active,2022-05-02
+616,CUST00616,Restaurant North West 26,On-Trade,Restaurant,North West,North West,North West City 3,254777,7,Active,2022-09-25
+617,CUST00617,Hotel North West 27,On-Trade,Hotel,North West,North West,North West City 1,312807,30,Active,2022-06-07
+618,CUST00618,Bar North West 28,On-Trade,Bar,North West,North West,North West City 3,155044,30,Inactive,2022-11-04
+619,CUST00619,Hotel North West 29,On-Trade,Hotel,North West,North West,North West City 2,92573,30,Active,2022-01-20
+620,CUST00620,Direct-to-Consumer North West 1,E-Commerce,Direct-to-Consumer,North West,North West,North West City 1,118306,30,Active,2022-05-05
+621,CUST00621,Direct-to-Consumer North West 2,E-Commerce,Direct-to-Consumer,North West,North West,North West City 3,310984,14,Active,2022-02-10
+622,CUST00622,Direct-to-Consumer North West 3,E-Commerce,Direct-to-Consumer,North West,North West,North West City 3,293418,45,Active,2022-03-01
+623,CUST00623,Marketplace North West 4,E-Commerce,Marketplace,North West,North West,North West City 1,65536,45,Active,2022-02-14
+624,CUST00624,Marketplace North West 5,E-Commerce,Marketplace,North West,North West,North West City 2,379454,45,Active,2022-05-11
+625,CUST00625,Online Retailer North West 6,E-Commerce,Online Retailer,North West,North West,North West City 5,51180,45,Active,2022-02-27
+626,CUST00626,Direct-to-Consumer North West 7,E-Commerce,Direct-to-Consumer,North West,North West,North West City 4,60993,45,Active,2022-11-21
+627,CUST00627,Direct-to-Consumer North West 8,E-Commerce,Direct-to-Consumer,North West,North West,North West City 4,256701,14,Active,2022-03-28
+628,CUST00628,Direct-to-Consumer North West 9,E-Commerce,Direct-to-Consumer,North West,North West,North West City 3,488602,30,Inactive,2022-03-23
+629,CUST00629,Direct-to-Consumer North West 10,E-Commerce,Direct-to-Consumer,North West,North West,North West City 3,423547,30,Inactive,2022-08-01
+630,CUST00630,Online Retailer North West 11,E-Commerce,Online Retailer,North West,North West,North West City 4,69185,30,Inactive,2022-08-28
+631,CUST00631,Online Retailer North West 12,E-Commerce,Online Retailer,North West,North West,North West City 3,412622,30,Active,2022-09-04
+632,CUST00632,Marketplace North West 13,E-Commerce,Marketplace,North West,North West,North West City 1,180849,7,Active,2022-09-15
+633,CUST00633,Marketplace North West 14,E-Commerce,Marketplace,North West,North West,North West City 5,226762,14,Active,2022-09-06
+634,CUST00634,Marketplace North West 15,E-Commerce,Marketplace,North West,North West,North West City 4,44634,30,Active,2022-12-19
+635,CUST00635,Marketplace North West 16,E-Commerce,Marketplace,North West,North West,North West City 4,307382,30,Active,2022-03-22
+636,CUST00636,Direct-to-Consumer North West 17,E-Commerce,Direct-to-Consumer,North West,North West,North West City 1,397641,45,Active,2022-10-20
+637,CUST00637,Marketplace North West 18,E-Commerce,Marketplace,North West,North West,North West City 3,301025,7,Inactive,2022-03-10
+638,CUST00638,Marketplace North West 19,E-Commerce,Marketplace,North West,North West,North West City 1,323660,7,Inactive,2022-06-16
+639,CUST00639,Direct-to-Consumer North West 20,E-Commerce,Direct-to-Consumer,North West,North West,North West City 1,57465,14,Active,2022-10-25
+640,CUST00640,Direct-to-Consumer North West 21,E-Commerce,Direct-to-Consumer,North West,North West,North West City 1,406926,14,Active,2022-08-18
+641,CUST00641,Marketplace North West 22,E-Commerce,Marketplace,North West,North West,North West City 4,332737,45,Active,2022-04-22
+642,CUST00642,Marketplace North West 23,E-Commerce,Marketplace,North West,North West,North West City 3,308989,30,Inactive,2022-12-12
+643,CUST00643,Online Retailer North West 24,E-Commerce,Online Retailer,North West,North West,North West City 5,14256,45,Active,2022-05-02
+644,CUST00644,Marketplace North West 25,E-Commerce,Marketplace,North West,North West,North West City 5,37854,7,Active,2022-02-28
+645,CUST00645,Marketplace North West 26,E-Commerce,Marketplace,North West,North West,North West City 1,133334,45,Inactive,2022-11-11
+646,CUST00646,Direct-to-Consumer North West 27,E-Commerce,Direct-to-Consumer,North West,North West,North West City 4,222878,45,Inactive,2022-09-07
+647,CUST00647,Hypermarket Northern Cape 1,Retail,Hypermarket,Northern Cape,Northern Cape,Northern Cape City 2,108685,45,Active,2022-07-05
+648,CUST00648,Bottle Store Northern Cape 2,Retail,Bottle Store,Northern Cape,Northern Cape,Northern Cape City 2,80400,7,Active,2022-11-01
+649,CUST00649,Convenience Store Northern Cape 3,Retail,Convenience Store,Northern Cape,Northern Cape,Northern Cape City 4,354943,45,Active,2022-02-05
+650,CUST00650,Hypermarket Northern Cape 4,Retail,Hypermarket,Northern Cape,Northern Cape,Northern Cape City 4,478494,45,Active,2022-08-17
+651,CUST00651,Hypermarket Northern Cape 5,Retail,Hypermarket,Northern Cape,Northern Cape,Northern Cape City 5,439953,45,Inactive,2022-06-08
+652,CUST00652,Convenience Store Northern Cape 6,Retail,Convenience Store,Northern Cape,Northern Cape,Northern Cape City 4,326970,7,Inactive,2022-12-08
+653,CUST00653,Bottle Store Northern Cape 7,Retail,Bottle Store,Northern Cape,Northern Cape,Northern Cape City 4,495786,30,Active,2022-01-19
+654,CUST00654,Hypermarket Northern Cape 8,Retail,Hypermarket,Northern Cape,Northern Cape,Northern Cape City 3,69330,45,Active,2022-03-24
+655,CUST00655,Bottle Store Northern Cape 9,Retail,Bottle Store,Northern Cape,Northern Cape,Northern Cape City 4,281030,7,Active,2022-04-16
+656,CUST00656,Supermarket Northern Cape 10,Retail,Supermarket,Northern Cape,Northern Cape,Northern Cape City 5,428433,30,Active,2022-06-18
+657,CUST00657,Supermarket Northern Cape 11,Retail,Supermarket,Northern Cape,Northern Cape,Northern Cape City 4,248044,45,Active,2022-07-12
+658,CUST00658,Bottle Store Northern Cape 12,Retail,Bottle Store,Northern Cape,Northern Cape,Northern Cape City 3,97822,7,Active,2022-12-26
+659,CUST00659,Bottle Store Northern Cape 13,Retail,Bottle Store,Northern Cape,Northern Cape,Northern Cape City 1,339934,45,Active,2022-10-02
+660,CUST00660,Bottle Store Northern Cape 14,Retail,Bottle Store,Northern Cape,Northern Cape,Northern Cape City 5,24312,30,Inactive,2022-02-05
+661,CUST00661,Supermarket Northern Cape 15,Retail,Supermarket,Northern Cape,Northern Cape,Northern Cape City 3,142147,14,Active,2022-05-28
+662,CUST00662,Cash & Carry Northern Cape 1,Wholesale,Cash & Carry,Northern Cape,Northern Cape,Northern Cape City 1,326576,14,Active,2022-11-15
+663,CUST00663,Distributor Northern Cape 2,Wholesale,Distributor,Northern Cape,Northern Cape,Northern Cape City 2,146971,14,Inactive,2022-03-26
+664,CUST00664,Wholesaler Northern Cape 3,Wholesale,Wholesaler,Northern Cape,Northern Cape,Northern Cape City 1,189751,7,Active,2022-10-27
+665,CUST00665,Cash & Carry Northern Cape 4,Wholesale,Cash & Carry,Northern Cape,Northern Cape,Northern Cape City 4,404663,45,Inactive,2022-04-22
+666,CUST00666,Distributor Northern Cape 5,Wholesale,Distributor,Northern Cape,Northern Cape,Northern Cape City 2,120549,30,Active,2022-11-09
+667,CUST00667,Cash & Carry Northern Cape 6,Wholesale,Cash & Carry,Northern Cape,Northern Cape,Northern Cape City 1,97870,45,Inactive,2022-08-10
+668,CUST00668,Distributor Northern Cape 7,Wholesale,Distributor,Northern Cape,Northern Cape,Northern Cape City 5,132505,45,Inactive,2022-08-09
+669,CUST00669,Cash & Carry Northern Cape 8,Wholesale,Cash & Carry,Northern Cape,Northern Cape,Northern Cape City 5,466276,45,Active,2022-05-26
+670,CUST00670,Distributor Northern Cape 9,Wholesale,Distributor,Northern Cape,Northern Cape,Northern Cape City 4,365725,30,Active,2022-02-18
+671,CUST00671,Wholesaler Northern Cape 10,Wholesale,Wholesaler,Northern Cape,Northern Cape,Northern Cape City 3,452624,45,Active,2022-06-09
+672,CUST00672,Distributor Northern Cape 11,Wholesale,Distributor,Northern Cape,Northern Cape,Northern Cape City 1,143873,45,Inactive,2022-11-24
+673,CUST00673,Cash & Carry Northern Cape 12,Wholesale,Cash & Carry,Northern Cape,Northern Cape,Northern Cape City 5,413962,14,Active,2022-11-23
+674,CUST00674,Cash & Carry Northern Cape 13,Wholesale,Cash & Carry,Northern Cape,Northern Cape,Northern Cape City 3,297106,7,Active,2022-02-01
+675,CUST00675,Distributor Northern Cape 14,Wholesale,Distributor,Northern Cape,Northern Cape,Northern Cape City 1,285389,7,Inactive,2022-06-08
+676,CUST00676,Wholesaler Northern Cape 15,Wholesale,Wholesaler,Northern Cape,Northern Cape,Northern Cape City 3,142066,14,Active,2022-01-20
+677,CUST00677,Cash & Carry Northern Cape 16,Wholesale,Cash & Carry,Northern Cape,Northern Cape,Northern Cape City 1,321499,14,Active,2022-12-04
+678,CUST00678,Cash & Carry Northern Cape 17,Wholesale,Cash & Carry,Northern Cape,Northern Cape,Northern Cape City 5,78108,45,Active,2022-02-23
+679,CUST00679,Cash & Carry Northern Cape 18,Wholesale,Cash & Carry,Northern Cape,Northern Cape,Northern Cape City 3,164438,45,Active,2022-11-15
+680,CUST00680,Club Northern Cape 1,On-Trade,Club,Northern Cape,Northern Cape,Northern Cape City 3,144918,14,Active,2022-05-25
+681,CUST00681,Restaurant Northern Cape 2,On-Trade,Restaurant,Northern Cape,Northern Cape,Northern Cape City 4,213733,30,Active,2022-05-27
+682,CUST00682,Hotel Northern Cape 3,On-Trade,Hotel,Northern Cape,Northern Cape,Northern Cape City 2,240988,7,Inactive,2022-04-20
+683,CUST00683,Club Northern Cape 4,On-Trade,Club,Northern Cape,Northern Cape,Northern Cape City 2,348419,45,Active,2022-03-18
+684,CUST00684,Club Northern Cape 5,On-Trade,Club,Northern Cape,Northern Cape,Northern Cape City 2,331895,7,Inactive,2022-12-09
+685,CUST00685,Restaurant Northern Cape 6,On-Trade,Restaurant,Northern Cape,Northern Cape,Northern Cape City 1,48230,7,Active,2022-08-01
+686,CUST00686,Club Northern Cape 7,On-Trade,Club,Northern Cape,Northern Cape,Northern Cape City 2,352289,7,Active,2022-11-13
+687,CUST00687,Hotel Northern Cape 8,On-Trade,Hotel,Northern Cape,Northern Cape,Northern Cape City 2,377030,30,Inactive,2022-10-01
+688,CUST00688,Club Northern Cape 9,On-Trade,Club,Northern Cape,Northern Cape,Northern Cape City 4,238619,45,Active,2022-09-08
+689,CUST00689,Restaurant Northern Cape 10,On-Trade,Restaurant,Northern Cape,Northern Cape,Northern Cape City 4,371371,45,Active,2022-10-18
+690,CUST00690,Hotel Northern Cape 11,On-Trade,Hotel,Northern Cape,Northern Cape,Northern Cape City 3,367478,30,Inactive,2022-01-21
+691,CUST00691,Restaurant Northern Cape 12,On-Trade,Restaurant,Northern Cape,Northern Cape,Northern Cape City 3,290298,30,Active,2022-08-25
+692,CUST00692,Hotel Northern Cape 13,On-Trade,Hotel,Northern Cape,Northern Cape,Northern Cape City 2,102598,7,Inactive,2022-11-07
+693,CUST00693,Hotel Northern Cape 14,On-Trade,Hotel,Northern Cape,Northern Cape,Northern Cape City 4,480003,7,Active,2022-08-03
+694,CUST00694,Club Northern Cape 15,On-Trade,Club,Northern Cape,Northern Cape,Northern Cape City 2,83370,7,Active,2022-01-24
+695,CUST00695,Bar Northern Cape 16,On-Trade,Bar,Northern Cape,Northern Cape,Northern Cape City 4,213826,7,Active,2022-08-18
+696,CUST00696,Club Northern Cape 17,On-Trade,Club,Northern Cape,Northern Cape,Northern Cape City 1,29421,30,Active,2022-06-26
+697,CUST00697,Restaurant Northern Cape 18,On-Trade,Restaurant,Northern Cape,Northern Cape,Northern Cape City 4,71964,14,Inactive,2022-11-28
+698,CUST00698,Online Retailer Northern Cape 1,E-Commerce,Online Retailer,Northern Cape,Northern Cape,Northern Cape City 5,132151,7,Active,2022-12-05
+699,CUST00699,Marketplace Northern Cape 2,E-Commerce,Marketplace,Northern Cape,Northern Cape,Northern Cape City 1,257054,7,Active,2022-12-21
+700,CUST00700,Online Retailer Northern Cape 3,E-Commerce,Online Retailer,Northern Cape,Northern Cape,Northern Cape City 1,100308,7,Active,2022-02-15
+701,CUST00701,Direct-to-Consumer Northern Cape 4,E-Commerce,Direct-to-Consumer,Northern Cape,Northern Cape,Northern Cape City 2,447965,7,Active,2022-02-16
+702,CUST00702,Direct-to-Consumer Northern Cape 5,E-Commerce,Direct-to-Consumer,Northern Cape,Northern Cape,Northern Cape City 5,125643,7,Active,2022-07-11
+703,CUST00703,Direct-to-Consumer Northern Cape 6,E-Commerce,Direct-to-Consumer,Northern Cape,Northern Cape,Northern Cape City 4,179992,7,Active,2022-06-27
+704,CUST00704,Online Retailer Northern Cape 7,E-Commerce,Online Retailer,Northern Cape,Northern Cape,Northern Cape City 1,320947,14,Active,2022-02-04
+705,CUST00705,Marketplace Northern Cape 8,E-Commerce,Marketplace,Northern Cape,Northern Cape,Northern Cape City 2,407174,45,Active,2022-12-12
+706,CUST00706,Direct-to-Consumer Northern Cape 9,E-Commerce,Direct-to-Consumer,Northern Cape,Northern Cape,Northern Cape City 2,239984,14,Active,2022-03-04
+707,CUST00707,Direct-to-Consumer Northern Cape 10,E-Commerce,Direct-to-Consumer,Northern Cape,Northern Cape,Northern Cape City 5,207200,14,Active,2022-08-03
+708,CUST00708,Online Retailer Northern Cape 11,E-Commerce,Online Retailer,Northern Cape,Northern Cape,Northern Cape City 1,104064,7,Active,2022-07-23
+709,CUST00709,Marketplace Northern Cape 12,E-Commerce,Marketplace,Northern Cape,Northern Cape,Northern Cape City 2,118087,14,Active,2022-09-15
+710,CUST00710,Marketplace Northern Cape 13,E-Commerce,Marketplace,Northern Cape,Northern Cape,Northern Cape City 2,101513,7,Active,2022-12-16
+711,CUST00711,Direct-to-Consumer Northern Cape 14,E-Commerce,Direct-to-Consumer,Northern Cape,Northern Cape,Northern Cape City 1,338829,30,Active,2022-07-01
+712,CUST00712,Direct-to-Consumer Northern Cape 15,E-Commerce,Direct-to-Consumer,Northern Cape,Northern Cape,Northern Cape City 2,110612,7,Active,2022-10-12
+713,CUST00713,Direct-to-Consumer Northern Cape 16,E-Commerce,Direct-to-Consumer,Northern Cape,Northern Cape,Northern Cape City 5,124963,45,Active,2022-05-02
+714,CUST00714,Online Retailer Northern Cape 17,E-Commerce,Online Retailer,Northern Cape,Northern Cape,Northern Cape City 1,427654,14,Inactive,2022-08-06
+715,CUST00715,Online Retailer Northern Cape 18,E-Commerce,Online Retailer,Northern Cape,Northern Cape,Northern Cape City 1,38326,30,Active,2022-04-14
+716,CUST00716,Marketplace Northern Cape 19,E-Commerce,Marketplace,Northern Cape,Northern Cape,Northern Cape City 3,333390,45,Active,2022-02-24
+717,CUST00717,Online Retailer Northern Cape 20,E-Commerce,Online Retailer,Northern Cape,Northern Cape,Northern Cape City 5,102215,14,Active,2022-08-17
+718,CUST00718,Online Retailer Northern Cape 21,E-Commerce,Online Retailer,Northern Cape,Northern Cape,Northern Cape City 1,479279,14,Inactive,2022-10-19
+719,CUST00719,Marketplace Northern Cape 22,E-Commerce,Marketplace,Northern Cape,Northern Cape,Northern Cape City 4,114202,30,Active,2022-02-11
+720,CUST00720,Online Retailer Northern Cape 23,E-Commerce,Online Retailer,Northern Cape,Northern Cape,Northern Cape City 1,134318,45,Active,2022-07-08
+721,CUST00721,Online Retailer Northern Cape 24,E-Commerce,Online Retailer,Northern Cape,Northern Cape,Northern Cape City 4,316756,45,Active,2022-07-05
+722,CUST00722,Online Retailer Northern Cape 25,E-Commerce,Online Retailer,Northern Cape,Northern Cape,Northern Cape City 5,248546,14,Inactive,2022-06-05
+723,CUST00723,Marketplace Northern Cape 26,E-Commerce,Marketplace,Northern Cape,Northern Cape,Northern Cape City 2,341361,30,Active,2022-04-11
+724,CUST00724,Online Retailer Northern Cape 27,E-Commerce,Online Retailer,Northern Cape,Northern Cape,Northern Cape City 1,372917,7,Active,2022-03-04

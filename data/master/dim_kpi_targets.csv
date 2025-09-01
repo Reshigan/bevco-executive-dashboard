@@ -1,0 +1,13 @@
+KPIName,Target,Unit,Frequency
+Net Sales,150000000,ZAR,Monthly
+Gross Profit Margin,35,%,Monthly
+Operating Profit,30000000,ZAR,Monthly
+Net Profit,20000000,ZAR,Monthly
+Cash Flow,25000000,ZAR,Monthly
+Working Capital Days,45,Days,Monthly
+Market Share,25,%,Quarterly
+Customer Satisfaction,85,Score,Monthly
+Inventory Turnover,12,Times,Monthly
+OTIF Delivery,95,%,Weekly
+Employee Turnover,10,%,Quarterly
+Revenue per Employee,2000000,ZAR,Annual

@@ -1,0 +1,320 @@
+EmployeeKey,EmployeeCode,Name,Position,Department,ReportsTo,HireDate,Salary,EmploymentType
+1000,EMP1000,John Smith,CEO,Executive,,2020-01-15,,
+1001,EMP1001,Sarah Johnson,CFO,Finance,1000.0,2020-03-01,,
+1002,EMP1002,Michael Brown,Sales Director,Sales,1000.0,2020-02-01,,
+1003,EMP1003,Lisa Davis,Operations Director,Operations,1000.0,2020-04-01,,
+1004,EMP1004,Sarah Brown 1004,Sales Rep,Sales,1002.0,2021-06-08,107374.0,Full-time
+1005,EMP1005,Lisa Jones 1005,Sales Rep,Sales,1002.0,2021-10-18,90215.0,Full-time
+1006,EMP1006,Sarah Jones 1006,Sales Rep,Sales,1002.0,2023-04-19,154122.0,Contract
+1007,EMP1007,Mike Smith 1007,Sales Rep,Sales,1002.0,2023-12-28,94658.0,Full-time
+1008,EMP1008,Mike Brown 1008,Sales Rep,Sales,1002.0,2021-10-05,180392.0,Full-time
+1009,EMP1009,Sarah Smith 1009,Sales Rep,Sales,1002.0,2020-08-24,162177.0,Full-time
+1010,EMP1010,Sarah Jones 1010,Sales Rep,Sales,1002.0,2023-08-26,55689.0,Contract
+1011,EMP1011,Sarah Johnson 1011,Sales Rep,Sales,1002.0,2020-09-25,33256.0,Contract
+1012,EMP1012,Jane Johnson 1012,Sales Rep,Sales,1002.0,2022-05-08,199774.0,Full-time
+1013,EMP1013,John Brown 1013,Sales Rep,Sales,1002.0,2022-03-23,150398.0,Full-time
+1014,EMP1014,Sarah Brown 1014,Sales Rep,Sales,1002.0,2021-12-13,78482.0,Full-time
+1015,EMP1015,Lisa Brown 1015,Sales Rep,Sales,1002.0,2020-11-03,130893.0,Full-time
+1016,EMP1016,Tom Smith 1016,Sales Rep,Sales,1002.0,2022-07-25,100723.0,Full-time
+1017,EMP1017,Lisa Smith 1017,Sales Rep,Sales,1002.0,2022-12-02,164935.0,Full-time
+1018,EMP1018,John Smith 1018,Sales Rep,Sales,1002.0,2023-06-15,192302.0,Full-time
+1019,EMP1019,Mike Williams 1019,Sales Rep,Sales,1002.0,2021-11-18,47565.0,Full-time
+1020,EMP1020,Jane Williams 1020,Sales Rep,Sales,1002.0,2021-09-04,155434.0,Full-time
+1021,EMP1021,Lisa Johnson 1021,Sales Rep,Sales,1002.0,2022-06-09,162006.0,Contract
+1022,EMP1022,Mike Smith 1022,Sales Rep,Sales,1002.0,2020-06-12,148596.0,Contract
+1023,EMP1023,Sarah Davis 1023,Sales Manager,Sales,,2022-08-20,126507.0,Full-time
+1024,EMP1024,Jane Brown 1024,Sales Manager,Sales,1023.0,2020-02-13,76874.0,Full-time
+1025,EMP1025,John Smith 1025,Sales Manager,Sales,1023.0,2021-05-04,68785.0,Contract
+1026,EMP1026,Jane Johnson 1026,Sales Manager,Sales,1023.0,2020-05-14,171933.0,Full-time
+1027,EMP1027,Sarah Williams 1027,Sales Manager,Sales,1023.0,2023-08-24,199000.0,Full-time
+1028,EMP1028,Mike Johnson 1028,Sales Manager,Sales,1023.0,2020-01-28,90903.0,Full-time
+1029,EMP1029,Sarah Jones 1029,Sales Manager,Sales,1023.0,2022-11-21,115539.0,Contract
+1030,EMP1030,Tom Davis 1030,Sales Manager,Sales,1023.0,2023-08-10,178701.0,Full-time
+1031,EMP1031,Jane Williams 1031,Regional Sales Manager,Sales,1023.0,2021-08-12,105535.0,Full-time
+1032,EMP1032,Jane Williams 1032,Regional Sales Manager,Sales,1023.0,2022-08-06,192170.0,Full-time
+1033,EMP1033,Lisa Jones 1033,Regional Sales Manager,Sales,1023.0,2022-03-06,70235.0,Full-time
+1034,EMP1034,Jane Smith 1034,Regional Sales Manager,Sales,1023.0,2020-06-19,63154.0,Contract
+1035,EMP1035,Mike Williams 1035,Regional Sales Manager,Sales,1023.0,2021-04-18,39093.0,Full-time
+1036,EMP1036,Mike Johnson 1036,Regional Sales Manager,Sales,1023.0,2022-08-18,72623.0,Full-time
+1037,EMP1037,John Smith 1037,Regional Sales Manager,Sales,1023.0,2023-08-25,68111.0,Contract
+1038,EMP1038,Mike Johnson 1038,Regional Sales Manager,Sales,1023.0,2020-12-18,163014.0,Full-time
+1039,EMP1039,Lisa Davis 1039,Regional Sales Manager,Sales,1023.0,2022-08-10,180399.0,Full-time
+1040,EMP1040,Tom Davis 1040,Regional Sales Manager,Sales,1023.0,2023-06-23,59442.0,Contract
+1041,EMP1041,John Johnson 1041,Regional Sales Manager,Sales,1023.0,2020-05-01,135284.0,Full-time
+1042,EMP1042,Sarah Williams 1042,Regional Sales Manager,Sales,1023.0,2020-06-02,189423.0,Full-time
+1043,EMP1043,Tom Jones 1043,Regional Sales Manager,Sales,1023.0,2021-05-07,35910.0,Full-time
+1044,EMP1044,Tom Brown 1044,Regional Sales Manager,Sales,1023.0,2020-09-13,80973.0,Contract
+1045,EMP1045,Tom Jones 1045,Operations Analyst,Operations,1003.0,2020-11-12,134217.0,Full-time
+1046,EMP1046,Lisa Brown 1046,Operations Analyst,Operations,1003.0,2022-07-12,33195.0,Full-time
+1047,EMP1047,Mike Williams 1047,Operations Analyst,Operations,1003.0,2022-08-28,177071.0,Full-time
+1048,EMP1048,Jane Davis 1048,Operations Analyst,Operations,1003.0,2023-12-14,145999.0,Full-time
+1049,EMP1049,Jane Davis 1049,Operations Analyst,Operations,1003.0,2023-12-14,66586.0,Full-time
+1050,EMP1050,Jane Johnson 1050,Operations Analyst,Operations,1003.0,2022-08-28,167704.0,Full-time
+1051,EMP1051,John Jones 1051,Operations Analyst,Operations,1003.0,2023-02-01,137337.0,Full-time
+1052,EMP1052,Sarah Johnson 1052,Operations Analyst,Operations,1003.0,2023-12-19,65894.0,Full-time
+1053,EMP1053,Jane Brown 1053,Operations Analyst,Operations,1003.0,2022-09-16,41071.0,Full-time
+1054,EMP1054,Tom Williams 1054,Operations Analyst,Operations,1003.0,2023-09-24,151491.0,Full-time
+1055,EMP1055,John Smith 1055,Operations Analyst,Operations,1003.0,2021-05-10,197917.0,Contract
+1056,EMP1056,John Davis 1056,Operations Analyst,Operations,1003.0,2022-07-06,158945.0,Full-time
+1057,EMP1057,John Smith 1057,Operations Analyst,Operations,1003.0,2022-08-03,186995.0,Full-time
+1058,EMP1058,Tom Brown 1058,Operations Analyst,Operations,1003.0,2023-05-21,154791.0,Full-time
+1059,EMP1059,Mike Jones 1059,Operations Analyst,Operations,1003.0,2020-05-06,182477.0,Full-time
+1060,EMP1060,Mike Brown 1060,Operations Manager,Operations,,2021-06-06,43864.0,Full-time
+1061,EMP1061,Mike Brown 1061,Operations Manager,Operations,1060.0,2022-01-10,106457.0,Full-time
+1062,EMP1062,Tom Johnson 1062,Operations Manager,Operations,1060.0,2021-02-20,73813.0,Full-time
+1063,EMP1063,Mike Davis 1063,Operations Manager,Operations,1060.0,2022-05-22,125033.0,Full-time
+1064,EMP1064,Tom Jones 1064,Operations Manager,Operations,1060.0,2022-03-01,65900.0,Full-time
+1065,EMP1065,Mike Brown 1065,Operations Manager,Operations,1060.0,2023-06-06,56848.0,Full-time
+1066,EMP1066,Jane Jones 1066,Operations Manager,Operations,1060.0,2021-04-26,176448.0,Full-time
+1067,EMP1067,Sarah Brown 1067,Operations Manager,Operations,1060.0,2020-02-27,64401.0,Full-time
+1068,EMP1068,Sarah Williams 1068,Operations Manager,Operations,1060.0,2022-12-12,66441.0,Contract
+1069,EMP1069,Jane Davis 1069,Financial Analyst,Finance,,2022-01-24,61089.0,Full-time
+1070,EMP1070,Jane Davis 1070,Financial Analyst,Finance,,2021-12-08,110590.0,Full-time
+1071,EMP1071,Jane Johnson 1071,Financial Analyst,Finance,,2020-07-23,59287.0,Full-time
+1072,EMP1072,John Brown 1072,Financial Analyst,Finance,,2023-01-07,58263.0,Full-time
+1073,EMP1073,Lisa Jones 1073,Financial Analyst,Finance,,2020-08-04,96325.0,Full-time
+1074,EMP1074,John Williams 1074,Financial Analyst,Finance,,2020-02-26,62451.0,Full-time
+1075,EMP1075,Tom Johnson 1075,Financial Analyst,Finance,,2021-11-12,37670.0,Full-time
+1076,EMP1076,Jane Davis 1076,Financial Analyst,Finance,,2022-10-12,122327.0,Full-time
+1077,EMP1077,Tom Davis 1077,Financial Analyst,Finance,,2021-09-19,47914.0,Full-time
+1078,EMP1078,Tom Smith 1078,Financial Analyst,Finance,,2021-12-07,103887.0,Full-time
+1079,EMP1079,Tom Smith 1079,Financial Analyst,Finance,,2020-04-17,154443.0,Full-time
+1080,EMP1080,Lisa Jones 1080,Financial Analyst,Finance,,2021-08-22,58134.0,Full-time
+1081,EMP1081,Mike Brown 1081,Financial Analyst,Finance,,2023-04-17,89651.0,Contract
+1082,EMP1082,John Williams 1082,Financial Analyst,Finance,,2020-08-04,166243.0,Full-time
+1083,EMP1083,Sarah Williams 1083,Financial Analyst,Finance,,2022-09-24,40645.0,Full-time
+1084,EMP1084,Sarah Smith 1084,Accountant,Finance,,2023-05-15,187388.0,Full-time
+1085,EMP1085,Lisa Brown 1085,Accountant,Finance,,2021-09-14,106176.0,Contract
+1086,EMP1086,Jane Smith 1086,Accountant,Finance,,2023-11-12,77001.0,Full-time
+1087,EMP1087,Lisa Brown 1087,Accountant,Finance,,2020-07-15,167012.0,Full-time
+1088,EMP1088,John Johnson 1088,Accountant,Finance,,2023-07-23,184811.0,Full-time
+1089,EMP1089,Lisa Johnson 1089,Accountant,Finance,,2020-06-07,118770.0,Full-time
+1090,EMP1090,Tom Brown 1090,Accountant,Finance,,2020-04-27,141333.0,Contract
+1091,EMP1091,Mike Davis 1091,Accountant,Finance,,2022-11-13,123348.0,Contract
+1092,EMP1092,Lisa Jones 1092,Accountant,Finance,,2023-08-17,103109.0,Full-time
+1093,EMP1093,Sarah Smith 1093,Accountant,Finance,,2020-05-16,160357.0,Full-time
+1094,EMP1094,Lisa Johnson 1094,Accountant,Finance,,2020-02-24,43854.0,Full-time
+1095,EMP1095,Sarah Davis 1095,Accountant,Finance,,2020-03-13,188488.0,Full-time
+1096,EMP1096,Jane Williams 1096,Accountant,Finance,,2020-02-22,166301.0,Contract
+1097,EMP1097,Sarah Johnson 1097,Accountant,Finance,,2022-11-16,158516.0,Full-time
+1098,EMP1098,Tom Williams 1098,Accountant,Finance,,2020-01-14,61230.0,Contract
+1099,EMP1099,Mike Brown 1099,Finance Manager,Finance,,2023-08-02,38613.0,Full-time
+1100,EMP1100,Tom Davis 1100,Finance Manager,Finance,1099.0,2022-12-06,158838.0,Contract
+1101,EMP1101,Jane Williams 1101,Finance Manager,Finance,1099.0,2023-08-25,58673.0,Contract
+1102,EMP1102,Lisa Jones 1102,Finance Manager,Finance,1099.0,2023-08-18,70975.0,Full-time
+1103,EMP1103,Sarah Williams 1103,Finance Manager,Finance,1099.0,2023-10-13,191727.0,Full-time
+1104,EMP1104,Mike Williams 1104,Finance Manager,Finance,1099.0,2020-01-19,41827.0,Full-time
+1105,EMP1105,Mike Williams 1105,Finance Manager,Finance,1099.0,2020-11-11,129765.0,Full-time
+1106,EMP1106,Sarah Williams 1106,Finance Manager,Finance,1099.0,2022-07-12,44797.0,Full-time
+1107,EMP1107,Jane Johnson 1107,Finance Manager,Finance,1099.0,2022-10-03,47170.0,Full-time
+1108,EMP1108,John Williams 1108,Finance Manager,Finance,1099.0,2021-01-18,115489.0,Full-time
+1109,EMP1109,Sarah Davis 1109,Finance Manager,Finance,1099.0,2023-10-17,140407.0,Full-time
+1110,EMP1110,John Davis 1110,Finance Manager,Finance,1099.0,2023-10-01,112972.0,Contract
+1111,EMP1111,Tom Brown 1111,Finance Manager,Finance,1099.0,2022-10-04,158020.0,Full-time
+1112,EMP1112,Lisa Davis 1112,Finance Manager,Finance,1099.0,2021-06-16,161797.0,Full-time
+1113,EMP1113,Jane Jones 1113,Finance Manager,Finance,1099.0,2022-06-14,82889.0,Contract
+1114,EMP1114,Lisa Smith 1114,Finance Manager,Finance,1099.0,2021-05-09,42460.0,Full-time
+1115,EMP1115,Tom Brown 1115,Finance Manager,Finance,1099.0,2021-10-24,54106.0,Full-time
+1116,EMP1116,Tom Williams 1116,Finance Manager,Finance,1099.0,2022-02-19,169215.0,Contract
+1117,EMP1117,Sarah Johnson 1117,Finance Manager,Finance,1099.0,2022-02-21,109127.0,Full-time
+1118,EMP1118,Lisa Jones 1118,Marketing Coordinator,Marketing,,2022-04-14,135460.0,Full-time
+1119,EMP1119,Tom Jones 1119,Marketing Coordinator,Marketing,,2023-11-25,173540.0,Full-time
+1120,EMP1120,John Davis 1120,Marketing Coordinator,Marketing,,2021-10-16,85824.0,Contract
+1121,EMP1121,Mike Davis 1121,Marketing Coordinator,Marketing,,2023-10-24,194300.0,Full-time
+1122,EMP1122,Tom Johnson 1122,Marketing Coordinator,Marketing,,2022-08-05,93012.0,Full-time
+1123,EMP1123,Lisa Davis 1123,Marketing Coordinator,Marketing,,2022-07-14,113533.0,Full-time
+1124,EMP1124,Lisa Johnson 1124,Marketing Coordinator,Marketing,,2023-05-27,105247.0,Full-time
+1125,EMP1125,Mike Davis 1125,Marketing Coordinator,Marketing,,2021-07-08,59768.0,Full-time
+1126,EMP1126,Jane Smith 1126,Marketing Coordinator,Marketing,,2021-05-15,157240.0,Contract
+1127,EMP1127,Sarah Davis 1127,Marketing Coordinator,Marketing,,2020-04-06,101489.0,Full-time
+1128,EMP1128,John Williams 1128,Marketing Coordinator,Marketing,,2022-11-18,76133.0,Full-time
+1129,EMP1129,Lisa Brown 1129,Marketing Coordinator,Marketing,,2020-01-28,52001.0,Full-time
+1130,EMP1130,Tom Williams 1130,Marketing Coordinator,Marketing,,2020-07-12,53673.0,Contract
+1131,EMP1131,Lisa Johnson 1131,Marketing Coordinator,Marketing,,2021-02-19,161137.0,Full-time
+1132,EMP1132,Tom Davis 1132,Marketing Coordinator,Marketing,,2022-08-03,92410.0,Full-time
+1133,EMP1133,Mike Williams 1133,Marketing Coordinator,Marketing,,2023-12-24,91849.0,Contract
+1134,EMP1134,Jane Johnson 1134,Marketing Coordinator,Marketing,,2020-03-07,101970.0,Contract
+1135,EMP1135,Sarah Williams 1135,Marketing Coordinator,Marketing,,2020-08-18,128226.0,Full-time
+1136,EMP1136,Tom Brown 1136,Brand Manager,Marketing,,2023-11-08,102806.0,Full-time
+1137,EMP1137,Mike Brown 1137,Brand Manager,Marketing,1136.0,2022-05-01,199187.0,Full-time
+1138,EMP1138,Lisa Davis 1138,Brand Manager,Marketing,1136.0,2020-12-26,92829.0,Full-time
+1139,EMP1139,Tom Brown 1139,Brand Manager,Marketing,1136.0,2022-11-23,125120.0,Full-time
+1140,EMP1140,Tom Johnson 1140,Brand Manager,Marketing,1136.0,2023-07-01,133016.0,Full-time
+1141,EMP1141,Mike Smith 1141,Brand Manager,Marketing,1136.0,2021-05-07,72002.0,Contract
+1142,EMP1142,Lisa Williams 1142,Brand Manager,Marketing,1136.0,2023-01-09,50996.0,Contract
+1143,EMP1143,Sarah Davis 1143,Brand Manager,Marketing,1136.0,2023-06-23,140720.0,Full-time
+1144,EMP1144,Jane Davis 1144,Brand Manager,Marketing,1136.0,2022-09-03,122237.0,Contract
+1145,EMP1145,Tom Davis 1145,Brand Manager,Marketing,1136.0,2022-08-23,37169.0,Full-time
+1146,EMP1146,Lisa Davis 1146,Brand Manager,Marketing,1136.0,2021-11-15,198060.0,Full-time
+1147,EMP1147,John Brown 1147,Brand Manager,Marketing,1136.0,2021-11-10,112240.0,Full-time
+1148,EMP1148,John Johnson 1148,Brand Manager,Marketing,1136.0,2021-09-23,64103.0,Contract
+1149,EMP1149,Mike Brown 1149,Brand Manager,Marketing,1136.0,2023-12-05,98335.0,Full-time
+1150,EMP1150,Lisa Jones 1150,Brand Manager,Marketing,1136.0,2022-05-07,52124.0,Contract
+1151,EMP1151,Jane Brown 1151,Marketing Director,Marketing,1136.0,2023-10-08,35435.0,Full-time
+1152,EMP1152,Tom Davis 1152,Marketing Director,Marketing,1136.0,2021-02-15,81974.0,Full-time
+1153,EMP1153,Lisa Johnson 1153,Marketing Director,Marketing,1136.0,2020-07-20,142434.0,Full-time
+1154,EMP1154,Jane Smith 1154,Marketing Director,Marketing,1136.0,2022-03-19,60762.0,Full-time
+1155,EMP1155,Lisa Jones 1155,Marketing Director,Marketing,1136.0,2023-08-27,159538.0,Full-time
+1156,EMP1156,Jane Davis 1156,Marketing Director,Marketing,1136.0,2021-04-28,99783.0,Full-time
+1157,EMP1157,Lisa Brown 1157,Marketing Director,Marketing,1136.0,2023-03-14,84160.0,Full-time
+1158,EMP1158,Mike Davis 1158,Marketing Director,Marketing,1136.0,2021-07-06,137092.0,Full-time
+1159,EMP1159,John Williams 1159,Marketing Director,Marketing,1136.0,2022-04-20,148220.0,Full-time
+1160,EMP1160,Mike Jones 1160,Marketing Director,Marketing,1136.0,2023-02-01,152914.0,Full-time
+1161,EMP1161,Mike Davis 1161,Marketing Director,Marketing,1136.0,2023-11-07,130531.0,Contract
+1162,EMP1162,Lisa Jones 1162,Marketing Director,Marketing,1136.0,2022-02-04,176014.0,Full-time
+1163,EMP1163,John Williams 1163,Marketing Director,Marketing,1136.0,2021-08-12,188957.0,Full-time
+1164,EMP1164,John Williams 1164,Marketing Director,Marketing,1136.0,2023-05-13,127229.0,Full-time
+1165,EMP1165,Tom Smith 1165,Marketing Director,Marketing,1136.0,2021-05-06,162054.0,Contract
+1166,EMP1166,Mike Brown 1166,Marketing Director,Marketing,1136.0,2021-02-11,169047.0,Contract
+1167,EMP1167,Mike Smith 1167,Developer,IT,,2022-01-05,160865.0,Full-time
+1168,EMP1168,Lisa Williams 1168,Developer,IT,,2023-05-09,190676.0,Full-time
+1169,EMP1169,Tom Williams 1169,Developer,IT,,2023-03-11,158784.0,Full-time
+1170,EMP1170,Tom Davis 1170,Developer,IT,,2023-01-07,68960.0,Full-time
+1171,EMP1171,Jane Johnson 1171,Developer,IT,,2020-08-09,72874.0,Contract
+1172,EMP1172,Sarah Smith 1172,Developer,IT,,2023-01-15,123459.0,Contract
+1173,EMP1173,Sarah Brown 1173,Developer,IT,,2020-12-28,68811.0,Full-time
+1174,EMP1174,Mike Smith 1174,Developer,IT,,2021-05-06,74117.0,Full-time
+1175,EMP1175,Tom Davis 1175,Developer,IT,,2021-10-01,167891.0,Full-time
+1176,EMP1176,John Johnson 1176,System Administrator,IT,,2023-11-04,116155.0,Full-time
+1177,EMP1177,Mike Davis 1177,System Administrator,IT,,2020-07-12,184753.0,Full-time
+1178,EMP1178,Mike Johnson 1178,System Administrator,IT,,2020-02-15,155791.0,Contract
+1179,EMP1179,Lisa Williams 1179,System Administrator,IT,,2020-06-02,193149.0,Contract
+1180,EMP1180,Mike Davis 1180,System Administrator,IT,,2021-04-28,42761.0,Full-time
+1181,EMP1181,Mike Smith 1181,System Administrator,IT,,2020-09-20,129979.0,Full-time
+1182,EMP1182,Sarah Williams 1182,System Administrator,IT,,2021-04-25,134573.0,Full-time
+1183,EMP1183,John Johnson 1183,System Administrator,IT,,2021-07-25,135485.0,Full-time
+1184,EMP1184,Lisa Davis 1184,System Administrator,IT,,2021-02-10,158672.0,Contract
+1185,EMP1185,Lisa Williams 1185,System Administrator,IT,,2021-06-22,55195.0,Full-time
+1186,EMP1186,Tom Johnson 1186,System Administrator,IT,,2023-08-13,154895.0,Full-time
+1187,EMP1187,Tom Jones 1187,System Administrator,IT,,2023-02-25,140765.0,Full-time
+1188,EMP1188,Tom Johnson 1188,System Administrator,IT,,2023-11-14,54365.0,Full-time
+1189,EMP1189,Tom Williams 1189,System Administrator,IT,,2023-11-08,199767.0,Full-time
+1190,EMP1190,Sarah Jones 1190,System Administrator,IT,,2020-05-15,144650.0,Full-time
+1191,EMP1191,Sarah Williams 1191,System Administrator,IT,,2021-03-22,108750.0,Full-time
+1192,EMP1192,Tom Brown 1192,System Administrator,IT,,2022-10-02,174439.0,Full-time
+1193,EMP1193,John Jones 1193,System Administrator,IT,,2020-09-14,138270.0,Full-time
+1194,EMP1194,Lisa Davis 1194,IT Manager,IT,,2022-06-09,183503.0,Full-time
+1195,EMP1195,Tom Smith 1195,IT Manager,IT,1194.0,2020-12-22,151340.0,Full-time
+1196,EMP1196,Jane Brown 1196,IT Manager,IT,1194.0,2020-02-14,108026.0,Full-time
+1197,EMP1197,Tom Davis 1197,IT Manager,IT,1194.0,2023-11-15,193528.0,Full-time
+1198,EMP1198,Mike Johnson 1198,IT Manager,IT,1194.0,2021-03-03,188348.0,Full-time
+1199,EMP1199,Lisa Smith 1199,IT Manager,IT,1194.0,2023-09-01,31532.0,Contract
+1200,EMP1200,John Smith 1200,IT Manager,IT,1194.0,2021-11-16,150628.0,Contract
+1201,EMP1201,Lisa Davis 1201,IT Manager,IT,1194.0,2023-05-20,191675.0,Full-time
+1202,EMP1202,Lisa Davis 1202,IT Manager,IT,1194.0,2023-05-03,62791.0,Full-time
+1203,EMP1203,John Johnson 1203,IT Manager,IT,1194.0,2020-01-23,79341.0,Full-time
+1204,EMP1204,Jane Brown 1204,IT Manager,IT,1194.0,2021-11-08,144239.0,Full-time
+1205,EMP1205,John Williams 1205,IT Manager,IT,1194.0,2023-03-16,140593.0,Full-time
+1206,EMP1206,John Johnson 1206,IT Manager,IT,1194.0,2021-12-23,146723.0,Contract
+1207,EMP1207,Sarah Smith 1207,IT Manager,IT,1194.0,2023-10-08,82779.0,Full-time
+1208,EMP1208,Tom Brown 1208,IT Manager,IT,1194.0,2020-06-01,56912.0,Contract
+1209,EMP1209,Sarah Brown 1209,IT Manager,IT,1194.0,2022-01-16,134773.0,Contract
+1210,EMP1210,Tom Jones 1210,IT Manager,IT,1194.0,2023-04-23,45913.0,Full-time
+1211,EMP1211,Sarah Jones 1211,IT Manager,IT,1194.0,2022-09-03,100214.0,Contract
+1212,EMP1212,Sarah Smith 1212,IT Manager,IT,1194.0,2023-10-21,120902.0,Contract
+1213,EMP1213,John Johnson 1213,CTO,IT,1194.0,2022-12-07,153008.0,Full-time
+1214,EMP1214,Sarah Johnson 1214,CTO,IT,1194.0,2021-10-22,118906.0,Contract
+1215,EMP1215,Jane Williams 1215,CTO,IT,1194.0,2023-07-27,124438.0,Contract
+1216,EMP1216,Jane Jones 1216,CTO,IT,1194.0,2021-05-23,52594.0,Contract
+1217,EMP1217,Jane Johnson 1217,CTO,IT,1194.0,2021-03-20,159023.0,Full-time
+1218,EMP1218,Sarah Brown 1218,CTO,IT,1194.0,2022-04-07,175969.0,Full-time
+1219,EMP1219,John Williams 1219,CTO,IT,1194.0,2022-06-22,71577.0,Full-time
+1220,EMP1220,Tom Smith 1220,CTO,IT,1194.0,2020-06-14,59876.0,Full-time
+1221,EMP1221,John Jones 1221,CTO,IT,1194.0,2021-08-09,119213.0,Full-time
+1222,EMP1222,John Jones 1222,CTO,IT,1194.0,2022-03-28,165105.0,Full-time
+1223,EMP1223,Lisa Smith 1223,CTO,IT,1194.0,2023-08-27,59079.0,Full-time
+1224,EMP1224,Tom Jones 1224,CTO,IT,1194.0,2020-09-02,162987.0,Full-time
+1225,EMP1225,Jane Davis 1225,CTO,IT,1194.0,2020-04-12,71165.0,Full-time
+1226,EMP1226,Lisa Brown 1226,CTO,IT,1194.0,2023-12-28,56029.0,Full-time
+1227,EMP1227,Lisa Williams 1227,CTO,IT,1194.0,2022-03-04,82924.0,Contract
+1228,EMP1228,Sarah Smith 1228,CTO,IT,1194.0,2021-08-11,105171.0,Full-time
+1229,EMP1229,John Williams 1229,CTO,IT,1194.0,2022-12-25,138792.0,Full-time
+1230,EMP1230,Lisa Davis 1230,CTO,IT,1194.0,2021-03-25,168844.0,Contract
+1231,EMP1231,Jane Brown 1231,HR Coordinator,HR,,2023-07-15,165307.0,Full-time
+1232,EMP1232,John Brown 1232,HR Coordinator,HR,,2021-01-23,165619.0,Full-time
+1233,EMP1233,John Williams 1233,HR Coordinator,HR,,2022-07-25,73076.0,Contract
+1234,EMP1234,John Brown 1234,HR Coordinator,HR,,2020-11-21,69571.0,Full-time
+1235,EMP1235,Lisa Davis 1235,HR Coordinator,HR,,2022-07-13,175125.0,Full-time
+1236,EMP1236,Lisa Davis 1236,HR Coordinator,HR,,2022-06-01,103342.0,Full-time
+1237,EMP1237,Lisa Brown 1237,HR Coordinator,HR,,2023-11-07,172717.0,Contract
+1238,EMP1238,Lisa Williams 1238,HR Coordinator,HR,,2023-04-10,52093.0,Full-time
+1239,EMP1239,Tom Williams 1239,HR Coordinator,HR,,2023-12-24,63031.0,Full-time
+1240,EMP1240,Jane Smith 1240,HR Coordinator,HR,,2022-09-11,196641.0,Full-time
+1241,EMP1241,John Smith 1241,HR Coordinator,HR,,2022-04-27,109676.0,Contract
+1242,EMP1242,Tom Smith 1242,HR Coordinator,HR,,2020-06-09,194361.0,Full-time
+1243,EMP1243,John Davis 1243,HR Manager,HR,,2020-08-10,180060.0,Full-time
+1244,EMP1244,Sarah Williams 1244,HR Manager,HR,1243.0,2021-12-19,178267.0,Full-time
+1245,EMP1245,Mike Williams 1245,HR Manager,HR,1243.0,2022-11-26,180147.0,Full-time
+1246,EMP1246,Lisa Brown 1246,HR Manager,HR,1243.0,2021-02-11,165384.0,Full-time
+1247,EMP1247,Mike Brown 1247,HR Manager,HR,1243.0,2020-03-23,141592.0,Contract
+1248,EMP1248,John Smith 1248,HR Manager,HR,1243.0,2020-07-05,154846.0,Full-time
+1249,EMP1249,Sarah Smith 1249,HR Manager,HR,1243.0,2022-11-17,135579.0,Contract
+1250,EMP1250,Mike Jones 1250,HR Manager,HR,1243.0,2023-11-14,145364.0,Contract
+1251,EMP1251,Jane Johnson 1251,HR Director,HR,1243.0,2021-08-23,149986.0,Full-time
+1252,EMP1252,Lisa Jones 1252,HR Director,HR,1243.0,2020-12-07,149388.0,Contract
+1253,EMP1253,John Davis 1253,HR Director,HR,1243.0,2021-09-12,61133.0,Contract
+1254,EMP1254,John Smith 1254,HR Director,HR,1243.0,2022-10-10,40559.0,Full-time
+1255,EMP1255,John Williams 1255,HR Director,HR,1243.0,2022-06-10,107065.0,Contract
+1256,EMP1256,John Johnson 1256,HR Director,HR,1243.0,2021-10-14,42753.0,Full-time
+1257,EMP1257,Mike Johnson 1257,HR Director,HR,1243.0,2021-12-16,30546.0,Full-time
+1258,EMP1258,Tom Williams 1258,HR Director,HR,1243.0,2020-01-14,156137.0,Full-time
+1259,EMP1259,Tom Brown 1259,HR Director,HR,1243.0,2022-07-16,188783.0,Full-time
+1260,EMP1260,Jane Jones 1260,HR Director,HR,1243.0,2023-08-22,147722.0,Full-time
+1261,EMP1261,Lisa Williams 1261,HR Director,HR,1243.0,2020-10-22,193470.0,Contract
+1262,EMP1262,Sarah Johnson 1262,HR Director,HR,1243.0,2023-06-18,42011.0,Contract
+1263,EMP1263,Lisa Williams 1263,HR Director,HR,1243.0,2020-03-23,36502.0,Full-time
+1264,EMP1264,Tom Davis 1264,HR Director,HR,1243.0,2020-11-18,52322.0,Full-time
+1265,EMP1265,Tom Jones 1265,HR Director,HR,1243.0,2020-10-17,79648.0,Contract
+1266,EMP1266,Tom Smith 1266,HR Director,HR,1243.0,2020-11-18,77118.0,Full-time
+1267,EMP1267,Mike Johnson 1267,HR Director,HR,1243.0,2021-12-27,181926.0,Contract
+1268,EMP1268,John Jones 1268,HR Director,HR,1243.0,2022-07-19,41792.0,Contract
+1269,EMP1269,Mike Brown 1269,Supply Chain Analyst,Supply Chain,,2021-07-01,168386.0,Full-time
+1270,EMP1270,Sarah Williams 1270,Supply Chain Analyst,Supply Chain,,2020-02-04,172024.0,Full-time
+1271,EMP1271,Mike Johnson 1271,Supply Chain Analyst,Supply Chain,,2021-05-25,53495.0,Full-time
+1272,EMP1272,Mike Brown 1272,Supply Chain Analyst,Supply Chain,,2021-01-20,115273.0,Full-time
+1273,EMP1273,John Davis 1273,Supply Chain Analyst,Supply Chain,,2020-05-13,55885.0,Full-time
+1274,EMP1274,Sarah Williams 1274,Logistics Manager,Supply Chain,,2022-07-27,61710.0,Full-time
+1275,EMP1275,Jane Johnson 1275,Logistics Manager,Supply Chain,1274.0,2021-08-17,162231.0,Contract
+1276,EMP1276,John Williams 1276,Logistics Manager,Supply Chain,1274.0,2020-06-15,174997.0,Contract
+1277,EMP1277,John Brown 1277,Logistics Manager,Supply Chain,1274.0,2020-07-21,91273.0,Full-time
+1278,EMP1278,Mike Jones 1278,Logistics Manager,Supply Chain,1274.0,2020-04-25,175413.0,Full-time
+1279,EMP1279,Mike Jones 1279,Logistics Manager,Supply Chain,1274.0,2023-08-03,196670.0,Full-time
+1280,EMP1280,Jane Williams 1280,Logistics Manager,Supply Chain,1274.0,2021-04-18,141084.0,Contract
+1281,EMP1281,John Smith 1281,Logistics Manager,Supply Chain,1274.0,2023-10-10,73878.0,Full-time
+1282,EMP1282,John Brown 1282,Logistics Manager,Supply Chain,1274.0,2022-10-09,129654.0,Full-time
+1283,EMP1283,Tom Jones 1283,Supply Chain Director,Supply Chain,1274.0,2022-01-06,170008.0,Full-time
+1284,EMP1284,Mike Smith 1284,Supply Chain Director,Supply Chain,1274.0,2023-12-04,66608.0,Full-time
+1285,EMP1285,Sarah Johnson 1285,Supply Chain Director,Supply Chain,1274.0,2022-11-11,196505.0,Full-time
+1286,EMP1286,Lisa Brown 1286,Supply Chain Director,Supply Chain,1274.0,2022-04-22,114315.0,Full-time
+1287,EMP1287,Jane Brown 1287,Supply Chain Director,Supply Chain,1274.0,2022-01-23,65055.0,Full-time
+1288,EMP1288,Tom Brown 1288,Supply Chain Director,Supply Chain,1274.0,2020-01-22,75491.0,Contract
+1289,EMP1289,Tom Davis 1289,Supply Chain Director,Supply Chain,1274.0,2023-07-18,51272.0,Full-time
+1290,EMP1290,Tom Smith 1290,Supply Chain Director,Supply Chain,1274.0,2023-11-04,122535.0,Contract
+1291,EMP1291,Tom Williams 1291,Supply Chain Director,Supply Chain,1274.0,2023-03-27,32210.0,Full-time
+1292,EMP1292,Sarah Williams 1292,Supply Chain Director,Supply Chain,1274.0,2021-08-01,88070.0,Full-time
+1293,EMP1293,Mike Davis 1293,Supply Chain Director,Supply Chain,1274.0,2022-04-03,190810.0,Full-time
+1294,EMP1294,Jane Brown 1294,Customer Service Rep,Customer Service,,2022-01-09,159194.0,Full-time
+1295,EMP1295,John Johnson 1295,Customer Service Rep,Customer Service,,2023-02-28,102704.0,Contract
+1296,EMP1296,Jane Jones 1296,Customer Service Rep,Customer Service,,2021-11-24,178296.0,Full-time
+1297,EMP1297,John Jones 1297,Customer Service Rep,Customer Service,,2021-12-03,63405.0,Full-time
+1298,EMP1298,Tom Johnson 1298,Customer Service Rep,Customer Service,,2022-04-28,36060.0,Full-time
+1299,EMP1299,Lisa Jones 1299,Customer Service Rep,Customer Service,,2023-01-14,198025.0,Full-time
+1300,EMP1300,Mike Brown 1300,Customer Service Rep,Customer Service,,2023-05-04,165867.0,Contract
+1301,EMP1301,Sarah Williams 1301,Customer Service Rep,Customer Service,,2020-12-08,42311.0,Full-time
+1302,EMP1302,Sarah Jones 1302,Customer Service Rep,Customer Service,,2023-06-01,132723.0,Full-time
+1303,EMP1303,Mike Smith 1303,Customer Service Rep,Customer Service,,2020-12-08,141101.0,Full-time
+1304,EMP1304,Jane Johnson 1304,Customer Service Rep,Customer Service,,2021-06-10,46474.0,Full-time
+1305,EMP1305,John Brown 1305,Customer Service Rep,Customer Service,,2023-01-19,194180.0,Full-time
+1306,EMP1306,Jane Smith 1306,Customer Service Manager,Customer Service,,2023-04-11,44269.0,Full-time
+1307,EMP1307,Tom Johnson 1307,Customer Service Manager,Customer Service,1306.0,2020-10-20,144957.0,Full-time
+1308,EMP1308,Lisa Brown 1308,Customer Service Manager,Customer Service,1306.0,2020-02-02,38740.0,Contract
+1309,EMP1309,Mike Davis 1309,Customer Service Manager,Customer Service,1306.0,2020-03-02,145846.0,Full-time
+1310,EMP1310,Mike Jones 1310,Customer Service Manager,Customer Service,1306.0,2023-02-04,44625.0,Full-time
+1311,EMP1311,Mike Brown 1311,Customer Service Manager,Customer Service,1306.0,2023-02-20,137769.0,Full-time
+1312,EMP1312,Tom Davis 1312,Customer Service Manager,Customer Service,1306.0,2020-08-13,151689.0,Contract
+1313,EMP1313,Tom Jones 1313,Customer Service Manager,Customer Service,1306.0,2020-06-21,36808.0,Contract
+1314,EMP1314,Tom Williams 1314,Customer Service Manager,Customer Service,1306.0,2021-02-04,33221.0,Full-time
+1315,EMP1315,Tom Johnson 1315,Customer Service Manager,Customer Service,1306.0,2021-11-17,97183.0,Full-time
+1316,EMP1316,Sarah Brown 1316,Customer Service Manager,Customer Service,1306.0,2023-03-08,66090.0,Full-time
+1317,EMP1317,John Johnson 1317,Customer Service Manager,Customer Service,1306.0,2022-10-14,164512.0,Full-time
+1318,EMP1318,Mike Jones 1318,Customer Service Manager,Customer Service,1306.0,2021-03-16,110917.0,Full-time
