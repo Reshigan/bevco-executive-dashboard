@@ -8,9 +8,21 @@ import os
 np.random.seed(42)
 random.seed(42)
 
-# Define output directory
-output_dir = "/workspace/bevco-executive-dashboard/data/master"
-os.makedirs(output_dir, exist_ok=True)
+# Define output directory - use relative path from script location
+script_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(os.path.dirname(script_dir))
+output_dir = os.path.join(project_root, "data", "master")
+
+# Create output directory if it doesn't exist
+try:
+    os.makedirs(output_dir, exist_ok=True)
+    print(f"✓ Output directory: {output_dir}")
+except OSError as e:
+    print(f"✗ Error creating directory {output_dir}: {e}")
+    # Fallback to current directory
+    output_dir = os.path.join(os.getcwd(), "data", "master")
+    os.makedirs(output_dir, exist_ok=True)
+    print(f"✓ Using fallback directory: {output_dir}")
 
 # Generate Date Dimension
 def generate_date_dimension():

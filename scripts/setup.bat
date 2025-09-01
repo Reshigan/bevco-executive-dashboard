@@ -47,6 +47,13 @@ if %errorlevel% neq 0 (
 )
 echo [OK] Installed Python packages
 
+REM Create data directories
+echo.
+echo Creating data directories...
+if not exist "data\master" mkdir data\master
+if not exist "data\processed" mkdir data\processed
+echo [OK] Created data directories
+
 REM Generate master data
 echo.
 echo Generating sample data...

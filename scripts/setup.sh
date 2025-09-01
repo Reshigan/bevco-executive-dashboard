@@ -47,6 +47,12 @@ pip install --upgrade pip >/dev/null 2>&1
 pip install pandas numpy openpyxl >/dev/null 2>&1
 print_status $? "Installed Python packages"
 
+# Create data directories
+echo -e "\n${YELLOW}Creating data directories...${NC}"
+mkdir -p data/master
+mkdir -p data/processed
+print_status $? "Created data directories"
+
 # Generate master data
 echo -e "\n${YELLOW}Generating sample data...${NC}"
 python scripts/etl/generate_master_data.py
