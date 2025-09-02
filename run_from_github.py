@@ -49,6 +49,15 @@ def download_and_run():
             print("🐧 Using universal launcher")
             launcher = "auto_setup.py"
         
+        # Ensure templates exist
+        if not os.path.exists("dashboard_portal/templates"):
+            print("📝 Creating template files...")
+            try:
+                subprocess.run([sys.executable, "create_templates.py"], check=True, capture_output=True)
+                print("✅ Templates created!")
+            except:
+                print("⚠️  Templates will be created by launcher")
+        
         # Run the launcher
         print(f"🚀 Starting dashboard with {launcher}...")
         print("=" * 50)

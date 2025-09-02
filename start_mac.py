@@ -125,6 +125,18 @@ def start_dashboard():
         print_colored(f"⏳ Starting server with {app_file}...", Colors.BLUE)
         print_colored("   This may take 10-15 seconds for first-time setup...", Colors.YELLOW)
         
+        # Ensure templates exist
+        if not os.path.exists("templates"):
+            print_colored("📝 Creating template files...", Colors.BLUE)
+            try:
+                # Go back to parent directory to run create_templates.py
+                os.chdir(script_dir)
+                subprocess.run([sys.executable, "create_templates.py"], check=True, capture_output=True)
+                os.chdir(dashboard_dir)
+                print_colored("✅ Templates created!", Colors.GREEN)
+            except Exception as e:
+                print_colored(f"⚠️  Could not create templates: {e}", Colors.YELLOW)
+        
         # Start the Flask application
         process = subprocess.Popen([
             sys.executable, app_file
