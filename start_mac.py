@@ -114,8 +114,13 @@ def start_dashboard():
             app_file = "app.py"
             print_colored("📊 Using full-featured dashboard", Colors.GREEN)
         else:
-            app_file = "app_simple.py"
-            print_colored("📊 Using simplified dashboard (no pandas)", Colors.YELLOW)
+            # Use auto-port version to avoid port conflicts
+            if os.path.exists("app_simple_auto_port.py"):
+                app_file = "app_simple_auto_port.py"
+                print_colored("📊 Using auto-port dashboard (finds available port)", Colors.GREEN)
+            else:
+                app_file = "app_simple.py"
+                print_colored("📊 Using simplified dashboard (no pandas)", Colors.YELLOW)
             print_colored("   All features still work, just using SQLite directly", Colors.BLUE)
         
         if not os.path.exists(app_file):
