@@ -8,15 +8,42 @@ A comprehensive Power BI executive dashboard solution for Bevco South Africa, pr
 
 ![Dashboard Preview](https://via.placeholder.com/800x400?text=Bevco+Executive+Dashboard)
 
-## 🚀 Quick Start
+## 🚀 Quick Start - One Line Command
 
+Run the dashboard directly from GitHub with a single command:
+
+### **All Platforms (Python)**
+```bash
+curl -s https://raw.githubusercontent.com/Reshigan/bevco-executive-dashboard/main/run_from_github.py | python3
+```
+
+### **Mac Users (Optimized)**
+```bash
+curl -s https://raw.githubusercontent.com/Reshigan/bevco-executive-dashboard/main/start_mac.py | python3
+```
+
+### **Windows (PowerShell)**
+```powershell
+iwr -useb https://raw.githubusercontent.com/Reshigan/bevco-executive-dashboard/main/run_from_github.py | python
+```
+
+**That's it!** The dashboard will automatically:
+- ✅ Download all files from GitHub
+- ✅ Install required dependencies
+- ✅ Create database with 5,000+ sample transactions
+- ✅ Start the web server
+- ✅ Open in your browser
+
+**Login:** `admin` / `admin123`
+
+### **Alternative: Clone and Run**
 ```bash
 # Clone the repository
 git clone https://github.com/Reshigan/bevco-executive-dashboard.git
 cd bevco-executive-dashboard
 
-# Run automated setup (Linux/Mac)
-./scripts/setup.sh
+# Run automated setup
+python3 auto_setup.py
 
 # Run automated setup (Windows)
 scripts\setup.bat
