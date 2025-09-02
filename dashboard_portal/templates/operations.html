@@ -1,0 +1,500 @@
+{% extends "base.html" %}
+
+{% block title %}Operations Dashboard - Bevco{% endblock %}
+{% block page_title %}Operations Dashboard{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- Operations KPI Cards -->
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">Inventory Turnover</div>
+            <div class="kpi-value text-primary" id="inventoryTurnover">8.2</div>
+            <div class="kpi-change negative">
+                <i class="fas fa-arrow-down me-1"></i>vs 12.0 Target
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">On-Time Delivery</div>
+            <div class="kpi-value text-success" id="onTimeDelivery">94.2%</div>
+            <div class="kpi-change positive">
+                <i class="fas fa-arrow-up me-1"></i>+2.1% vs LM
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">Employee Productivity</div>
+            <div class="kpi-value text-warning" id="productivity">87.5%</div>
+            <div class="kpi-change positive">
+                <i class="fas fa-arrow-up me-1"></i>+5.3% vs LM
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">Cost per Case</div>
+            <div class="kpi-value text-info" id="costPerCase">R 28.50</div>
+            <div class="kpi-change negative">
+                <i class="fas fa-arrow-up me-1"></i>+R 3.50 vs Target
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Inventory Levels -->
+    <div class="col-xl-8 col-lg-7 mb-4">
+        <div class="dashboard-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-boxes text-primary me-2"></i>Inventory Levels by Warehouse
+                </h5>
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-warehouse me-1"></i>All Warehouses
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">JHB Main</a></li>
+                        <li><a class="dropdown-item" href="#">CPT Main</a></li>
+                        <li><a class="dropdown-item" href="#">DBN Main</a></li>
+                        <li><a class="dropdown-item" href="#">PE Branch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="inventoryChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Warehouse Utilization -->
+    <div class="col-xl-4 col-lg-5 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-chart-pie text-success me-2"></i>Warehouse Utilization
+            </h5>
+            <div class="chart-container">
+                <canvas id="utilizationChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Employee Performance -->
+    <div class="col-xl-6 col-lg-6 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-users text-warning me-2"></i>Employee Performance by Department
+            </h5>
+            <div class="chart-container">
+                <canvas id="employeeChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Supply Chain Metrics -->
+    <div class="col-xl-6 col-lg-6 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-truck text-info me-2"></i>Supply Chain Performance
+            </h5>
+            <div class="supply-chain-metrics">
+                <div class="metric-row d-flex justify-content-between align-items-center mb-3 p-3 bg-light rounded">
+                    <div class="metric-info">
+                        <div class="metric-name fw-bold">Average Lead Time</div>
+                        <div class="metric-description text-muted small">From order to delivery</div>
+                    </div>
+                    <div class="metric-value text-end">
+                        <div class="h4 text-primary mb-0">3.2 days</div>
+                        <div class="text-success small">-0.5 days vs target</div>
+                    </div>
+                </div>
+                
+                <div class="metric-row d-flex justify-content-between align-items-center mb-3 p-3 bg-light rounded">
+                    <div class="metric-info">
+                        <div class="metric-name fw-bold">Perfect Order Rate</div>
+                        <div class="metric-description text-muted small">Complete, on-time, damage-free</div>
+                    </div>
+                    <div class="metric-value text-end">
+                        <div class="h4 text-success mb-0">91.8%</div>
+                        <div class="text-success small">+1.8% vs target</div>
+                    </div>
+                </div>
+                
+                <div class="metric-row d-flex justify-content-between align-items-center mb-3 p-3 bg-light rounded">
+                    <div class="metric-info">
+                        <div class="metric-name fw-bold">Supplier Performance</div>
+                        <div class="metric-description text-muted small">On-time delivery rate</div>
+                    </div>
+                    <div class="metric-value text-end">
+                        <div class="h4 text-warning mb-0">88.5%</div>
+                        <div class="text-warning small">-1.5% vs target</div>
+                    </div>
+                </div>
+                
+                <div class="metric-row d-flex justify-content-between align-items-center mb-3 p-3 bg-light rounded">
+                    <div class="metric-info">
+                        <div class="metric-name fw-bold">Transportation Cost</div>
+                        <div class="metric-description text-muted small">% of total revenue</div>
+                    </div>
+                    <div class="metric-value text-end">
+                        <div class="h4 text-info mb-0">4.2%</div>
+                        <div class="text-success small">-0.3% vs target</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Inventory Status Table -->
+    <div class="col-xl-8 col-lg-8 mb-4">
+        <div class="dashboard-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-clipboard-list text-secondary me-2"></i>Inventory Status by Product Category
+                </h5>
+                <button class="btn btn-outline-primary btn-sm" id="refreshInventoryBtn">
+                    <i class="fas fa-sync-alt me-1"></i>Refresh
+                </button>
+            </div>
+            <div class="table-responsive">
+                <table class="data-table" id="inventoryTable">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Stock on Hand</th>
+                            <th>Reorder Level</th>
+                            <th>Days Coverage</th>
+                            <th>Value (R)</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inventoryTableBody">
+                        <!-- Data will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Operational Alerts -->
+    <div class="col-xl-4 col-lg-4 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-bell text-warning me-2"></i>Operational Alerts
+            </h5>
+            <div class="alerts-container" style="max-height: 400px; overflow-y: auto;">
+                <div class="alert alert-danger d-flex align-items-start mb-3">
+                    <i class="fas fa-exclamation-circle me-2 mt-1"></i>
+                    <div>
+                        <strong>Critical Stock Level</strong><br>
+                        <small>Beer inventory at JHB warehouse below reorder point</small>
+                        <div class="mt-2">
+                            <button class="btn btn-sm btn-outline-danger">Reorder Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-warning d-flex align-items-start mb-3">
+                    <i class="fas fa-truck me-2 mt-1"></i>
+                    <div>
+                        <strong>Delivery Delay</strong><br>
+                        <small>Shipment #SH-2024-001 delayed by 2 hours</small>
+                        <div class="mt-2">
+                            <button class="btn btn-sm btn-outline-warning">Track Shipment</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-info d-flex align-items-start mb-3">
+                    <i class="fas fa-user-clock me-2 mt-1"></i>
+                    <div>
+                        <strong>Overtime Alert</strong><br>
+                        <small>Warehouse team approaching overtime limits</small>
+                        <div class="mt-2">
+                            <button class="btn btn-sm btn-outline-info">View Schedule</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-success d-flex align-items-start mb-3">
+                    <i class="fas fa-check-circle me-2 mt-1"></i>
+                    <div>
+                        <strong>Quality Check Passed</strong><br>
+                        <small>Batch #B-2024-0892 cleared for distribution</small>
+                        <div class="mt-2">
+                            <button class="btn btn-sm btn-outline-success">View Report</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-primary d-flex align-items-start mb-3">
+                    <i class="fas fa-calendar-check me-2 mt-1"></i>
+                    <div>
+                        <strong>Maintenance Scheduled</strong><br>
+                        <small>Forklift FL-003 due for service tomorrow</small>
+                        <div class="mt-2">
+                            <button class="btn btn-sm btn-outline-primary">Reschedule</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Equipment Status -->
+    <div class="col-12 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-tools text-primary me-2"></i>Equipment Status Dashboard
+            </h5>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="equipment-card bg-success text-white p-3 rounded text-center">
+                        <i class="fas fa-forklift fa-2x mb-2"></i>
+                        <div class="h5 mb-1">12</div>
+                        <div class="small">Forklifts Operational</div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="equipment-card bg-warning text-white p-3 rounded text-center">
+                        <i class="fas fa-truck fa-2x mb-2"></i>
+                        <div class="h5 mb-1">3</div>
+                        <div class="small">Trucks in Maintenance</div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="equipment-card bg-info text-white p-3 rounded text-center">
+                        <i class="fas fa-conveyor-belt fa-2x mb-2"></i>
+                        <div class="h5 mb-1">8</div>
+                        <div class="small">Conveyor Lines Active</div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="equipment-card bg-danger text-white p-3 rounded text-center">
+                        <i class="fas fa-exclamation-triangle fa-2x mb-2"></i>
+                        <div class="h5 mb-1">1</div>
+                        <div class="small">Equipment Down</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    let inventoryChart, utilizationChart, employeeChart;
+
+    document.addEventListener('DOMContentLoaded', function() {
+        loadOperationsData();
+        setupEventListeners();
+    });
+
+    function setupEventListeners() {
+        document.getElementById('refreshInventoryBtn').addEventListener('click', function() {
+            this.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>Refreshing...';
+            loadOperationsData();
+        });
+    }
+
+    function loadOperationsData() {
+        // Mock operations data
+        const operationsData = {
+            inventory_levels: [
+                { category: 'Beer', stock: 15420, reorder: 10000, value: 2850000 },
+                { category: 'Wine', stock: 8750, reorder: 6000, value: 4200000 },
+                { category: 'Spirits', stock: 3200, reorder: 2500, value: 1920000 },
+                { category: 'Soft Drinks', stock: 22100, reorder: 15000, value: 1650000 },
+                { category: 'Water', stock: 18900, reorder: 12000, value: 945000 }
+            ],
+            warehouse_utilization: [
+                { warehouse: 'JHB Main', utilization: 87 },
+                { warehouse: 'CPT Main', utilization: 92 },
+                { warehouse: 'DBN Main', utilization: 78 },
+                { warehouse: 'PE Branch', utilization: 65 }
+            ],
+            employee_performance: [
+                { department: 'Warehouse', performance: 89 },
+                { department: 'Logistics', performance: 92 },
+                { department: 'Quality Control', performance: 95 },
+                { department: 'Maintenance', performance: 87 },
+                { department: 'Administration', performance: 91 }
+            ]
+        };
+
+        createOperationsCharts(operationsData);
+        updateInventoryTable(operationsData.inventory_levels);
+        
+        // Reset refresh button
+        const refreshBtn = document.getElementById('refreshInventoryBtn');
+        refreshBtn.innerHTML = '<i class="fas fa-sync-alt me-1"></i>Refresh';
+    }
+
+    function createOperationsCharts(data) {
+        // Inventory Levels Chart
+        const inventoryCtx = document.getElementById('inventoryChart').getContext('2d');
+        if (inventoryChart) inventoryChart.destroy();
+        
+        inventoryChart = createChart(inventoryCtx, 'bar', {
+            labels: data.inventory_levels.map(item => item.category),
+            datasets: [{
+                label: 'Current Stock',
+                data: data.inventory_levels.map(item => item.stock),
+                backgroundColor: '#007AFF',
+                borderRadius: 8
+            }, {
+                label: 'Reorder Level',
+                data: data.inventory_levels.map(item => item.reorder),
+                backgroundColor: '#FF6B35',
+                borderRadius: 8
+            }]
+        }, {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(value) {
+                            return value.toLocaleString();
+                        }
+                    }
+                }
+            }
+        });
+
+        // Warehouse Utilization Chart
+        const utilizationCtx = document.getElementById('utilizationChart').getContext('2d');
+        if (utilizationChart) utilizationChart.destroy();
+        
+        const utilizationColors = data.warehouse_utilization.map(item => {
+            if (item.utilization >= 90) return '#dc3545'; // Red for high utilization
+            if (item.utilization >= 80) return '#ffc107'; // Yellow for medium
+            return '#28a745'; // Green for low
+        });
+        
+        utilizationChart = createChart(utilizationCtx, 'doughnut', {
+            labels: data.warehouse_utilization.map(item => item.warehouse),
+            datasets: [{
+                data: data.warehouse_utilization.map(item => item.utilization),
+                backgroundColor: utilizationColors,
+                borderWidth: 0
+            }]
+        }, {
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        });
+
+        // Employee Performance Chart
+        const employeeCtx = document.getElementById('employeeChart').getContext('2d');
+        if (employeeChart) employeeChart.destroy();
+        
+        employeeChart = createChart(employeeCtx, 'radar', {
+            labels: data.employee_performance.map(item => item.department),
+            datasets: [{
+                label: 'Performance %',
+                data: data.employee_performance.map(item => item.performance),
+                borderColor: '#28a745',
+                backgroundColor: 'rgba(40, 167, 69, 0.2)',
+                borderWidth: 2,
+                pointBackgroundColor: '#28a745',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: '#28a745'
+            }]
+        }, {
+            scales: {
+                r: {
+                    beginAtZero: true,
+                    max: 100,
+                    ticks: {
+                        callback: function(value) {
+                            return value + '%';
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    function updateInventoryTable(inventoryData) {
+        const tableBody = document.getElementById('inventoryTableBody');
+        tableBody.innerHTML = '';
+        
+        inventoryData.forEach(item => {
+            const daysCoverage = Math.floor(item.stock / (item.stock * 0.05)); // Mock calculation
+            const status = item.stock <= item.reorder ? 'Low Stock' : 
+                          item.stock <= item.reorder * 1.2 ? 'Reorder Soon' : 'Good';
+            const statusClass = item.stock <= item.reorder ? 'danger' : 
+                               item.stock <= item.reorder * 1.2 ? 'warning' : 'success';
+            
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td><strong>${item.category}</strong></td>
+                <td>${item.stock.toLocaleString()}</td>
+                <td>${item.reorder.toLocaleString()}</td>
+                <td>${daysCoverage} days</td>
+                <td>${formatCurrency(item.value)}</td>
+                <td><span class="badge bg-${statusClass}">${status}</span></td>
+                <td>
+                    ${item.stock <= item.reorder ? 
+                        '<button class="btn btn-sm btn-danger">Reorder</button>' : 
+                        '<button class="btn btn-sm btn-outline-primary">View Details</button>'
+                    }
+                </td>
+            `;
+            tableBody.appendChild(row);
+        });
+    }
+</script>
+
+<style>
+    .metric-row {
+        transition: all 0.3s ease;
+    }
+
+    .metric-row:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .equipment-card {
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .equipment-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .supply-chain-metrics {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    .alerts-container .alert {
+        border: none;
+        border-radius: 10px;
+    }
+
+    .alerts-container .btn {
+        font-size: 0.8rem;
+    }
+</style>
+{% endblock %}

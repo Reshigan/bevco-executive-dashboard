@@ -1,0 +1,455 @@
+{% extends "base.html" %}
+
+{% block title %}Executive Dashboard - Bevco{% endblock %}
+{% block page_title %}Executive Dashboard{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- KPI Cards -->
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">Total Sales</div>
+            <div class="kpi-value text-primary" id="totalSales">R 0</div>
+            <div class="kpi-change positive" id="salesChange">
+                <i class="fas fa-arrow-up me-1"></i>+8.2% vs LY
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">Profit Margin</div>
+            <div class="kpi-value text-success" id="profitMargin">0%</div>
+            <div class="kpi-change negative" id="marginChange">
+                <i class="fas fa-arrow-down me-1"></i>-2.1% vs Target
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">Total Profit</div>
+            <div class="kpi-value text-warning" id="totalProfit">R 0</div>
+            <div class="kpi-change positive" id="profitChange">
+                <i class="fas fa-arrow-up me-1"></i>+5.7% vs LY
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">Active Customers</div>
+            <div class="kpi-value text-info" id="activeCustomers">0</div>
+            <div class="kpi-change positive" id="customerChange">
+                <i class="fas fa-arrow-up me-1"></i>+12 New This Month
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Sales Trend Chart -->
+    <div class="col-xl-8 col-lg-7 mb-4">
+        <div class="dashboard-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-chart-line text-primary me-2"></i>Sales Trend (Last 30 Days)
+                </h5>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary btn-sm active" data-period="30">30D</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm" data-period="90">90D</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm" data-period="365">1Y</button>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="salesTrendChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Regional Performance -->
+    <div class="col-xl-4 col-lg-5 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-map-marker-alt text-success me-2"></i>Regional Performance
+            </h5>
+            <div class="chart-container">
+                <canvas id="regionalChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Product Performance -->
+    <div class="col-xl-6 col-lg-6 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-box text-warning me-2"></i>Top Product Categories
+            </h5>
+            <div class="chart-container">
+                <canvas id="productChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Recent Activity -->
+    <div class="col-xl-6 col-lg-6 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-clock text-info me-2"></i>Recent Activity
+            </h5>
+            <div id="recentActivity">
+                <div class="activity-item d-flex align-items-center mb-3">
+                    <div class="activity-icon bg-success text-white rounded-circle me-3">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="activity-content">
+                        <div class="activity-title">New Sale Recorded</div>
+                        <div class="activity-description text-muted">R 4,250 sale in Gauteng region</div>
+                        <div class="activity-time text-muted small">2 minutes ago</div>
+                    </div>
+                </div>
+                
+                <div class="activity-item d-flex align-items-center mb-3">
+                    <div class="activity-icon bg-warning text-white rounded-circle me-3">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="activity-content">
+                        <div class="activity-title">Inventory Alert</div>
+                        <div class="activity-description text-muted">Beer stock running low in JHB warehouse</div>
+                        <div class="activity-time text-muted small">15 minutes ago</div>
+                    </div>
+                </div>
+                
+                <div class="activity-item d-flex align-items-center mb-3">
+                    <div class="activity-icon bg-info text-white rounded-circle me-3">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="activity-content">
+                        <div class="activity-title">KPI Update</div>
+                        <div class="activity-description text-muted">Customer satisfaction increased to 89.2%</div>
+                        <div class="activity-time text-muted small">1 hour ago</div>
+                    </div>
+                </div>
+                
+                <div class="activity-item d-flex align-items-center mb-3">
+                    <div class="activity-icon bg-primary text-white rounded-circle me-3">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="activity-content">
+                        <div class="activity-title">New Customer</div>
+                        <div class="activity-description text-muted">Premium retailer added in Western Cape</div>
+                        <div class="activity-time text-muted small">3 hours ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Performance Summary Table -->
+    <div class="col-12 mb-4">
+        <div class="dashboard-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-table text-secondary me-2"></i>Regional Performance Summary
+                </h5>
+                <button class="btn btn-outline-primary btn-sm" id="refreshDataBtn">
+                    <i class="fas fa-sync-alt me-1"></i>Refresh Data
+                </button>
+            </div>
+            <div class="table-responsive">
+                <table class="data-table" id="performanceTable">
+                    <thead>
+                        <tr>
+                            <th>Region</th>
+                            <th>Sales (R)</th>
+                            <th>Growth (%)</th>
+                            <th>Customers</th>
+                            <th>Avg Order</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="performanceTableBody">
+                        <!-- Data will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    let salesTrendChart, regionalChart, productChart;
+    let dashboardData = {};
+
+    // Load dashboard data on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        loadDashboardData();
+        
+        // Set up refresh button
+        document.getElementById('refreshDataBtn').addEventListener('click', function() {
+            this.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>Refreshing...';
+            loadDashboardData();
+        });
+        
+        // Set up period buttons
+        document.querySelectorAll('[data-period]').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('[data-period]').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                // In a real app, this would reload data for the selected period
+                showAlert(`Loading data for ${this.textContent} period`, 'info');
+            });
+        });
+    });
+
+    function loadDashboardData() {
+        fetch('/api/dashboard_data')
+            .then(response => response.json())
+            .then(data => {
+                dashboardData = data;
+                updateKPIs(data);
+                createCharts(data);
+                updatePerformanceTable(data);
+                
+                // Reset refresh button
+                const refreshBtn = document.getElementById('refreshDataBtn');
+                refreshBtn.innerHTML = '<i class="fas fa-sync-alt me-1"></i>Refresh Data';
+            })
+            .catch(error => {
+                console.error('Error loading dashboard data:', error);
+                showAlert('Error loading dashboard data', 'error');
+            });
+    }
+
+    function updateKPIs(data) {
+        // Update KPI values
+        document.getElementById('totalSales').textContent = formatCurrency(data.total_sales);
+        document.getElementById('profitMargin').textContent = formatPercentage(data.profit_margin);
+        document.getElementById('totalProfit').textContent = formatCurrency(data.total_profit);
+        
+        // Calculate active customers (mock data)
+        const activeCustomers = Math.floor(data.total_sales / 50000); // Rough estimate
+        document.getElementById('activeCustomers').textContent = activeCustomers.toLocaleString();
+    }
+
+    function createCharts(data) {
+        // Sales Trend Chart
+        const salesCtx = document.getElementById('salesTrendChart').getContext('2d');
+        if (salesTrendChart) salesTrendChart.destroy();
+        
+        salesTrendChart = createChart(salesCtx, 'line', {
+            labels: data.sales_trend.map(item => new Date(item.date).toLocaleDateString()),
+            datasets: [{
+                label: 'Daily Sales (R)',
+                data: data.sales_trend.map(item => item.sales),
+                borderColor: '#007AFF',
+                backgroundColor: 'rgba(0, 122, 255, 0.1)',
+                borderWidth: 3,
+                fill: true,
+                tension: 0.4
+            }]
+        }, {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(value) {
+                            return 'R' + value.toLocaleString();
+                        }
+                    }
+                }
+            }
+        });
+
+        // Regional Performance Chart
+        const regionalCtx = document.getElementById('regionalChart').getContext('2d');
+        if (regionalChart) regionalChart.destroy();
+        
+        const colors = ['#FF6B35', '#007AFF', '#28a745', '#ffc107', '#dc3545'];
+        
+        regionalChart = createChart(regionalCtx, 'doughnut', {
+            labels: data.sales_by_region.map(item => item.region),
+            datasets: [{
+                data: data.sales_by_region.map(item => item.sales),
+                backgroundColor: colors.slice(0, data.sales_by_region.length),
+                borderWidth: 0
+            }]
+        }, {
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        });
+
+        // Product Performance Chart
+        const productCtx = document.getElementById('productChart').getContext('2d');
+        if (productChart) productChart.destroy();
+        
+        productChart = createChart(productCtx, 'bar', {
+            labels: data.top_products.map(item => item.product_category),
+            datasets: [{
+                label: 'Sales (R)',
+                data: data.top_products.map(item => item.sales),
+                backgroundColor: '#FF6B35',
+                borderRadius: 8
+            }]
+        }, {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(value) {
+                            return 'R' + value.toLocaleString();
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    function updatePerformanceTable(data) {
+        const tableBody = document.getElementById('performanceTableBody');
+        tableBody.innerHTML = '';
+        
+        data.sales_by_region.forEach((region, index) => {
+            const growth = (Math.random() * 20 - 5).toFixed(1); // Mock growth data
+            const customers = Math.floor(Math.random() * 100 + 50); // Mock customer count
+            const avgOrder = (region.sales / customers).toFixed(0); // Mock average order
+            const status = growth > 0 ? 'Growing' : 'Declining';
+            const statusClass = growth > 0 ? 'text-success' : 'text-danger';
+            
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td><strong>${region.region}</strong></td>
+                <td>${formatCurrency(region.sales)}</td>
+                <td class="${statusClass}">${growth > 0 ? '+' : ''}${growth}%</td>
+                <td>${customers}</td>
+                <td>${formatCurrency(avgOrder)}</td>
+                <td><span class="badge bg-${growth > 0 ? 'success' : 'warning'}">${status}</span></td>
+            `;
+            tableBody.appendChild(row);
+        });
+    }
+
+    // Real-time activity updates
+    function addActivityItem(type, title, description) {
+        const activityContainer = document.getElementById('recentActivity');
+        const icons = {
+            'sale': 'fas fa-shopping-cart',
+            'alert': 'fas fa-exclamation-triangle',
+            'kpi': 'fas fa-chart-bar',
+            'customer': 'fas fa-users'
+        };
+        
+        const colors = {
+            'sale': 'bg-success',
+            'alert': 'bg-warning',
+            'kpi': 'bg-info',
+            'customer': 'bg-primary'
+        };
+        
+        const newActivity = document.createElement('div');
+        newActivity.className = 'activity-item d-flex align-items-center mb-3';
+        newActivity.innerHTML = `
+            <div class="activity-icon ${colors[type]} text-white rounded-circle me-3">
+                <i class="${icons[type]}"></i>
+            </div>
+            <div class="activity-content">
+                <div class="activity-title">${title}</div>
+                <div class="activity-description text-muted">${description}</div>
+                <div class="activity-time text-muted small">Just now</div>
+            </div>
+        `;
+        
+        // Add to top and remove oldest if more than 4 items
+        activityContainer.insertBefore(newActivity, activityContainer.firstChild);
+        const items = activityContainer.querySelectorAll('.activity-item');
+        if (items.length > 4) {
+            activityContainer.removeChild(items[items.length - 1]);
+        }
+    }
+
+    // Listen for real-time updates
+    if (typeof socket !== 'undefined') {
+        socket.on('real_time_update', function(data) {
+            // Add to activity feed
+            if (data.type === 'sales') {
+                addActivityItem('sale', 'New Sale Recorded', data.message);
+            } else if (data.type === 'alert') {
+                addActivityItem('alert', 'System Alert', data.message);
+            } else if (data.type === 'kpi') {
+                addActivityItem('kpi', 'KPI Update', data.message);
+            }
+        });
+    }
+
+    // Auto-refresh data every 5 minutes
+    setInterval(function() {
+        loadDashboardData();
+    }, 300000); // 5 minutes
+</script>
+
+<style>
+    .activity-icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+    }
+
+    .activity-item {
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .activity-item:last-child {
+        border-bottom: none;
+    }
+
+    .activity-title {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 2px;
+    }
+
+    .activity-description {
+        font-size: 0.9rem;
+        margin-bottom: 2px;
+    }
+
+    .activity-time {
+        font-size: 0.8rem;
+    }
+
+    .btn-group .btn {
+        border-radius: 0;
+    }
+
+    .btn-group .btn:first-child {
+        border-radius: 0.375rem 0 0 0.375rem;
+    }
+
+    .btn-group .btn:last-child {
+        border-radius: 0 0.375rem 0.375rem 0;
+    }
+
+    .table-responsive {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.35em 0.65em;
+    }
+</style>
+{% endblock %}

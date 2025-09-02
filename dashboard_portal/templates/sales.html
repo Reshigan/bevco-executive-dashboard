@@ -1,0 +1,603 @@
+{% extends "base.html" %}
+
+{% block title %}Sales Analytics - Bevco{% endblock %}
+{% block page_title %}Sales Analytics{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- Sales Overview Cards -->
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">Monthly Sales</div>
+            <div class="kpi-value text-primary" id="monthlySales">R 0</div>
+            <div class="kpi-change positive">
+                <i class="fas fa-arrow-up me-1"></i>+12.5% vs Last Month
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">Avg Order Value</div>
+            <div class="kpi-value text-success" id="avgOrderValue">R 0</div>
+            <div class="kpi-change positive">
+                <i class="fas fa-arrow-up me-1"></i>+3.2% vs Last Month
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">Total Transactions</div>
+            <div class="kpi-value text-warning" id="totalTransactions">0</div>
+            <div class="kpi-change positive">
+                <i class="fas fa-arrow-up me-1"></i>+8.7% vs Last Month
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">Conversion Rate</div>
+            <div class="kpi-value text-info" id="conversionRate">0%</div>
+            <div class="kpi-change negative">
+                <i class="fas fa-arrow-down me-1"></i>-1.2% vs Last Month
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Sales by Category Trend -->
+    <div class="col-xl-8 col-lg-7 mb-4">
+        <div class="dashboard-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-chart-area text-primary me-2"></i>Sales by Category (Last 90 Days)
+                </h5>
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-filter me-1"></i>Filter
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" data-filter="all">All Categories</a></li>
+                        <li><a class="dropdown-item" href="#" data-filter="beer">Beer</a></li>
+                        <li><a class="dropdown-item" href="#" data-filter="wine">Wine</a></li>
+                        <li><a class="dropdown-item" href="#" data-filter="spirits">Spirits</a></li>
+                        <li><a class="dropdown-item" href="#" data-filter="soft-drinks">Soft Drinks</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="categoryTrendChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Top Vendors -->
+    <div class="col-xl-4 col-lg-5 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-industry text-success me-2"></i>Top Vendors
+            </h5>
+            <div class="chart-container">
+                <canvas id="vendorChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Customer Type Analysis -->
+    <div class="col-xl-6 col-lg-6 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-users text-warning me-2"></i>Customer Type Analysis
+            </h5>
+            <div class="chart-container">
+                <canvas id="customerTypeChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sales Leaderboard -->
+    <div class="col-xl-6 col-lg-6 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-trophy text-info me-2"></i>Regional Sales Leaderboard
+            </h5>
+            <div id="salesLeaderboard">
+                <!-- Leaderboard items will be populated here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Detailed Sales Table -->
+    <div class="col-12 mb-4">
+        <div class="dashboard-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-table text-secondary me-2"></i>Detailed Sales Analysis
+                </h5>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-success btn-sm" id="exportBtn">
+                        <i class="fas fa-download me-1"></i>Export
+                    </button>
+                    <button class="btn btn-outline-primary btn-sm" id="refreshSalesBtn">
+                        <i class="fas fa-sync-alt me-1"></i>Refresh
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Search and Filter Controls -->
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        <input type="text" class="form-control" id="searchInput" placeholder="Search products, regions...">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="regionFilter">
+                        <option value="">All Regions</option>
+                        <option value="Gauteng">Gauteng</option>
+                        <option value="Western Cape">Western Cape</option>
+                        <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                        <option value="Eastern Cape">Eastern Cape</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="categoryFilter">
+                        <option value="">All Categories</option>
+                        <option value="Beer">Beer</option>
+                        <option value="Wine">Wine</option>
+                        <option value="Spirits">Spirits</option>
+                        <option value="Soft Drinks">Soft Drinks</option>
+                        <option value="Water">Water</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary w-100" id="applyFilters">
+                        <i class="fas fa-filter me-1"></i>Apply
+                    </button>
+                </div>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="data-table" id="salesTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Region</th>
+                            <th>Category</th>
+                            <th>Vendor</th>
+                            <th>Customer Type</th>
+                            <th>Sales (R)</th>
+                            <th>Profit (R)</th>
+                            <th>Margin %</th>
+                        </tr>
+                    </thead>
+                    <tbody id="salesTableBody">
+                        <!-- Data will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Pagination -->
+            <nav aria-label="Sales data pagination" class="mt-3">
+                <ul class="pagination justify-content-center" id="pagination">
+                    <!-- Pagination will be generated here -->
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    let categoryTrendChart, vendorChart, customerTypeChart;
+    let salesData = [];
+    let filteredData = [];
+    let currentPage = 1;
+    const itemsPerPage = 10;
+
+    // Load sales data on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        loadSalesData();
+        setupEventListeners();
+    });
+
+    function setupEventListeners() {
+        // Refresh button
+        document.getElementById('refreshSalesBtn').addEventListener('click', function() {
+            this.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>Refreshing...';
+            loadSalesData();
+        });
+        
+        // Export button
+        document.getElementById('exportBtn').addEventListener('click', function() {
+            exportToCSV();
+        });
+        
+        // Filter controls
+        document.getElementById('applyFilters').addEventListener('click', applyFilters);
+        document.getElementById('searchInput').addEventListener('keyup', function(e) {
+            if (e.key === 'Enter') applyFilters();
+        });
+        
+        // Category filter dropdown
+        document.querySelectorAll('[data-filter]').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const filter = this.getAttribute('data-filter');
+                filterCategoryChart(filter);
+            });
+        });
+    }
+
+    function loadSalesData() {
+        Promise.all([
+            fetch('/api/sales_data').then(r => r.json()),
+            fetch('/api/dashboard_data').then(r => r.json())
+        ])
+        .then(([salesApiData, dashboardApiData]) => {
+            // Update KPIs
+            updateSalesKPIs(dashboardApiData);
+            
+            // Create charts
+            createSalesCharts(salesApiData);
+            
+            // Generate mock detailed sales data for table
+            generateDetailedSalesData(dashboardApiData);
+            
+            // Reset refresh button
+            const refreshBtn = document.getElementById('refreshSalesBtn');
+            refreshBtn.innerHTML = '<i class="fas fa-sync-alt me-1"></i>Refresh';
+        })
+        .catch(error => {
+            console.error('Error loading sales data:', error);
+            showAlert('Error loading sales data', 'error');
+        });
+    }
+
+    function updateSalesKPIs(data) {
+        const monthlySales = data.total_sales * 0.3; // Approximate monthly sales
+        const avgOrderValue = data.total_sales / 1000; // Mock average order value
+        const totalTransactions = Math.floor(data.total_sales / avgOrderValue);
+        const conversionRate = 23.5; // Mock conversion rate
+        
+        document.getElementById('monthlySales').textContent = formatCurrency(monthlySales);
+        document.getElementById('avgOrderValue').textContent = formatCurrency(avgOrderValue);
+        document.getElementById('totalTransactions').textContent = totalTransactions.toLocaleString();
+        document.getElementById('conversionRate').textContent = formatPercentage(conversionRate);
+    }
+
+    function createSalesCharts(data) {
+        // Category Trend Chart
+        const categoryCtx = document.getElementById('categoryTrendChart').getContext('2d');
+        if (categoryTrendChart) categoryTrendChart.destroy();
+        
+        // Process category trend data
+        const categories = [...new Set(data.category_trend.map(item => item.product_category))];
+        const dates = [...new Set(data.category_trend.map(item => item.date))].sort();
+        
+        const datasets = categories.map((category, index) => {
+            const colors = ['#FF6B35', '#007AFF', '#28a745', '#ffc107', '#dc3545'];
+            const categoryData = dates.map(date => {
+                const item = data.category_trend.find(d => d.date === date && d.product_category === category);
+                return item ? item.sales : 0;
+            });
+            
+            return {
+                label: category,
+                data: categoryData,
+                borderColor: colors[index % colors.length],
+                backgroundColor: colors[index % colors.length] + '20',
+                borderWidth: 2,
+                fill: false,
+                tension: 0.4
+            };
+        });
+        
+        categoryTrendChart = createChart(categoryCtx, 'line', {
+            labels: dates.map(date => new Date(date).toLocaleDateString()),
+            datasets: datasets
+        }, {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(value) {
+                            return 'R' + value.toLocaleString();
+                        }
+                    }
+                }
+            }
+        });
+
+        // Vendor Chart
+        const vendorCtx = document.getElementById('vendorChart').getContext('2d');
+        if (vendorChart) vendorChart.destroy();
+        
+        vendorChart = createChart(vendorCtx, 'horizontalBar', {
+            labels: data.vendor_sales.map(item => item.vendor),
+            datasets: [{
+                label: 'Sales (R)',
+                data: data.vendor_sales.map(item => item.sales),
+                backgroundColor: '#FF6B35',
+                borderRadius: 5
+            }]
+        }, {
+            indexAxis: 'y',
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(value) {
+                            return 'R' + value.toLocaleString();
+                        }
+                    }
+                }
+            }
+        });
+
+        // Customer Type Chart
+        const customerCtx = document.getElementById('customerTypeChart').getContext('2d');
+        if (customerTypeChart) customerTypeChart.destroy();
+        
+        const customerColors = ['#007AFF', '#28a745', '#ffc107', '#dc3545'];
+        
+        customerTypeChart = createChart(customerCtx, 'pie', {
+            labels: data.customer_analysis.map(item => item.customer_type),
+            datasets: [{
+                data: data.customer_analysis.map(item => item.sales),
+                backgroundColor: customerColors,
+                borderWidth: 0
+            }]
+        }, {
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        });
+
+        // Update sales leaderboard
+        updateSalesLeaderboard(data.vendor_sales);
+    }
+
+    function updateSalesLeaderboard(vendorData) {
+        const leaderboard = document.getElementById('salesLeaderboard');
+        leaderboard.innerHTML = '';
+        
+        // Mock regional data based on vendor performance
+        const regions = ['Gauteng', 'Western Cape', 'KwaZulu-Natal', 'Eastern Cape', 'Free State'];
+        const regionalData = regions.map((region, index) => ({
+            region: region,
+            sales: vendorData[index % vendorData.length].sales * (0.8 + Math.random() * 0.4),
+            growth: (Math.random() * 30 - 10).toFixed(1)
+        })).sort((a, b) => b.sales - a.sales);
+        
+        regionalData.forEach((region, index) => {
+            const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : `${index + 1}.`;
+            const growthClass = region.growth > 0 ? 'text-success' : 'text-danger';
+            
+            const item = document.createElement('div');
+            item.className = 'leaderboard-item d-flex justify-content-between align-items-center mb-3 p-3 bg-light rounded';
+            item.innerHTML = `
+                <div class="d-flex align-items-center">
+                    <span class="leaderboard-rank me-3" style="font-size: 1.2rem;">${medal}</span>
+                    <div>
+                        <div class="fw-bold">${region.region}</div>
+                        <div class="text-muted small">Regional Performance</div>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <div class="fw-bold">${formatCurrency(region.sales)}</div>
+                    <div class="${growthClass} small">${region.growth > 0 ? '+' : ''}${region.growth}%</div>
+                </div>
+            `;
+            leaderboard.appendChild(item);
+        });
+    }
+
+    function generateDetailedSalesData(dashboardData) {
+        // Generate mock detailed sales data for the table
+        salesData = [];
+        const regions = ['Gauteng', 'Western Cape', 'KwaZulu-Natal', 'Eastern Cape', 'Free State'];
+        const categories = ['Beer', 'Wine', 'Spirits', 'Soft Drinks', 'Water'];
+        const vendors = ['SAB Miller', 'Distell', 'Coca-Cola', 'Pepsi', 'Local Brands'];
+        const customerTypes = ['Retail', 'Wholesale', 'On-Trade', 'Export'];
+        
+        for (let i = 0; i < 100; i++) {
+            const sales = Math.random() * 50000 + 5000;
+            const profit = sales * (0.15 + Math.random() * 0.25);
+            const margin = (profit / sales * 100);
+            
+            salesData.push({
+                date: new Date(Date.now() - Math.random() * 90 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+                region: regions[Math.floor(Math.random() * regions.length)],
+                category: categories[Math.floor(Math.random() * categories.length)],
+                vendor: vendors[Math.floor(Math.random() * vendors.length)],
+                customerType: customerTypes[Math.floor(Math.random() * customerTypes.length)],
+                sales: sales,
+                profit: profit,
+                margin: margin
+            });
+        }
+        
+        filteredData = [...salesData];
+        displaySalesTable();
+    }
+
+    function applyFilters() {
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+        const regionFilter = document.getElementById('regionFilter').value;
+        const categoryFilter = document.getElementById('categoryFilter').value;
+        
+        filteredData = salesData.filter(item => {
+            const matchesSearch = !searchTerm || 
+                item.region.toLowerCase().includes(searchTerm) ||
+                item.category.toLowerCase().includes(searchTerm) ||
+                item.vendor.toLowerCase().includes(searchTerm);
+            
+            const matchesRegion = !regionFilter || item.region === regionFilter;
+            const matchesCategory = !categoryFilter || item.category === categoryFilter;
+            
+            return matchesSearch && matchesRegion && matchesCategory;
+        });
+        
+        currentPage = 1;
+        displaySalesTable();
+        showAlert(`Found ${filteredData.length} matching records`, 'info');
+    }
+
+    function displaySalesTable() {
+        const tableBody = document.getElementById('salesTableBody');
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const pageData = filteredData.slice(startIndex, endIndex);
+        
+        tableBody.innerHTML = '';
+        
+        pageData.forEach(item => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${new Date(item.date).toLocaleDateString()}</td>
+                <td><span class="badge bg-primary">${item.region}</span></td>
+                <td>${item.category}</td>
+                <td>${item.vendor}</td>
+                <td>${item.customerType}</td>
+                <td class="fw-bold">${formatCurrency(item.sales)}</td>
+                <td class="text-success">${formatCurrency(item.profit)}</td>
+                <td class="text-info">${item.margin.toFixed(1)}%</td>
+            `;
+            tableBody.appendChild(row);
+        });
+        
+        updatePagination();
+    }
+
+    function updatePagination() {
+        const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+        const pagination = document.getElementById('pagination');
+        pagination.innerHTML = '';
+        
+        // Previous button
+        const prevLi = document.createElement('li');
+        prevLi.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
+        prevLi.innerHTML = '<a class="page-link" href="#" data-page="prev">Previous</a>';
+        pagination.appendChild(prevLi);
+        
+        // Page numbers
+        for (let i = 1; i <= Math.min(totalPages, 5); i++) {
+            const li = document.createElement('li');
+            li.className = `page-item ${i === currentPage ? 'active' : ''}`;
+            li.innerHTML = `<a class="page-link" href="#" data-page="${i}">${i}</a>`;
+            pagination.appendChild(li);
+        }
+        
+        // Next button
+        const nextLi = document.createElement('li');
+        nextLi.className = `page-item ${currentPage === totalPages ? 'disabled' : ''}`;
+        nextLi.innerHTML = '<a class="page-link" href="#" data-page="next">Next</a>';
+        pagination.appendChild(nextLi);
+        
+        // Add click handlers
+        pagination.querySelectorAll('.page-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const page = this.getAttribute('data-page');
+                
+                if (page === 'prev' && currentPage > 1) {
+                    currentPage--;
+                } else if (page === 'next' && currentPage < totalPages) {
+                    currentPage++;
+                } else if (!isNaN(page)) {
+                    currentPage = parseInt(page);
+                }
+                
+                displaySalesTable();
+            });
+        });
+    }
+
+    function exportToCSV() {
+        const headers = ['Date', 'Region', 'Category', 'Vendor', 'Customer Type', 'Sales', 'Profit', 'Margin %'];
+        const csvContent = [
+            headers.join(','),
+            ...filteredData.map(row => [
+                row.date,
+                row.region,
+                row.category,
+                row.vendor,
+                row.customerType,
+                row.sales.toFixed(2),
+                row.profit.toFixed(2),
+                row.margin.toFixed(1)
+            ].join(','))
+        ].join('\n');
+        
+        const blob = new Blob([csvContent], { type: 'text/csv' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `sales_data_${new Date().toISOString().split('T')[0]}.csv`;
+        a.click();
+        window.URL.revokeObjectURL(url);
+        
+        showAlert('Sales data exported successfully', 'success');
+    }
+
+    function filterCategoryChart(category) {
+        // This would filter the category trend chart
+        showAlert(`Filtering chart for: ${category === 'all' ? 'All Categories' : category}`, 'info');
+    }
+</script>
+
+<style>
+    .leaderboard-item {
+        transition: all 0.3s ease;
+    }
+
+    .leaderboard-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .leaderboard-rank {
+        min-width: 30px;
+        text-align: center;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+    }
+
+    .input-group-text {
+        background: #f8f9fa;
+        border-color: #dee2e6;
+    }
+
+    .form-select, .form-control {
+        border-color: #dee2e6;
+    }
+
+    .form-select:focus, .form-control:focus {
+        border-color: #007AFF;
+        box-shadow: 0 0 0 0.2rem rgba(0, 122, 255, 0.25);
+    }
+
+    .page-link {
+        color: #007AFF;
+    }
+
+    .page-item.active .page-link {
+        background-color: #007AFF;
+        border-color: #007AFF;
+    }
+</style>
+{% endblock %}

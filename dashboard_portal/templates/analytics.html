@@ -1,0 +1,564 @@
+{% extends "base.html" %}
+
+{% block title %}AI Analytics - Bevco{% endblock %}
+{% block page_title %}AI Analytics{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- AI Insights Cards -->
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">Forecast Accuracy</div>
+            <div class="kpi-value text-primary" id="forecastAccuracy">92.3%</div>
+            <div class="kpi-change positive">
+                <i class="fas fa-arrow-up me-1"></i>+3.2% vs LM
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">Anomalies Detected</div>
+            <div class="kpi-value text-warning" id="anomalies">7</div>
+            <div class="kpi-change negative">
+                <i class="fas fa-arrow-up me-1"></i>+2 vs Yesterday
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">Churn Risk Score</div>
+            <div class="kpi-value text-success" id="churnRisk">Low</div>
+            <div class="kpi-change positive">
+                <i class="fas fa-arrow-down me-1"></i>Improved
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+        <div class="dashboard-card kpi-card">
+            <div class="kpi-label">AI Recommendations</div>
+            <div class="kpi-value text-info" id="recommendations">12</div>
+            <div class="kpi-change positive">
+                <i class="fas fa-lightbulb me-1"></i>Active
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Sales Forecast -->
+    <div class="col-xl-8 col-lg-7 mb-4">
+        <div class="dashboard-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-crystal-ball text-primary me-2"></i>AI Sales Forecast (Next 90 Days)
+                </h5>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary btn-sm active">30 Days</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm">90 Days</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm">1 Year</button>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="forecastChart"></canvas>
+            </div>
+            <div class="forecast-confidence mt-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="text-muted">Confidence Level:</span>
+                    <div class="progress" style="width: 200px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Customer Segmentation -->
+    <div class="col-xl-4 col-lg-5 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-users-cog text-success me-2"></i>AI Customer Segmentation
+            </h5>
+            <div class="chart-container">
+                <canvas id="segmentationChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- AI Recommendations -->
+    <div class="col-xl-6 col-lg-6 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-robot text-warning me-2"></i>AI Recommendations
+            </h5>
+            <div class="recommendations-list" style="max-height: 400px; overflow-y: auto;">
+                <div class="recommendation-item d-flex align-items-start mb-3 p-3 bg-light rounded">
+                    <div class="recommendation-icon bg-success text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="recommendation-content flex-grow-1">
+                        <div class="recommendation-title fw-bold text-success">Increase Beer Inventory</div>
+                        <div class="recommendation-description text-muted small mb-2">
+                            AI predicts 25% increase in beer demand for Gauteng region next month based on seasonal patterns and local events.
+                        </div>
+                        <div class="recommendation-impact">
+                            <span class="badge bg-success me-2">High Impact</span>
+                            <span class="text-muted small">Confidence: 89%</span>
+                        </div>
+                        <div class="recommendation-actions mt-2">
+                            <button class="btn btn-sm btn-success me-2">Apply</button>
+                            <button class="btn btn-sm btn-outline-secondary">Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recommendation-item d-flex align-items-start mb-3 p-3 bg-light rounded">
+                    <div class="recommendation-icon bg-warning text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="recommendation-content flex-grow-1">
+                        <div class="recommendation-title fw-bold text-warning">Customer Retention Alert</div>
+                        <div class="recommendation-description text-muted small mb-2">
+                            3 high-value customers show signs of potential churn. Recommend targeted retention campaign.
+                        </div>
+                        <div class="recommendation-impact">
+                            <span class="badge bg-warning me-2">Medium Impact</span>
+                            <span class="text-muted small">Confidence: 76%</span>
+                        </div>
+                        <div class="recommendation-actions mt-2">
+                            <button class="btn btn-sm btn-warning me-2">Review</button>
+                            <button class="btn btn-sm btn-outline-secondary">Contact</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recommendation-item d-flex align-items-start mb-3 p-3 bg-light rounded">
+                    <div class="recommendation-icon bg-info text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="recommendation-content flex-grow-1">
+                        <div class="recommendation-title fw-bold text-info">Pricing Optimization</div>
+                        <div class="recommendation-description text-muted small mb-2">
+                            Adjust wine pricing in Western Cape by 3-5% to maximize profit margin without affecting demand.
+                        </div>
+                        <div class="recommendation-impact">
+                            <span class="badge bg-info me-2">High Impact</span>
+                            <span class="text-muted small">Confidence: 94%</span>
+                        </div>
+                        <div class="recommendation-actions mt-2">
+                            <button class="btn btn-sm btn-info me-2">Simulate</button>
+                            <button class="btn btn-sm btn-outline-secondary">Analyze</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recommendation-item d-flex align-items-start mb-3 p-3 bg-light rounded">
+                    <div class="recommendation-icon bg-primary text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="recommendation-content flex-grow-1">
+                        <div class="recommendation-title fw-bold text-primary">Route Optimization</div>
+                        <div class="recommendation-description text-muted small mb-2">
+                            Optimize delivery routes for JHB region to reduce transportation costs by 12% and improve delivery times.
+                        </div>
+                        <div class="recommendation-impact">
+                            <span class="badge bg-primary me-2">Medium Impact</span>
+                            <span class="text-muted small">Confidence: 82%</span>
+                        </div>
+                        <div class="recommendation-actions mt-2">
+                            <button class="btn btn-sm btn-primary me-2">Optimize</button>
+                            <button class="btn btn-sm btn-outline-secondary">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Anomaly Detection -->
+    <div class="col-xl-6 col-lg-6 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-search text-info me-2"></i>Anomaly Detection
+            </h5>
+            <div class="anomalies-list" style="max-height: 400px; overflow-y: auto;">
+                <div class="anomaly-item d-flex align-items-start mb-3 p-3 border rounded">
+                    <div class="anomaly-severity bg-danger text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 30px; height: 30px; font-size: 0.8rem;">
+                        H
+                    </div>
+                    <div class="anomaly-content flex-grow-1">
+                        <div class="anomaly-title fw-bold text-danger">Unusual Sales Drop</div>
+                        <div class="anomaly-description text-muted small mb-2">
+                            Spirits sales in Eastern Cape dropped 45% compared to historical average for this period.
+                        </div>
+                        <div class="anomaly-details">
+                            <span class="text-muted small">Detected: 2 hours ago</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-muted small">Severity: High</span>
+                        </div>
+                        <div class="anomaly-actions mt-2">
+                            <button class="btn btn-sm btn-outline-danger">Investigate</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="anomaly-item d-flex align-items-start mb-3 p-3 border rounded">
+                    <div class="anomaly-severity bg-warning text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 30px; height: 30px; font-size: 0.8rem;">
+                        M
+                    </div>
+                    <div class="anomaly-content flex-grow-1">
+                        <div class="anomaly-title fw-bold text-warning">Inventory Spike</div>
+                        <div class="anomaly-description text-muted small mb-2">
+                            Soft drinks inventory increased 30% above normal levels at DBN warehouse.
+                        </div>
+                        <div class="anomaly-details">
+                            <span class="text-muted small">Detected: 4 hours ago</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-muted small">Severity: Medium</span>
+                        </div>
+                        <div class="anomaly-actions mt-2">
+                            <button class="btn btn-sm btn-outline-warning">Review</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="anomaly-item d-flex align-items-start mb-3 p-3 border rounded">
+                    <div class="anomaly-severity bg-info text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 30px; height: 30px; font-size: 0.8rem;">
+                        L
+                    </div>
+                    <div class="anomaly-content flex-grow-1">
+                        <div class="anomaly-title fw-bold text-info">Customer Behavior Change</div>
+                        <div class="anomaly-description text-muted small mb-2">
+                            Large retail customer changed ordering pattern - now ordering 20% more frequently.
+                        </div>
+                        <div class="anomaly-details">
+                            <span class="text-muted small">Detected: 6 hours ago</span>
+                            <span class="mx-2">•</span>
+                            <span class="text-muted small">Severity: Low</span>
+                        </div>
+                        <div class="anomaly-actions mt-2">
+                            <button class="btn btn-sm btn-outline-info">Monitor</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Predictive Analytics Dashboard -->
+    <div class="col-12 mb-4">
+        <div class="dashboard-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-brain text-primary me-2"></i>Predictive Analytics Dashboard
+            </h5>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="prediction-card bg-gradient-primary text-white p-3 rounded">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="h6 mb-1">Next Month Sales</div>
+                                <div class="h4 mb-0">R 15.2M</div>
+                                <div class="small opacity-75">+8.3% predicted growth</div>
+                            </div>
+                            <i class="fas fa-chart-line fa-2x opacity-50"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <div class="prediction-card bg-gradient-success text-white p-3 rounded">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="h6 mb-1">Inventory Needs</div>
+                                <div class="h4 mb-0">R 4.8M</div>
+                                <div class="small opacity-75">Optimal stock level</div>
+                            </div>
+                            <i class="fas fa-boxes fa-2x opacity-50"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <div class="prediction-card bg-gradient-warning text-white p-3 rounded">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="h6 mb-1">Churn Risk</div>
+                                <div class="h4 mb-0">8 Customers</div>
+                                <div class="small opacity-75">Require attention</div>
+                            </div>
+                            <i class="fas fa-user-times fa-2x opacity-50"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <div class="prediction-card bg-gradient-info text-white p-3 rounded">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="h6 mb-1">Market Opportunity</div>
+                                <div class="h4 mb-0">R 2.1M</div>
+                                <div class="small opacity-75">Untapped potential</div>
+                            </div>
+                            <i class="fas fa-bullseye fa-2x opacity-50"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    let forecastChart, segmentationChart;
+
+    document.addEventListener('DOMContentLoaded', function() {
+        loadAnalyticsData();
+        setupAIInteractions();
+    });
+
+    function loadAnalyticsData() {
+        // Mock AI analytics data
+        const analyticsData = {
+            forecast_data: generateForecastData(),
+            customer_segments: [
+                { segment: 'High Value', customers: 156, revenue: 8500000 },
+                { segment: 'Regular', customers: 342, revenue: 4200000 },
+                { segment: 'Occasional', customers: 189, revenue: 1800000 },
+                { segment: 'At Risk', customers: 37, revenue: 650000 }
+            ]
+        };
+
+        createAnalyticsCharts(analyticsData);
+    }
+
+    function generateForecastData() {
+        const historical = [];
+        const forecast = [];
+        const dates = [];
+        
+        // Generate historical data (last 30 days)
+        for (let i = 30; i >= 0; i--) {
+            const date = new Date();
+            date.setDate(date.getDate() - i);
+            dates.push(date.toLocaleDateString());
+            
+            const baseValue = 400000 + Math.sin(i * 0.1) * 50000;
+            historical.push(baseValue + (Math.random() - 0.5) * 40000);
+        }
+        
+        // Generate forecast data (next 30 days)
+        for (let i = 1; i <= 30; i++) {
+            const date = new Date();
+            date.setDate(date.getDate() + i);
+            dates.push(date.toLocaleDateString());
+            
+            const baseValue = 420000 + Math.sin(i * 0.1) * 55000;
+            forecast.push(baseValue + (Math.random() - 0.5) * 30000);
+        }
+        
+        return { dates, historical, forecast };
+    }
+
+    function createAnalyticsCharts(data) {
+        // Sales Forecast Chart
+        const forecastCtx = document.getElementById('forecastChart').getContext('2d');
+        if (forecastChart) forecastChart.destroy();
+        
+        forecastChart = createChart(forecastCtx, 'line', {
+            labels: data.forecast_data.dates,
+            datasets: [{
+                label: 'Historical Sales',
+                data: [...data.forecast_data.historical, ...Array(30).fill(null)],
+                borderColor: '#007AFF',
+                backgroundColor: 'rgba(0, 122, 255, 0.1)',
+                borderWidth: 2,
+                fill: true,
+                tension: 0.4
+            }, {
+                label: 'Forecast',
+                data: [...Array(31).fill(null), ...data.forecast_data.forecast],
+                borderColor: '#FF6B35',
+                backgroundColor: 'rgba(255, 107, 53, 0.1)',
+                borderWidth: 2,
+                borderDash: [5, 5],
+                fill: true,
+                tension: 0.4
+            }, {
+                label: 'Confidence Interval',
+                data: [...Array(31).fill(null), ...data.forecast_data.forecast.map(val => val * 1.1)],
+                borderColor: 'rgba(255, 107, 53, 0.3)',
+                backgroundColor: 'rgba(255, 107, 53, 0.05)',
+                borderWidth: 1,
+                fill: '-1',
+                tension: 0.4,
+                pointRadius: 0
+            }]
+        }, {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(value) {
+                            return 'R' + (value / 1000).toFixed(0) + 'K';
+                        }
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: true
+                }
+            }
+        });
+
+        // Customer Segmentation Chart
+        const segmentationCtx = document.getElementById('segmentationChart').getContext('2d');
+        if (segmentationChart) segmentationChart.destroy();
+        
+        const segmentColors = ['#28a745', '#007AFF', '#ffc107', '#dc3545'];
+        
+        segmentationChart = createChart(segmentationCtx, 'doughnut', {
+            labels: data.customer_segments.map(item => item.segment),
+            datasets: [{
+                data: data.customer_segments.map(item => item.revenue),
+                backgroundColor: segmentColors,
+                borderWidth: 0
+            }]
+        }, {
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        });
+    }
+
+    function setupAIInteractions() {
+        // Add click handlers for recommendation actions
+        document.querySelectorAll('.recommendation-actions .btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const action = this.textContent.trim();
+                const title = this.closest('.recommendation-item').querySelector('.recommendation-title').textContent;
+                
+                showAlert(`${action} action initiated for: ${title}`, 'info');
+                
+                // Simulate processing
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                this.disabled = true;
+                
+                setTimeout(() => {
+                    this.innerHTML = action;
+                    this.disabled = false;
+                    showAlert(`${action} completed successfully`, 'success');
+                }, 2000);
+            });
+        });
+        
+        // Add click handlers for anomaly actions
+        document.querySelectorAll('.anomaly-actions .btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const action = this.textContent.trim();
+                const title = this.closest('.anomaly-item').querySelector('.anomaly-title').textContent;
+                
+                showAlert(`${action} initiated for: ${title}`, 'info');
+            });
+        });
+    }
+
+    // Simulate real-time AI updates
+    setInterval(function() {
+        // Update forecast accuracy randomly
+        const accuracy = 90 + Math.random() * 5;
+        document.getElementById('forecastAccuracy').textContent = accuracy.toFixed(1) + '%';
+        
+        // Update anomalies count
+        const anomalies = Math.floor(Math.random() * 10) + 3;
+        document.getElementById('anomalies').textContent = anomalies;
+        
+        // Occasionally add new recommendations
+        if (Math.random() < 0.1) { // 10% chance every interval
+            addNewRecommendation();
+        }
+    }, 30000); // Every 30 seconds
+
+    function addNewRecommendation() {
+        const recommendations = [
+            {
+                title: 'Seasonal Promotion Opportunity',
+                description: 'Launch summer promotion for soft drinks in coastal regions. Predicted 18% sales increase.',
+                impact: 'High',
+                confidence: 87,
+                color: 'success'
+            },
+            {
+                title: 'Supplier Diversification',
+                description: 'Consider alternative suppliers for wine category to reduce dependency and costs.',
+                impact: 'Medium',
+                confidence: 73,
+                color: 'info'
+            }
+        ];
+        
+        const recommendation = recommendations[Math.floor(Math.random() * recommendations.length)];
+        
+        showAlert(`New AI Recommendation: ${recommendation.title}`, 'success');
+    }
+</script>
+
+<style>
+    .bg-gradient-primary {
+        background: linear-gradient(45deg, #007AFF, #0056b3);
+    }
+    
+    .bg-gradient-success {
+        background: linear-gradient(45deg, #28a745, #1e7e34);
+    }
+    
+    .bg-gradient-warning {
+        background: linear-gradient(45deg, #ffc107, #e0a800);
+    }
+    
+    .bg-gradient-info {
+        background: linear-gradient(45deg, #17a2b8, #138496);
+    }
+
+    .prediction-card {
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .prediction-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .recommendation-item, .anomaly-item {
+        transition: all 0.3s ease;
+    }
+
+    .recommendation-item:hover, .anomaly-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .recommendation-icon, .anomaly-severity {
+        flex-shrink: 0;
+    }
+
+    .forecast-confidence .progress {
+        height: 20px;
+    }
+
+    .anomaly-severity {
+        font-weight: bold;
+    }
+</style>
+{% endblock %}

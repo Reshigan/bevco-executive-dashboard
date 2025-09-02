@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Bevco Executive Dashboard{% endblock %}</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Socket.IO -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+    
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #FF6B35;
+            --accent-color: #007AFF;
+            --success-color: #28a745;
+            --warning-color: #ffc107;
+            --danger-color: #dc3545;
+            --dark-color: #343a40;
+            --light-color: #f8f9fa;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            background: var(--primary-color);
+            min-height: 100vh;
+            width: 280px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar.collapsed {
+            width: 80px;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar-header h3 {
+            color: white;
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .sidebar-header .subtitle {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        .sidebar-nav {
+            padding: 20px 0;
+        }
+
+        .nav-item {
+            margin: 5px 15px;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .nav-link.active {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        .nav-link i {
+            width: 20px;
+            margin-right: 15px;
+            text-align: center;
+        }
+
+        .main-content {
+            margin-left: 280px;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+
+        .main-content.expanded {
+            margin-left: 80px;
+        }
+
+        .top-navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 15px 30px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .notification-bell {
+            position: relative;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .notification-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: var(--danger-color);
+            color: white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            font-size: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+        }
+
+        .content-area {
+            padding: 30px;
+            min-height: calc(100vh - 80px);
+        }
+
+        .dashboard-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .kpi-card {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .kpi-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .kpi-label {
+            color: #666;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .kpi-change {
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .kpi-change.positive {
+            color: var(--success-color);
+        }
+
+        .kpi-change.negative {
+            color: var(--danger-color);
+        }
+
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin: 20px 0;
+        }
+
+        .chat-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 350px;
+            height: 500px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            z-index: 1001;
+        }
+
+        .chat-widget.open {
+            display: flex;
+        }
+
+        .chat-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            max-height: 350px;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 15px;
+            max-width: 80%;
+        }
+
+        .message.user {
+            background: var(--accent-color);
+            color: white;
+            margin-left: auto;
+            text-align: right;
+        }
+
+        .message.ai {
+            background: #f1f3f4;
+            color: #333;
+        }
+
+        .chat-input {
+            padding: 15px;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-input input {
+            flex: 1;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            padding: 10px 15px;
+            outline: none;
+        }
+
+        .chat-input button {
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .chat-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            z-index: 1002;
+            transition: all 0.3s ease;
+        }
+
+        .chat-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .alert-toast {
+            position: fixed;
+            top: 100px;
+            right: 30px;
+            background: white;
+            border-radius: 10px;
+            padding: 15px 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1003;
+            transform: translateX(400px);
+            transition: all 0.3s ease;
+        }
+
+        .alert-toast.show {
+            transform: translateX(0);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .data-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .data-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+            }
+
+            .sidebar.mobile-open {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .chat-widget {
+                width: 90%;
+                right: 5%;
+                bottom: 20px;
+            }
+
+            .chat-toggle {
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3><i class="fas fa-chart-line"></i> Bevco</h3>
+            <div class="subtitle">Executive Dashboard</div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <div class="nav-item">
+                <a href="{{ url_for('dashboard') }}" class="nav-link {% if request.endpoint == 'dashboard' %}active{% endif %}">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="{{ url_for('sales') }}" class="nav-link {% if request.endpoint == 'sales' %}active{% endif %}">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Sales Analytics</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="{{ url_for('finance') }}" class="nav-link {% if request.endpoint == 'finance' %}active{% endif %}">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>Financial</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="{{ url_for('operations') }}" class="nav-link {% if request.endpoint == 'operations' %}active{% endif %}">
+                    <i class="fas fa-cogs"></i>
+                    <span>Operations</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="{{ url_for('analytics') }}" class="nav-link {% if request.endpoint == 'analytics' %}active{% endif %}">
+                    <i class="fas fa-brain"></i>
+                    <span>AI Analytics</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <!-- Top Navbar -->
+        <div class="top-navbar">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-link text-primary me-3" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1 class="page-title">{% block page_title %}Dashboard{% endblock %}</h1>
+            </div>
+            
+            <div class="user-menu">
+                <div class="notification-bell" id="notificationBell">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge" id="notificationCount">3</span>
+                </div>
+                
+                <div class="dropdown">
+                    <div class="user-avatar dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ username[0].upper() if username else 'U' }}
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>Profile</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-area">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ 'danger' if category == 'error' else category }} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <div>
+                <strong><i class="fas fa-robot me-2"></i>AI Assistant</strong>
+                <div style="font-size: 0.8rem; opacity: 0.8;">Ask me about your business data</div>
+            </div>
+            <button class="btn btn-link text-white p-0" id="closeChatBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message ai">
+                <strong>AI Assistant:</strong><br>
+                Hello! I'm your business intelligence assistant. I can help you analyze sales data, financial metrics, regional performance, and more. What would you like to know?
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Ask about sales, profits, regions..." maxlength="500">
+            <button id="sendChatBtn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Chat Toggle Button -->
+    <button class="chat-toggle" id="chatToggle">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Alert Toast -->
+    <div class="alert-toast" id="alertToast">
+        <div id="alertContent"></div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Global variables
+        let socket;
+        let notificationCount = 3;
+
+        // Initialize Socket.IO
+        document.addEventListener('DOMContentLoaded', function() {
+            socket = io();
+            
+            socket.on('connect', function() {
+                console.log('Connected to server');
+            });
+            
+            socket.on('status', function(data) {
+                showAlert(data.msg, 'info');
+            });
+            
+            socket.on('real_time_update', function(data) {
+                showAlert(data.message, data.type);
+                updateNotificationCount();
+            });
+        });
+
+        // Sidebar toggle
+        document.getElementById('sidebarToggle').addEventListener('click', function() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('mainContent');
+            
+            sidebar.classList.toggle('collapsed');
+            mainContent.classList.toggle('expanded');
+        });
+
+        // Chat functionality
+        const chatToggle = document.getElementById('chatToggle');
+        const chatWidget = document.getElementById('chatWidget');
+        const closeChatBtn = document.getElementById('closeChatBtn');
+        const chatInput = document.getElementById('chatInput');
+        const sendChatBtn = document.getElementById('sendChatBtn');
+        const chatMessages = document.getElementById('chatMessages');
+
+        chatToggle.addEventListener('click', function() {
+            chatWidget.classList.add('open');
+            chatToggle.style.display = 'none';
+        });
+
+        closeChatBtn.addEventListener('click', function() {
+            chatWidget.classList.remove('open');
+            chatToggle.style.display = 'block';
+        });
+
+        sendChatBtn.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (!message) return;
+
+            // Add user message to chat
+            addMessageToChat(message, 'user');
+            chatInput.value = '';
+
+            // Show typing indicator
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'message ai';
+            typingDiv.innerHTML = '<em>AI is typing...</em>';
+            chatMessages.appendChild(typingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            // Send to server
+            fetch('/api/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ message: message })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Remove typing indicator
+                chatMessages.removeChild(typingDiv);
+                
+                // Add AI response
+                addMessageToChat(data.response, 'ai');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                chatMessages.removeChild(typingDiv);
+                addMessageToChat('Sorry, I encountered an error. Please try again.', 'ai');
+            });
+        }
+
+        function addMessageToChat(message, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            
+            if (sender === 'ai') {
+                messageDiv.innerHTML = `<strong>AI:</strong><br>${message}`;
+            } else {
+                messageDiv.textContent = message;
+            }
+            
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Alert system
+        function showAlert(message, type = 'info') {
+            const alertToast = document.getElementById('alertToast');
+            const alertContent = document.getElementById('alertContent');
+            
+            const icons = {
+                'info': 'fas fa-info-circle text-primary',
+                'success': 'fas fa-check-circle text-success',
+                'warning': 'fas fa-exclamation-triangle text-warning',
+                'error': 'fas fa-times-circle text-danger',
+                'sales': 'fas fa-chart-line text-success',
+                'alert': 'fas fa-exclamation-triangle text-warning',
+                'kpi': 'fas fa-tachometer-alt text-info'
+            };
+            
+            alertContent.innerHTML = `
+                <div class="d-flex align-items-center">
+                    <i class="${icons[type] || icons['info']} me-2"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+            
+            alertToast.classList.add('show');
+            
+            setTimeout(() => {
+                alertToast.classList.remove('show');
+            }, 5000);
+        }
+
+        // Notification system
+        function updateNotificationCount() {
+            notificationCount++;
+            document.getElementById('notificationCount').textContent = notificationCount;
+        }
+
+        document.getElementById('notificationBell').addEventListener('click', function() {
+            notificationCount = 0;
+            document.getElementById('notificationCount').textContent = '0';
+            showAlert('All notifications cleared', 'success');
+        });
+
+        // Utility functions for charts
+        function createChart(ctx, type, data, options = {}) {
+            return new Chart(ctx, {
+                type: type,
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        }
+                    },
+                    ...options
+                }
+            });
+        }
+
+        // Format currency
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('en-ZA', {
+                style: 'currency',
+                currency: 'ZAR',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(amount);
+        }
+
+        // Format percentage
+        function formatPercentage(value) {
+            return `${value.toFixed(1)}%`;
+        }
+    </script>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>
