@@ -109,11 +109,29 @@ def start_dashboard():
     """Start the dashboard application"""
     print_status("Starting Bevco Executive Dashboard...", "info")
     
-    # Change to dashboard directory
-    dashboard_dir = Path("dashboard_portal")
+    # Check current directory and find dashboard files
+    current_dir = Path.cwd()
+    dashboard_dir = current_dir / "dashboard_portal"
+    
+    # If we're already in the project directory, look for dashboard_portal
     if not dashboard_dir.exists():
-        print_status("Dashboard directory not found", "error")
-        return False
+        # Maybe we're in the wrong directory, try to find it
+        possible_paths = [
+            Path("dashboard_portal"),
+            Path("../dashboard_portal"),
+            Path("./bevco-executive-dashboard/dashboard_portal"),
+            current_dir.parent / "dashboard_portal"
+        ]
+        
+        for path in possible_paths:
+            if path.exists() and (path / "app.py").exists():
+                dashboard_dir = path
+                break
+        else:
+            print_status("Dashboard directory not found. Please run from the project root directory.", "error")
+            print_status(f"Current directory: {current_dir}", "info")
+            print_status("Expected structure: project_root/dashboard_portal/app.py", "info")
+            return False
     
     # Check if port is available
     if not check_port_availability(5000):
